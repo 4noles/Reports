@@ -1,0 +1,998 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Validation Report - Locations - en-ES</title>
+        <style>
+          body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; color: #333; background-color: #f9fafb; }
+          h1 { color: #1e3a8a; margin-bottom: 14px; }
+          .summary {
+            background: #f1f5f9;
+            border-left: 6px solid #2563eb;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+          }
+          .summary a { color: #2563eb; text-decoration: none; }
+          .summary a:hover { text-decoration: underline; }
+        
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            table-layout: fixed;
+            word-wrap: break-word;
+          }
+          th, td {
+            padding: 6px 8px;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+          }
+          th {
+            background: #1f2937;
+            color: white;
+            position: sticky;
+            top: 0;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+          }
+          tr:nth-child(even) { background: #f9fafb; }
+          tr:hover { background: #eef2ff; }
+        
+          .text-cell {
+            white-space: pre-wrap;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #111827;
+            background-color: #fafafa;
+            border-radius: 6px;
+            padding: 6px 8px;
+          }
+        
+          /* Proportional column widths */
+          td:nth-child(1) { width: 8%; }    /* Page */
+          td:nth-child(2) { width: 6%; }    /* Iframe */
+          td:nth-child(3) { width: 20%; }   /* XPath */
+          td:nth-child(4), td:nth-child(5) { width: 16%; }  /* Desktop Text */
+          td:nth-child(6) { width: 8%; }    /* Desktop Status */
+          td:nth-child(7), td:nth-child(8) { width: 16%; }  /* Mobile Text */
+          td:nth-child(9) { width: 8%; }    /* Mobile Status */
+        
+          .highlight-status {
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+          }
+          .status-match {
+            background: #dcfce7;
+            color: #065f46;
+          }
+          .status-mismatch {
+            background: #fee2e2;
+            color: #991b1b;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Locations (en-ES)</h1>
+        <div class="summary">
+          <b>Summary:</b><br>
+          Total: 63 |
+          <span style="color:green">Matches: 63</span> |
+          <span style="color:orange">Partial: 0</span> |
+          <span style="color:crimson">Mismatches: 20</span> |
+          Not Found: 3 |
+          Errors: 0<br>
+          <b>URL:</b> <a href="https://www.uat.orangetheory.com/en-es/locations" target="_blank">https://www.uat.orangetheory.com/en-es/locations</a>
+        </div>
+
+        <table>
+          <thead>
+          <tr>
+            <th>Page</th>
+            <th>Iframe</th>
+            <th>XPath</th>
+            <th>Desktop Expected</th>
+            <th>Desktop Actual</th>
+            <th>Desktop Status</th>
+            <th>Mobile Expected</th>
+            <th>Mobile Actual</th>
+            <th>Mobile Status</th>
+            <th>WITHOUT_QUERY_PARAMS</th> <!-- NEW -->
+            <th>WITH_QUERY_PARAMS</th>    <!-- NEW -->
+          </tr>
+        </thead>
+          <tbody>
+        <tr>
+          <td>Locations</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]</td>
+          <td class="text-cell">Find an Orangetheory Fitness Studio Near You.</td>
+          <td class="text-cell">Find an Orangetheory Fitness Studio Near You.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Find an Orangetheory Fitness Studio Near You.</td>
+          <td class="text-cell">Find an Orangetheory Fitness Studio Near You.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/main[1]/section[1]/p[1]</td>
+          <td class="text-cell">The coaches at our 1,500+ Orangetheory Fitness studios around the globe are ready to help you crush your fitness goals. Come experience how the energizing combination of strength and cardio enables you to look and feel your best.</td>
+          <td class="text-cell">The coaches at our 1,500+ Orangetheory Fitness studios around the globe are ready to help you crush your fitness goals. Come experience how the energizing combination of strength and cardio enables you to look and feel your best.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">The coaches at our 1,500+ Orangetheory Fitness studios around the globe are ready to help you crush your fitness goals. Come experience how the energizing combination of strength and cardio enables you to look and feel your best.</td>
+          <td class="text-cell">The coaches at our 1,500+ Orangetheory Fitness studios around the globe are ready to help you crush your fitness goals. Come experience how the energizing combination of strength and cardio enables you to look and feel your best.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/main[1]/section[1]/p[2]</td>
+          <td class="text-cell">Use our location finder to find your nearest studio and book your free first class today!</td>
+          <td class="text-cell">Use our location finder to find your nearest studio and book your free first class today!</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use our location finder to find your nearest studio and book your free first class today!</td>
+          <td class="text-cell">Use our location finder to find your nearest studio and book your free first class today!</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;react-select-2-placeholder&#39;]</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/button[1]</td>
+          <td class="text-cell">Search</td>
+          <td class="text-cell">Search</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search</td>
+          <td class="text-cell">Search</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/button[1]</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;toggle-map&#39;]</td>
+          <td class="text-cell">ON OFF</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">ON OFF</td>
+          <td class="text-cell">ON OFF</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/button[1]</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">3 Nearest Locations</td>
+          <td class="text-cell">9 Nearest Locations</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">3 Nearest Locations</td>
+          <td class="text-cell">3 Nearest Locations</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-f0140df5-b2e4-4567-8a68-383cafcfd097&#39;]</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-f0140df5-b2e4-4567-8a68-383cafcfd097&#39;]/p[1]</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-f0140df5-b2e4-4567-8a68-383cafcfd097&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-f0140df5-b2e4-4567-8a68-383cafcfd097&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-f0140df5-b2e4-4567-8a68-383cafcfd097&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-b4f11ba5-c32a-4868-80a8-15e51225cfd5&#39;]</td>
+          <td class="text-cell">Gal la Placidia</td>
+          <td class="text-cell">Gal la Placidia</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Gal la Placidia</td>
+          <td class="text-cell">Gal la Placidia</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-b4f11ba5-c32a-4868-80a8-15e51225cfd5&#39;]/p[1]</td>
+          <td class="text-cell">Gal La PLacidia 22 Barcelona, Cataluna 8006</td>
+          <td class="text-cell">Gal La PLacidia 22 Barcelona, Cataluna 8006</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Gal La PLacidia 22 Barcelona, Cataluna 8006</td>
+          <td class="text-cell">Gal La PLacidia 22 Barcelona, Cataluna 8006</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-b4f11ba5-c32a-4868-80a8-15e51225cfd5&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">682 46 75 62</td>
+          <td class="text-cell">682 46 75 62</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">682 46 75 62</td>
+          <td class="text-cell">682 46 75 62</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-b4f11ba5-c32a-4868-80a8-15e51225cfd5&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-b4f11ba5-c32a-4868-80a8-15e51225cfd5&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-389a31b8-49f6-419e-bfca-a5f4098e1eec&#39;]</td>
+          <td class="text-cell">Sant Cugat</td>
+          <td class="text-cell">Sant Cugat</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Sant Cugat</td>
+          <td class="text-cell">Sant Cugat</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-389a31b8-49f6-419e-bfca-a5f4098e1eec&#39;]/p[1]</td>
+          <td class="text-cell">Avinguda Lluis Companys, 13 Sant Cugat de Valles, Cataluna 8172</td>
+          <td class="text-cell">Avinguda Lluis Companys, 13 Sant Cugat de Valles, Cataluna 8172</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Avinguda Lluis Companys, 13 Sant Cugat de Valles, Cataluna 8172</td>
+          <td class="text-cell">Avinguda Lluis Companys, 13 Sant Cugat de Valles, Cataluna 8172</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-389a31b8-49f6-419e-bfca-a5f4098e1eec&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">616 87 99 70</td>
+          <td class="text-cell">616 87 99 70</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">616 87 99 70</td>
+          <td class="text-cell">616 87 99 70</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-389a31b8-49f6-419e-bfca-a5f4098e1eec&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-389a31b8-49f6-419e-bfca-a5f4098e1eec&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/button[1]</td>
+          <td class="text-cell">Search</td>
+          <td class="text-cell">Search</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search</td>
+          <td class="text-cell">Search</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/button[1]</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">9 Nearest Locations</td>
+          <td class="text-cell">9 Nearest Locations</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">9 Nearest Locations</td>
+          <td class="text-cell">3 Nearest Locations</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-d7bed741-3265-4b57-bf3d-f642fa472fbc&#39;]</td>
+          <td class="text-cell">Valencia</td>
+          <td class="text-cell">Valencia</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Valencia</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-d7bed741-3265-4b57-bf3d-f642fa472fbc&#39;]/p[1]</td>
+          <td class="text-cell">Calle Poeta Querol 5 Valencia, Valencia 46002</td>
+          <td class="text-cell">Calle Poeta Querol 5 Valencia, Valencia 46002</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Calle Poeta Querol 5 Valencia, Valencia 46002</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-d7bed741-3265-4b57-bf3d-f642fa472fbc&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">619 22 26 34</td>
+          <td class="text-cell">619 22 26 34</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">619 22 26 34</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-d7bed741-3265-4b57-bf3d-f642fa472fbc&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-d7bed741-3265-4b57-bf3d-f642fa472fbc&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-58b58136-1273-4328-865a-ec4c8589a869&#39;]</td>
+          <td class="text-cell">Santa Teresa</td>
+          <td class="text-cell">Santa Teresa</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Santa Teresa</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-58b58136-1273-4328-865a-ec4c8589a869&#39;]/p[1]</td>
+          <td class="text-cell">C/ 17 Santa Teresa Santa Teresa, Murcia 30005</td>
+          <td class="text-cell">C/ 17 Santa Teresa Santa Teresa, Murcia 30005</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">C/ 17 Santa Teresa Santa Teresa, Murcia 30005</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-58b58136-1273-4328-865a-ec4c8589a869&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">34683497180</td>
+          <td class="text-cell">34683497180</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">34683497180</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-58b58136-1273-4328-865a-ec4c8589a869&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-58b58136-1273-4328-865a-ec4c8589a869&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-f6903f11-d4a6-4c3f-a2f9-5d9ec8cbccee&#39;]</td>
+          <td class="text-cell">La Moraleja</td>
+          <td class="text-cell">La Moraleja</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">La Moraleja</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-f6903f11-d4a6-4c3f-a2f9-5d9ec8cbccee&#39;]/p[1]</td>
+          <td class="text-cell">Avenida de Bruselas 16 Alcobendas, Madrid 28108</td>
+          <td class="text-cell">Avenida de Bruselas 16 Alcobendas, Madrid 28108</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Avenida de Bruselas 16 Alcobendas, Madrid 28108</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-f6903f11-d4a6-4c3f-a2f9-5d9ec8cbccee&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">689020824</td>
+          <td class="text-cell">689020824</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">689020824</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-f6903f11-d4a6-4c3f-a2f9-5d9ec8cbccee&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-f6903f11-d4a6-4c3f-a2f9-5d9ec8cbccee&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-a71bbfa4-4a9d-4e7d-b0dd-6a6b83057f5e&#39;]</td>
+          <td class="text-cell">Chamartin</td>
+          <td class="text-cell">Chamartin</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Chamartin</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-a71bbfa4-4a9d-4e7d-b0dd-6a6b83057f5e&#39;]/p[1]</td>
+          <td class="text-cell">Calle del Padre Damián 44 Chamartin, Madrid 28036</td>
+          <td class="text-cell">Calle del Padre Damián 44 Chamartin, Madrid 28036</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Calle del Padre Damián 44 Chamartin, Madrid 28036</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-a71bbfa4-4a9d-4e7d-b0dd-6a6b83057f5e&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">628 373 435</td>
+          <td class="text-cell">628 373 435</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">628 373 435</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-a71bbfa4-4a9d-4e7d-b0dd-6a6b83057f5e&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-a71bbfa4-4a9d-4e7d-b0dd-6a6b83057f5e&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-7f5c27b6-b188-413d-a9c2-fdf92fe64add&#39;]</td>
+          <td class="text-cell">Velazquez</td>
+          <td class="text-cell">Velazquez</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Velazquez</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-7f5c27b6-b188-413d-a9c2-fdf92fe64add&#39;]/p[1]</td>
+          <td class="text-cell">Calle Velazquez 51 Madrid, Madrid 28001</td>
+          <td class="text-cell">Calle Velazquez 51 Madrid, Madrid 28001</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Calle Velazquez 51 Madrid, Madrid 28001</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-7f5c27b6-b188-413d-a9c2-fdf92fe64add&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">676 70 17 32</td>
+          <td class="text-cell">676 70 17 32</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">676 70 17 32</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-7f5c27b6-b188-413d-a9c2-fdf92fe64add&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-7f5c27b6-b188-413d-a9c2-fdf92fe64add&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-name-ad7392c4-bf18-45a8-80ae-457561e97704&#39;]</td>
+          <td class="text-cell">Pozuelo</td>
+          <td class="text-cell">Pozuelo</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Pozuelo</td>
+          <td class="text-cell">Aribau, ESP</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-ad7392c4-bf18-45a8-80ae-457561e97704&#39;]/p[1]</td>
+          <td class="text-cell">Calle Universidad 4, 28224 Pozuelo de Alarcon Madrid, Madrid 28224</td>
+          <td class="text-cell">Calle Universidad 4, 28224 Pozuelo de Alarcon Madrid, Madrid 28224</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Calle Universidad 4, 28224 Pozuelo de Alarcon Madrid, Madrid 28224</td>
+          <td class="text-cell">Carrer d&#39;Aribau, 121 Barcelona, Baleares (Balearic Islands) 8036</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-ad7392c4-bf18-45a8-80ae-457561e97704&#39;]/div[2]/button[1]</td>
+          <td class="text-cell">667 98 04 11</td>
+          <td class="text-cell">667 98 04 11</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">667 98 04 11</td>
+          <td class="text-cell">669 94 50 68</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-ad7392c4-bf18-45a8-80ae-457561e97704&#39;]/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;location-card-ad7392c4-bf18-45a8-80ae-457561e97704&#39;]/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[5]/div[2]/div[1]/a[1]</td>
+          <td class="text-cell">© Mapbox</td>
+          <td class="text-cell">© Mapbox</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">© Mapbox</td>
+          <td class="text-cell">© Mapbox</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Expected: https://www.mapbox.com/about/maps
+Actual: </td>
+          <td class="text-cell">Expected: https://www.mapbox.com/about/maps?test=query
+Actual: </td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[5]/div[2]/div[1]/a[2]</td>
+          <td class="text-cell">© OpenStreetMap</td>
+          <td class="text-cell">© OpenStreetMap</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">© OpenStreetMap</td>
+          <td class="text-cell">© OpenStreetMap</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Expected: https://www.openstreetmap.org/copyright/
+Actual: </td>
+          <td class="text-cell">Expected: https://www.openstreetmap.org/copyright/?test=query
+Actual: </td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[5]/div[2]/div[1]/a[3]</td>
+          <td class="text-cell">Improve this map</td>
+          <td class="text-cell">Improve this map</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Improve this map</td>
+          <td class="text-cell">Improve this map</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Locations</td>
+          <td>locations-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;root&#39;]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr></tbody>
+        </table>
+      </body>
+      </html>
