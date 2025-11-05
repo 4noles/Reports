@@ -1,0 +1,2600 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Membership Pricing Validation Report</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f4f6f9;
+        color: #333;
+        margin: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #ff6b00;
+      }
+      .summary {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 20px auto;
+        text-align: center;
+      }
+      .metric {
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        min-width: 140px;
+      }
+      .metric h2 { margin: 0; font-size: 1.4rem; color: #333; }
+      .metric p { margin: 5px 0 0; font-size: 1rem; color: #666; }
+      .metric.pass { border-top: 5px solid #28a745; }
+      .metric.fail { border-top: 5px solid #dc3545; }
+      .metric.review { border-top: 5px solid #007bff; }
+      .metric.total { border-top: 5px solid #ff6b00; }
+      .timestamp { text-align: right; font-size: 0.9rem; color: #666; margin-bottom: 10px; }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+      th, td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #ff6b00;
+        color: #fff;
+        font-weight: 600;
+      }
+      tr:nth-child(even) { background: #f9f9f9; }
+      tr.fail { background: #ffe5e5; }
+      tr.pass { background: #e6ffe6; }
+      tr.review { background: #e0f0ff; }
+      .status {
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .status.passed { background: #28a745; color: white; }
+      .status.failed { background: #dc3545; color: white; }
+      .status.review { background: #007bff; color: white; }
+      a { color: #007bff; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      td i { color: #555; }
+    </style>
+  </head>
+  <body>
+    <h1>Membership Pricing Validation Report</h1>
+    <div class="timestamp">🕒 Generated on: 11/5/2025, 6:42:20 AM</div>
+
+    <div class="summary">
+      <div class="metric total"><h2>192</h2><p>Total URLs</p></div>
+      <div class="metric pass"><h2>163</h2><p>Passed</p></div>
+      <div class="metric fail"><h2>5</h2><p>Failed</p></div>
+      <div class="metric review"><h2>24</h2><p>Review</p></div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>URL</th>
+          <th>Premier 6 Month</th>
+          <th>Premier 12 Month</th>
+          <th>Premier</th>
+          <th>Month to Month</th>
+          <th>Elite</th>
+          <th>Basic</th>
+          <th>Price is visible</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr class="passed">
+        <td>Livermore</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/livermore-california-0457" target="_blank">https://www.orangetheory.com/en-us/locations/livermore-california-0457</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lincoln - Wilderness Hills</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lincoln-nebraska-0946" target="_blank">https://www.orangetheory.com/en-us/locations/lincoln-nebraska-0946</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Littleton, CO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/littleton-colorado-0052" target="_blank">https://www.orangetheory.com/en-us/locations/littleton-colorado-0052</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Live Oak</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/university-city-texas-1246" target="_blank">https://www.orangetheory.com/en-us/locations/university-city-texas-1246</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lone Tree, CO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lone-tree-colorado-1115" target="_blank">https://www.orangetheory.com/en-us/locations/lone-tree-colorado-1115</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Little Rock West, AR</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/little-rock-arkansas-0404" target="_blank">https://www.orangetheory.com/en-us/locations/little-rock-arkansas-0404</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Londonderry, NH</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/londonderry-new-hampshire-0959" target="_blank">https://www.orangetheory.com/en-us/locations/londonderry-new-hampshire-0959</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Liberty, MO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/liberty-missouri-0949" target="_blank">https://www.orangetheory.com/en-us/locations/liberty-missouri-0949</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lincoln - Preserve</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lincoln-nebraska-1371" target="_blank">https://www.orangetheory.com/en-us/locations/lincoln-nebraska-1371</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>La Jolla, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/san-diego-california-0112" target="_blank">https://www.orangetheory.com/en-us/locations/san-diego-california-0112</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Leominster, MA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/leominster-massachusetts-1134" target="_blank">https://www.orangetheory.com/en-us/locations/leominster-massachusetts-1134</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lithia, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/valrico-florida-0931" target="_blank">https://www.orangetheory.com/en-us/locations/valrico-florida-0931</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lexington, KY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lexington-kentucky-0178" target="_blank">https://www.orangetheory.com/en-us/locations/lexington-kentucky-0178</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lexington KY, The Summit</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lexington-kentucky-1086" target="_blank">https://www.orangetheory.com/en-us/locations/lexington-kentucky-1086</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="failed">
+        <td>Lexington, SC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lexington-south-carolina-0883" target="_blank">https://www.orangetheory.com/en-us/locations/lexington-south-carolina-0883</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status failed">FAILED</span></td>
+        <td><i>Price not visible on Basic</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lexington-Fountains, KY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lexington-kentucky-1503" target="_blank">https://www.orangetheory.com/en-us/locations/lexington-kentucky-1503</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Little Rock Mid-Town, AR</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/little-rock-arkansas-0695" target="_blank">https://www.orangetheory.com/en-us/locations/little-rock-arkansas-0695</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Litchfield, AZ</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/goodyear-arizona-1100" target="_blank">https://www.orangetheory.com/en-us/locations/goodyear-arizona-1100</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lewis Center, OH</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lewis-center-ohio-0844" target="_blank">https://www.orangetheory.com/en-us/locations/lewis-center-ohio-0844</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Las Vegas Spring Valley, NV</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0728" target="_blank">https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0728</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Latham, NY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/latham-new-york-1221" target="_blank">https://www.orangetheory.com/en-us/locations/latham-new-york-1221</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Leander, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/leander-texas-0645" target="_blank">https://www.orangetheory.com/en-us/locations/leander-texas-0645</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Las Vegas West Flamingo, NV</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0858" target="_blank">https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0858</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>LAWRENCE, KS</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lawrence-kansas-1280" target="_blank">https://www.orangetheory.com/en-us/locations/lawrence-kansas-1280</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Las Vegas South, NV</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/henderson-nevada-0142" target="_blank">https://www.orangetheory.com/en-us/locations/henderson-nevada-0142</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Leesburg, VA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/leesburg-virginia-1108" target="_blank">https://www.orangetheory.com/en-us/locations/leesburg-virginia-1108</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lenexa, KS</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lenexa-kansas-0950" target="_blank">https://www.orangetheory.com/en-us/locations/lenexa-kansas-0950</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lehi, UT</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lehi-utah-0528" target="_blank">https://www.orangetheory.com/en-us/locations/lehi-utah-0528</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lee's Summit, MO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lees-summit-missouri-0532" target="_blank">https://www.orangetheory.com/en-us/locations/lees-summit-missouri-0532</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Las Colinas, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/irving-texas-1030" target="_blank">https://www.orangetheory.com/en-us/locations/irving-texas-1030</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Langhorne, PA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/langhorne-pennsylvania-0360" target="_blank">https://www.orangetheory.com/en-us/locations/langhorne-pennsylvania-0360</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lancaster, PA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lancaster-pennsylvania-0951" target="_blank">https://www.orangetheory.com/en-us/locations/lancaster-pennsylvania-0951</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Largo, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/largo-florida-0346" target="_blank">https://www.orangetheory.com/en-us/locations/largo-florida-0346</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Las Vegas Centennial, NV</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0440" target="_blank">https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0440</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Las Vegas Mountains Edge</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0439" target="_blank">https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0439</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Land Park, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/sacramento-california-1177" target="_blank">https://www.orangetheory.com/en-us/locations/sacramento-california-1177</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Las Vegas - West Sahara, NV</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0076" target="_blank">https://www.orangetheory.com/en-us/locations/las-vegas-nevada-0076</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Laredo, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/laredo-texas-0672" target="_blank">https://www.orangetheory.com/en-us/locations/laredo-texas-0672</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Las Vegas East, NV</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/henderson-nevada-0223" target="_blank">https://www.orangetheory.com/en-us/locations/henderson-nevada-0223</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Lakeland, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lakeland-florida-0428" target="_blank">https://www.orangetheory.com/en-us/locations/lakeland-florida-0428</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Lancaster West, PA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lancaster-pennsylvania-1357" target="_blank">https://www.orangetheory.com/en-us/locations/lancaster-pennsylvania-1357</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lakewood, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/dallas-texas-1018" target="_blank">https://www.orangetheory.com/en-us/locations/dallas-texas-1018</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lancaster, NY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/cheektowaga-new-york-1379" target="_blank">https://www.orangetheory.com/en-us/locations/cheektowaga-new-york-1379</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Tapps</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/auburn-washington-1212" target="_blank">https://www.orangetheory.com/en-us/locations/auburn-washington-1212</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lakewood Ranch, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/bradenton-florida-0255" target="_blank">https://www.orangetheory.com/en-us/locations/bradenton-florida-0255</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lakewood</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lakewood-ohio-1269" target="_blank">https://www.orangetheory.com/en-us/locations/lakewood-ohio-1269</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lakeline, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/austin-texas-0644" target="_blank">https://www.orangetheory.com/en-us/locations/austin-texas-0644</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lantana, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/austin-texas-1329" target="_blank">https://www.orangetheory.com/en-us/locations/austin-texas-1329</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lakeway, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lakeway-texas-0241" target="_blank">https://www.orangetheory.com/en-us/locations/lakeway-texas-0241</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Lake Zurich</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lake-zurich-illinois-1450" target="_blank">https://www.orangetheory.com/en-us/locations/lake-zurich-illinois-1450</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Mary, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lake-mary-florida-0136" target="_blank">https://www.orangetheory.com/en-us/locations/lake-mary-florida-0136</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>-</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Sumter-The Villages, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/the-villages-florida-1569" target="_blank">https://www.orangetheory.com/en-us/locations/the-villages-florida-1569</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Norman - Cornelius, NC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/cornelius-north-carolina-0389" target="_blank">https://www.orangetheory.com/en-us/locations/cornelius-north-carolina-0389</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Oswego</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lake-oswego-oregon-1198" target="_blank">https://www.orangetheory.com/en-us/locations/lake-oswego-oregon-1198</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Pleasant, AZ</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/peoria-arizona-0073" target="_blank">https://www.orangetheory.com/en-us/locations/peoria-arizona-0073</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Norman - Mooresville, NC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/mooresville-north-carolina-0390" target="_blank">https://www.orangetheory.com/en-us/locations/mooresville-north-carolina-0390</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Worth, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lake-worth-florida-0700" target="_blank">https://www.orangetheory.com/en-us/locations/lake-worth-florida-0700</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Ridge, VA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lake-ridge-virginia-0798" target="_blank">https://www.orangetheory.com/en-us/locations/lake-ridge-virginia-0798</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake St. Louis, MO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lake-st-louis-missouri-0639" target="_blank">https://www.orangetheory.com/en-us/locations/lake-st-louis-missouri-0639</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Lake Forest, IL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lake-forest-illinois-0554" target="_blank">https://www.orangetheory.com/en-us/locations/lake-forest-illinois-0554</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>La Habra, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/la-habra-california-1016" target="_blank">https://www.orangetheory.com/en-us/locations/la-habra-california-1016</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Laguna Niguel, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/laguna-niguel-california-0044" target="_blank">https://www.orangetheory.com/en-us/locations/laguna-niguel-california-0044</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lafayette - Moraga, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lafayette-california-0503" target="_blank">https://www.orangetheory.com/en-us/locations/lafayette-california-0503</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Forest Foothill Ranch, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/foothill-ranch-california-0677" target="_blank">https://www.orangetheory.com/en-us/locations/foothill-ranch-california-0677</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Ladue, MO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/ladue-missouri-0187" target="_blank">https://www.orangetheory.com/en-us/locations/ladue-missouri-0187</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lake Charles, LA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lake-charles-louisiana-1047" target="_blank">https://www.orangetheory.com/en-us/locations/lake-charles-louisiana-1047</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Lafayette, LA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/lafayette-louisiana-0775" target="_blank">https://www.orangetheory.com/en-us/locations/lafayette-louisiana-0775</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>La Cantera</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/san-antonio-texas-0852" target="_blank">https://www.orangetheory.com/en-us/locations/san-antonio-texas-0852</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kirkland, WA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kirkland-washington-0579" target="_blank">https://www.orangetheory.com/en-us/locations/kirkland-washington-0579</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kingwood, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kingwood-texas-0406" target="_blank">https://www.orangetheory.com/en-us/locations/kingwood-texas-0406</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>La Costa, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/carlsbad-california-1106" target="_blank">https://www.orangetheory.com/en-us/locations/carlsbad-california-1106</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>La Cañada, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/la-canada-flintridge-california-1072" target="_blank">https://www.orangetheory.com/en-us/locations/la-canada-flintridge-california-1072</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>La Grange, IL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/la-grange-illinois-0238" target="_blank">https://www.orangetheory.com/en-us/locations/la-grange-illinois-0238</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kyle, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kyle-texas-0783" target="_blank">https://www.orangetheory.com/en-us/locations/kyle-texas-0783</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Koreatown</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/los-angeles-california-1063" target="_blank">https://www.orangetheory.com/en-us/locations/los-angeles-california-1063</a></td>
+        <td>$189/mo</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$209/mo</td>
+        <td>$149/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kingston, MA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kingston-massachusetts-0916" target="_blank">https://www.orangetheory.com/en-us/locations/kingston-massachusetts-0916</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kingstowne, VA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/alexandria-virginia-0801" target="_blank">https://www.orangetheory.com/en-us/locations/alexandria-virginia-0801</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Kingspointe Village, OK</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/tulsa-oklahoma-1241" target="_blank">https://www.orangetheory.com/en-us/locations/tulsa-oklahoma-1241</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Keller, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/keller-texas-0244" target="_blank">https://www.orangetheory.com/en-us/locations/keller-texas-0244</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Kennesaw, GA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/marietta-georgia-0263" target="_blank">https://www.orangetheory.com/en-us/locations/marietta-georgia-0263</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Katy - Cinco Ranch, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/katy-texas-0471" target="_blank">https://www.orangetheory.com/en-us/locations/katy-texas-0471</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kapolei , HI</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kapolei-hawaii-1560" target="_blank">https://www.orangetheory.com/en-us/locations/kapolei-hawaii-1560</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kennewick,WA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kennewick-washington-1298" target="_blank">https://www.orangetheory.com/en-us/locations/kennewick-washington-1298</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kaysville, UT</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kaysville-utah-0394" target="_blank">https://www.orangetheory.com/en-us/locations/kaysville-utah-0394</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kendall Square, MA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/cambridge-massachusetts-0780" target="_blank">https://www.orangetheory.com/en-us/locations/cambridge-massachusetts-0780</a></td>
+        <td>$209/mo</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$229/mo</td>
+        <td>$169/mo</td>
+        <td>$119/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kenwood, OH</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/cincinnati-ohio-0904" target="_blank">https://www.orangetheory.com/en-us/locations/cincinnati-ohio-0904</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kildeer, IL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kildeer-illinois-0646" target="_blank">https://www.orangetheory.com/en-us/locations/kildeer-illinois-0646</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Kalamazoo, MI</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kalamazoo-michigan-0944" target="_blank">https://www.orangetheory.com/en-us/locations/kalamazoo-michigan-0944</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Johnston-Grimes</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/johnston-iowa-1310" target="_blank">https://www.orangetheory.com/en-us/locations/johnston-iowa-1310</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Kapiolani - Pan AM, HI</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/honolulu-hawaii-0480" target="_blank">https://www.orangetheory.com/en-us/locations/honolulu-hawaii-0480</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Jamestown, NC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greensboro-north-carolina-0655" target="_blank">https://www.orangetheory.com/en-us/locations/greensboro-north-carolina-0655</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Kakaako, HI</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/honolulu-hawaii-0423" target="_blank">https://www.orangetheory.com/en-us/locations/honolulu-hawaii-0423</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Johnson City, TN</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/johnson-city-tennessee-1420" target="_blank">https://www.orangetheory.com/en-us/locations/johnson-city-tennessee-1420</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jupiter, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jupiter-florida-0054" target="_blank">https://www.orangetheory.com/en-us/locations/jupiter-florida-0054</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Johns Creek - Rivermont, GA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/johns-creek-georgia-0189" target="_blank">https://www.orangetheory.com/en-us/locations/johns-creek-georgia-0189</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jonesboro</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jonesboro-arkansas-1147" target="_blank">https://www.orangetheory.com/en-us/locations/jonesboro-arkansas-1147</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Jackson Hole, WY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jackson-wyoming-1291" target="_blank">https://www.orangetheory.com/en-us/locations/jackson-wyoming-1291</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jensen Beach, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jensen-beach-florida-0900" target="_blank">https://www.orangetheory.com/en-us/locations/jensen-beach-florida-0900</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>-</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jacksonville - Southside, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jacksonville-florida-0836" target="_blank">https://www.orangetheory.com/en-us/locations/jacksonville-florida-0836</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jacksonville - Hodges Pointe, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jacksonville-florida-0152" target="_blank">https://www.orangetheory.com/en-us/locations/jacksonville-florida-0152</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jacksonville, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jacksonville-florida-0151" target="_blank">https://www.orangetheory.com/en-us/locations/jacksonville-florida-0151</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Issaquah, WA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/issaquah-washington-0408" target="_blank">https://www.orangetheory.com/en-us/locations/issaquah-washington-0408</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jersey City, NJ</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jersey-city-new-jersey-0706" target="_blank">https://www.orangetheory.com/en-us/locations/jersey-city-new-jersey-0706</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jackson, MS</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jackson-mississippi-0626" target="_blank">https://www.orangetheory.com/en-us/locations/jackson-mississippi-0626</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Jackson, TN</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/jackson-tennessee-1598" target="_blank">https://www.orangetheory.com/en-us/locations/jackson-tennessee-1598</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>IRMO, SC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/irmo-south-carolina-0880" target="_blank">https://www.orangetheory.com/en-us/locations/irmo-south-carolina-0880</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Irvine, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/irvine-california-0103" target="_blank">https://www.orangetheory.com/en-us/locations/irvine-california-0103</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Ithaca</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/ithaca-new-york-1133" target="_blank">https://www.orangetheory.com/en-us/locations/ithaca-new-york-1133</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Islip, NY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/east-islip-new-york-0830" target="_blank">https://www.orangetheory.com/en-us/locations/east-islip-new-york-0830</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hudson, OH</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hudson-ohio-0896" target="_blank">https://www.orangetheory.com/en-us/locations/hudson-ohio-0896</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Indianapolis-Ironworks at Keystone, IN</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/indianapolis-indiana-0515" target="_blank">https://www.orangetheory.com/en-us/locations/indianapolis-indiana-0515</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Huntsville, AL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/huntsville-alabama-0446" target="_blank">https://www.orangetheory.com/en-us/locations/huntsville-alabama-0446</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Inman Park, GA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/atlanta-georgia-1421" target="_blank">https://www.orangetheory.com/en-us/locations/atlanta-georgia-1421</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Idylwood, VA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/falls-church-virginia-1455" target="_blank">https://www.orangetheory.com/en-us/locations/falls-church-virginia-1455</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Inverness, AL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/birmingham-alabama-0364" target="_blank">https://www.orangetheory.com/en-us/locations/birmingham-alabama-0364</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Hoover, AL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hoover-alabama-0211" target="_blank">https://www.orangetheory.com/en-us/locations/hoover-alabama-0211</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Hunt Valley, MD</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hunt-valley-maryland-0576" target="_blank">https://www.orangetheory.com/en-us/locations/hunt-valley-maryland-0576</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Homestead, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/homestead-florida-0607" target="_blank">https://www.orangetheory.com/en-us/locations/homestead-florida-0607</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Hunters Creek, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/kissimmee-florida-0166" target="_blank">https://www.orangetheory.com/en-us/locations/kissimmee-florida-0166</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Huntington Beach - Brookhurst, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/huntington-beach-california-0099" target="_blank">https://www.orangetheory.com/en-us/locations/huntington-beach-california-0099</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Howard Beach, NY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/howard-beach-new-york-1449" target="_blank">https://www.orangetheory.com/en-us/locations/howard-beach-new-york-1449</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Holly Springs, NC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/holly-springs-north-carolina-0358" target="_blank">https://www.orangetheory.com/en-us/locations/holly-springs-north-carolina-0358</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hollywood, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/los-angeles-california-1480" target="_blank">https://www.orangetheory.com/en-us/locations/los-angeles-california-1480</a></td>
+        <td>$189/mo</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$209/mo</td>
+        <td>$149/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Huebner, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/san-antonio-texas-0751" target="_blank">https://www.orangetheory.com/en-us/locations/san-antonio-texas-0751</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hollywood, FL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hollywood-florida-0049" target="_blank">https://www.orangetheory.com/en-us/locations/hollywood-florida-0049</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Highlands Ranch, CO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/highlands-ranch-colorado-0009" target="_blank">https://www.orangetheory.com/en-us/locations/highlands-ranch-colorado-0009</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Holland, MI</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/holland-michigan-1120" target="_blank">https://www.orangetheory.com/en-us/locations/holland-michigan-1120</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="failed">
+        <td>Hilton Head, SC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hilton-head-south-carolina-0935" target="_blank">https://www.orangetheory.com/en-us/locations/hilton-head-south-carolina-0935</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status failed">FAILED</span></td>
+        <td><i>Price not visible on Basic</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hillsboro, OR</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hillsboro-oregon-0509" target="_blank">https://www.orangetheory.com/en-us/locations/hillsboro-oregon-0509</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Holladay, UT</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/holladay-utah-1355" target="_blank">https://www.orangetheory.com/en-us/locations/holladay-utah-1355</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Harrisonburg, VA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/harrisonburg-virginia-0757" target="_blank">https://www.orangetheory.com/en-us/locations/harrisonburg-virginia-0757</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hixson, TN</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hixson-tennessee-1279" target="_blank">https://www.orangetheory.com/en-us/locations/hixson-tennessee-1279</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hoffman Estates - S. Barrington, IL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hoffman-estates-illinois-0991" target="_blank">https://www.orangetheory.com/en-us/locations/hoffman-estates-illinois-0991</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hilliard, OH</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hilliard-ohio-0380" target="_blank">https://www.orangetheory.com/en-us/locations/hilliard-ohio-0380</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hingham, MA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hingham-massachusetts-0632" target="_blank">https://www.orangetheory.com/en-us/locations/hingham-massachusetts-0632</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hebron, KY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hebron-kentucky-1609" target="_blank">https://www.orangetheory.com/en-us/locations/hebron-kentucky-1609</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>HB - Bella Terra, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/huntington-beach-california-0953" target="_blank">https://www.orangetheory.com/en-us/locations/huntington-beach-california-0953</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Highland Village-Houston, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/houston-texas-1314" target="_blank">https://www.orangetheory.com/en-us/locations/houston-texas-1314</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hewlett, NY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hewlett-new-york-0329" target="_blank">https://www.orangetheory.com/en-us/locations/hewlett-new-york-0329</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Highlands - Denver, CO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/denver-colorado-0019" target="_blank">https://www.orangetheory.com/en-us/locations/denver-colorado-0019</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hendersonville, TN</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hendersonville-tennessee-0366" target="_blank">https://www.orangetheory.com/en-us/locations/hendersonville-tennessee-0366</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Herriman, UT</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/riverton-utah-1356" target="_blank">https://www.orangetheory.com/en-us/locations/riverton-utah-1356</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hattiesburg, MS</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hattiesburg-mississippi-0995" target="_blank">https://www.orangetheory.com/en-us/locations/hattiesburg-mississippi-0995</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Highland Park, IL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/highland-park-illinois-0687" target="_blank">https://www.orangetheory.com/en-us/locations/highland-park-illinois-0687</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hazel Dell, WA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/vancouver-oregon-0513" target="_blank">https://www.orangetheory.com/en-us/locations/vancouver-oregon-0513</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hayward, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hayward-california-0702" target="_blank">https://www.orangetheory.com/en-us/locations/hayward-california-0702</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Harker Heights, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/harker-heights-texas-1193" target="_blank">https://www.orangetheory.com/en-us/locations/harker-heights-texas-1193</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Harwood Heights-Portage Park, IL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/harwood-heights-illinois-0685" target="_blank">https://www.orangetheory.com/en-us/locations/harwood-heights-illinois-0685</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Happy Valley, AZ</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/phoenix-arizona-0088" target="_blank">https://www.orangetheory.com/en-us/locations/phoenix-arizona-0088</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hanover, MA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hanover-massachusetts-1199" target="_blank">https://www.orangetheory.com/en-us/locations/hanover-massachusetts-1199</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Harrisburg, PA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/harrisburg-pennsylvania-0610" target="_blank">https://www.orangetheory.com/en-us/locations/harrisburg-pennsylvania-0610</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Harlingen, TX</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/harlingen-texas-1216" target="_blank">https://www.orangetheory.com/en-us/locations/harlingen-texas-1216</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Happy Valley, OR</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/happy-valley-oregon-0510" target="_blank">https://www.orangetheory.com/en-us/locations/happy-valley-oregon-0510</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Harrisburg, NC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/harrisburg-north-carolina-0954" target="_blank">https://www.orangetheory.com/en-us/locations/harrisburg-north-carolina-0954</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hadley, MA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hadley-massachusetts-1126" target="_blank">https://www.orangetheory.com/en-us/locations/hadley-massachusetts-1126</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>-</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Gwynedd, PA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/north-wales-pennsylvania-0343" target="_blank">https://www.orangetheory.com/en-us/locations/north-wales-pennsylvania-0343</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>H Street, DC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/washington-dc-1094" target="_blank">https://www.orangetheory.com/en-us/locations/washington-dc-1094</a></td>
+        <td>$179/mo</td>
+        <td>$159/mo</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hamden- North Haven, CT</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hamden-connecticut-0873" target="_blank">https://www.orangetheory.com/en-us/locations/hamden-connecticut-0873</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Grove City, OH</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/grove-city-ohio-0752" target="_blank">https://www.orangetheory.com/en-us/locations/grove-city-ohio-0752</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Hackensack, NJ</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/hackensack-new-jersey-0261" target="_blank">https://www.orangetheory.com/en-us/locations/hackensack-new-jersey-0261</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Guilford, CT</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/guilford-connecticut-1070" target="_blank">https://www.orangetheory.com/en-us/locations/guilford-connecticut-1070</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Grosse Pointe Woods</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/grosse-pointe-woods-michigan-0905" target="_blank">https://www.orangetheory.com/en-us/locations/grosse-pointe-woods-michigan-0905</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Greenwood, IN</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greenwood-indiana-0787" target="_blank">https://www.orangetheory.com/en-us/locations/greenwood-indiana-0787</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Greenvale,NY</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greenvale-new-york-1160" target="_blank">https://www.orangetheory.com/en-us/locations/greenvale-new-york-1160</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>-</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Greenville</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greenville-north-carolina-1184" target="_blank">https://www.orangetheory.com/en-us/locations/greenville-north-carolina-1184</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="failed">
+        <td>Greenville, SC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greenville-south-carolina-0430" target="_blank">https://www.orangetheory.com/en-us/locations/greenville-south-carolina-0430</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status failed">FAILED</span></td>
+        <td><i>Price not visible on Basic</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Greensboro, NC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greensboro-north-carolina-0654" target="_blank">https://www.orangetheory.com/en-us/locations/greensboro-north-carolina-0654</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="failed">
+        <td>Greenville - Woodruff Rd, SC</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greenville-south-carolina-0875" target="_blank">https://www.orangetheory.com/en-us/locations/greenville-south-carolina-0875</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status failed">FAILED</span></td>
+        <td><i>Price not visible on Basic</i></td>
+      </tr>
+
+      <tr class="failed">
+        <td>Greer</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greer-south-carolina-1257" target="_blank">https://www.orangetheory.com/en-us/locations/greer-south-carolina-1257</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status failed">FAILED</span></td>
+        <td><i>Price not visible on Basic</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Great Falls, VA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/great-falls-virginia-1565" target="_blank">https://www.orangetheory.com/en-us/locations/great-falls-virginia-1565</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Chesapeake-Greenbrier, VA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/chesapeake-virginia-1027" target="_blank">https://www.orangetheory.com/en-us/locations/chesapeake-virginia-1027</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Greeley, CO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/greeley-colorado-1504" target="_blank">https://www.orangetheory.com/en-us/locations/greeley-colorado-1504</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Gonzales, LA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/gonzales-louisiana-1515" target="_blank">https://www.orangetheory.com/en-us/locations/gonzales-louisiana-1515</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Grand Ave-St.Paul</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/st-paul-minnesota-0974" target="_blank">https://www.orangetheory.com/en-us/locations/st-paul-minnesota-0974</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Grand Blanc, MI</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/grand-blanc-michigan-1170" target="_blank">https://www.orangetheory.com/en-us/locations/grand-blanc-michigan-1170</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Goodyear, AZ</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/goodyear-arizona-0213" target="_blank">https://www.orangetheory.com/en-us/locations/goodyear-arizona-0213</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Grand Rapids SE, MI</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/grand-rapids-michigan-1593" target="_blank">https://www.orangetheory.com/en-us/locations/grand-rapids-michigan-1593</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Goat Blocks, OR</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/portland-oregon-1099" target="_blank">https://www.orangetheory.com/en-us/locations/portland-oregon-1099</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Granger, IN</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/granger-indiana-0629" target="_blank">https://www.orangetheory.com/en-us/locations/granger-indiana-0629</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Grandview, OH</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/columbus-ohio-0470" target="_blank">https://www.orangetheory.com/en-us/locations/columbus-ohio-0470</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Grand Forks, ND</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/grand-forks-north-dakota-1065" target="_blank">https://www.orangetheory.com/en-us/locations/grand-forks-north-dakota-1065</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Grandville, MI</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/grandville-michigan-1575" target="_blank">https://www.orangetheory.com/en-us/locations/grandville-michigan-1575</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="review">
+        <td>Glendale-Thunderbird, AZ</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/arizona-1270" target="_blank">https://www.orangetheory.com/en-us/locations/arizona-1270</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td><span class="status review">REVIEW</span></td>
+        <td><i>Studio not Accessible: Redirected to Homepage</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Glen Mills, PA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/glen-mills-pennsylvania-1292" target="_blank">https://www.orangetheory.com/en-us/locations/glen-mills-pennsylvania-1292</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>-</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Glendora, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/glendora-california-0551" target="_blank">https://www.orangetheory.com/en-us/locations/glendora-california-0551</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>-</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Glastonbury, CT</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/glastonbury-connecticut-0623" target="_blank">https://www.orangetheory.com/en-us/locations/glastonbury-connecticut-0623</a></td>
+        <td>$139/mo</td>
+        <td>$119/mo</td>
+        <td>-</td>
+        <td>$159/mo</td>
+        <td>$99/mo</td>
+        <td>$59/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Glendale, CO</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/glendale-colorado-0040" target="_blank">https://www.orangetheory.com/en-us/locations/glendale-colorado-0040</a></td>
+        <td>$159/mo</td>
+        <td>$139/mo</td>
+        <td>-</td>
+        <td>$179/mo</td>
+        <td>$119/mo</td>
+        <td>$79/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Gilbert- East, AZ</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/gilbert-arizona-0292" target="_blank">https://www.orangetheory.com/en-us/locations/gilbert-arizona-0292</a></td>
+        <td>$149/mo</td>
+        <td>$129/mo</td>
+        <td>-</td>
+        <td>$169/mo</td>
+        <td>$109/mo</td>
+        <td>$69/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Georgetown</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/georgetown-dc-1189" target="_blank">https://www.orangetheory.com/en-us/locations/georgetown-dc-1189</a></td>
+        <td>$179/mo</td>
+        <td>$159/mo</td>
+        <td>-</td>
+        <td>$199/mo</td>
+        <td>$139/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Glendale - Silver Lake, CA</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/glendale-california-0183" target="_blank">https://www.orangetheory.com/en-us/locations/glendale-california-0183</a></td>
+        <td>$189/mo</td>
+        <td>$169/mo</td>
+        <td>-</td>
+        <td>$209/mo</td>
+        <td>$149/mo</td>
+        <td>$99/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Glenview, IL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/glenview-illinois-0237" target="_blank">https://www.orangetheory.com/en-us/locations/glenview-illinois-0237</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr>
+
+      <tr class="passed">
+        <td>Glen Ellyn, IL</td>
+        <td><a href="https://www.orangetheory.com/en-us/locations/glen-ellyn-illinois-0326" target="_blank">https://www.orangetheory.com/en-us/locations/glen-ellyn-illinois-0326</a></td>
+        <td>$169/mo</td>
+        <td>$149/mo</td>
+        <td>-</td>
+        <td>$189/mo</td>
+        <td>$129/mo</td>
+        <td>$89/mo</td>
+        <td><span class="status passed">PASSED</span></td>
+        <td><i>No issues found</i></td>
+      </tr></tbody>
+    </table>
+  </body>
+  </html>
