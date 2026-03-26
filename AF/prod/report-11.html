@@ -1,0 +1,1761 @@
+
+{
+  "config": {
+    "configFile": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\playwright.config.ts",
+    "rootDir": "C:/Users/NOLI/Documents/Github/Ignite/AF/AF/AF-Automation4/.features-gen",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\config\\global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "on"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-report.json"
+        }
+      ],
+      [
+        "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "detail": true,
+          "outputFolder": "allure-results",
+          "suiteTitle": false,
+          "environmentInfo": {
+            "ENV": "PROD",
+            "URL": "https://anytimefitness.com",
+            "LOCALE": "EN-US"
+          },
+          "categories": [
+            {
+              "name": "Product Defects",
+              "messageRegex": {},
+              "matchedStatuses": [
+                "failed"
+              ],
+              "description": "Test failures caused by a bug in the application under test."
+            },
+            {
+              "name": "Test Script Issues (Timeouts)",
+              "traceRegex": {},
+              "matchedStatuses": [
+                "broken",
+                "failed"
+              ],
+              "description": "Test failures caused by test code timing out (Playwright config issue, script slowness, etc.)."
+            },
+            {
+              "name": "Infrastructure/Environment Issues",
+              "messageRegex": {},
+              "matchedStatuses": [
+                "broken"
+              ],
+              "description": "Issues like failed browser launch, network errors, or environment setup problems."
+            },
+            {
+              "name": "Skipped tests",
+              "matchedStatuses": [
+                "skipped"
+              ],
+              "description": "Tests that were explicitly skipped using test.skip() or test.fixme()."
+            },
+            {
+              "name": "Flaky tests",
+              "flaky": true,
+              "description": "Tests that were unstable (failed then passed on retry) or match specific flakiness patterns."
+            },
+            {
+              "name": "Passed Tests",
+              "matchedStatuses": [
+                "passed"
+              ],
+              "description": "All tests that executed successfully and passed all assertions and validations."
+            }
+          ]
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/NOLI/Documents/Github/Ignite/AF/AF/AF-Automation4/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "Device: Desktop Chrome",
+        "name": "Device: Desktop Chrome",
+        "testDir": "C:/Users/NOLI/Documents/Github/Ignite/AF/AF/AF-Automation4/.features-gen",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "C:/Users/NOLI/Documents/Github/Ignite/AF/AF/AF-Automation4/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "Device: Samsung Galaxy S22",
+        "name": "Device: Samsung Galaxy S22",
+        "testDir": "C:/Users/NOLI/Documents/Github/Ignite/AF/AF/AF-Automation4/.features-gen",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "C:/Users/NOLI/Documents/Github/Ignite/AF/AF/AF-Automation4/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "Device: iPhone 13 (Safari)",
+        "name": "Device: iPhone 13 (Safari)",
+        "testDir": "C:/Users/NOLI/Documents/Github/Ignite/AF/AF/AF-Automation4/.features-gen",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.50.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js",
+      "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HSA-FSA",
+          "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Display error message when the user searches an invalid location in the location search in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: Desktop Chrome",
+                  "projectName": "Device: Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 223141,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n\n    at LocationSearchPage.waitForVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts:70:19)\n    at LocationSearchPage.getErrorMessage (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:150:16)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:24:74)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:12:5",
+                        "location": {
+                          "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts",
+                          "column": 19,
+                          "line": 70
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\common\\BasePage.ts:70\n\n\u001b[0m \u001b[90m 68 |\u001b[39m   \u001b[36masync\u001b[39m waitForVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m \u001b[33m|\u001b[39m string\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetElement(locator)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   }\n \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   \u001b[36mprotected\u001b[39m getIframeById(iframeId\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mFrameLocator\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts",
+                            "column": 19,
+                            "line": 70
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\common\\BasePage.ts:70\n\n\u001b[0m \u001b[90m 68 |\u001b[39m   \u001b[36masync\u001b[39m waitForVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m \u001b[33m|\u001b[39m string\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetElement(locator)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   }\n \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   \u001b[36mprotected\u001b[39m getIframeById(iframeId\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mFrameLocator\u001b[39m {\u001b[0m\n\u001b[2m    at LocationSearchPage.waitForVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts:70:19)\u001b[22m\n\u001b[2m    at LocationSearchPage.getErrorMessage (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:150:16)\u001b[22m\n\u001b[2m    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:24:74)\u001b[22m\n\u001b[2m    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:12:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "When The user searches an invalid location in the HSA-FSA location search",
+                          "duration": 75215
+                        },
+                        {
+                          "title": "Then The invalid location error message is displayed in the HSA-FSA location search",
+                          "duration": 120016,
+                          "error": {
+                            "message": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n",
+                            "stack": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n\n    at LocationSearchPage.waitForVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts:70:19)\n    at LocationSearchPage.getErrorMessage (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:150:16)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:24:74)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:12:5",
+                            "location": {
+                              "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts",
+                              "column": 19,
+                              "line": 70
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\common\\BasePage.ts:70\n\n\u001b[0m \u001b[90m 68 |\u001b[39m   \u001b[36masync\u001b[39m waitForVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m \u001b[33m|\u001b[39m string\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetElement(locator)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   }\n \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   \u001b[36mprotected\u001b[39m getIframeById(iframeId\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mFrameLocator\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-03-26T13:53:05.784Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--60067--location-search-in-HSA-FSA-Device-Desktop-Chrome\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts",
+                        "column": 19,
+                        "line": 70
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 100296,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "When The user searches an invalid location in the HSA-FSA location search",
+                          "duration": 76373
+                        },
+                        {
+                          "title": "Then The invalid location error message is displayed in the HSA-FSA location search",
+                          "duration": 156
+                        }
+                      ],
+                      "startTime": "2026-03-26T13:56:52.439Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--60067--location-search-in-HSA-FSA-Device-Desktop-Chrome-retry1\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--60067--location-search-in-HSA-FSA-Device-Desktop-Chrome-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-dddab027a1c4227b0d64",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "Display message when no nearby gyms are found in the searched location in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: Desktop Chrome",
+                  "projectName": "Device: Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 110099,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "When The user searches for a location with no nearby gyms in the HSA-FSA location search",
+                          "duration": 76088
+                        },
+                        {
+                          "title": "Then The no nearby locations error is displayed in the HSA-FSA location search",
+                          "duration": 11076
+                        }
+                      ],
+                      "startTime": "2026-03-26T13:58:33.356Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--577ea-earched-location-in-HSA-FSA-Device-Desktop-Chrome\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-1b57a35d64a6a77ce305",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "Display server-side error message when the search locations API is blocked in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: Desktop Chrome",
+                  "projectName": "Device: Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 220172,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n\n    at LocationSearchPage.waitForVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts:70:19)\n    at LocationSearchPage.getErrorMessage (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:150:16)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:60:74)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:23:5",
+                        "location": {
+                          "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts",
+                          "column": 19,
+                          "line": 70
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\common\\BasePage.ts:70\n\n\u001b[0m \u001b[90m 68 |\u001b[39m   \u001b[36masync\u001b[39m waitForVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m \u001b[33m|\u001b[39m string\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetElement(locator)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   }\n \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   \u001b[36mprotected\u001b[39m getIframeById(iframeId\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mFrameLocator\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts",
+                            "column": 19,
+                            "line": 70
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\common\\BasePage.ts:70\n\n\u001b[0m \u001b[90m 68 |\u001b[39m   \u001b[36masync\u001b[39m waitForVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m \u001b[33m|\u001b[39m string\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetElement(locator)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   }\n \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   \u001b[36mprotected\u001b[39m getIframeById(iframeId\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mFrameLocator\u001b[39m {\u001b[0m\n\u001b[2m    at LocationSearchPage.waitForVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts:70:19)\u001b[22m\n\u001b[2m    at LocationSearchPage.getErrorMessage (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:150:16)\u001b[22m\n\u001b[2m    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:60:74)\u001b[22m\n\u001b[2m    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:23:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The \"search locations\" API is blocked",
+                          "duration": 8
+                        },
+                        {
+                          "title": "When The user attempts to search for the location in the HSA-FSA and the server fails to respond",
+                          "duration": 77773
+                        },
+                        {
+                          "title": "Then The server-side error is shown in the HSA-FSA location search",
+                          "duration": 120011,
+                          "error": {
+                            "message": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n",
+                            "stack": "TimeoutError: locator.waitFor: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('[data-testid=\"location-search-error\"]') to be visible\u001b[22m\n\n    at LocationSearchPage.waitForVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts:70:19)\n    at LocationSearchPage.getErrorMessage (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:150:16)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:60:74)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:23:5",
+                            "location": {
+                              "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts",
+                              "column": 19,
+                              "line": 70
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\common\\BasePage.ts:70\n\n\u001b[0m \u001b[90m 68 |\u001b[39m   \u001b[36masync\u001b[39m waitForVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m \u001b[33m|\u001b[39m string\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetElement(locator)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   }\n \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   \u001b[36mprotected\u001b[39m getIframeById(iframeId\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mFrameLocator\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:00:23.465Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--e5859-s-API-is-blocked-in-HSA-FSA-Device-Desktop-Chrome\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\BasePage.ts",
+                        "column": 19,
+                        "line": 70
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 103106,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Given The \"search locations\" API is blocked",
+                          "duration": 28
+                        },
+                        {
+                          "title": "When The user attempts to search for the location in the HSA-FSA and the server fails to respond",
+                          "duration": 78954
+                        },
+                        {
+                          "title": "Then The server-side error is shown in the HSA-FSA location search",
+                          "duration": 148
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:04:06.949Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--e5859-s-API-is-blocked-in-HSA-FSA-Device-Desktop-Chrome-retry1\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--e5859-s-API-is-blocked-in-HSA-FSA-Device-Desktop-Chrome-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-f24dfc30128e596d3db5",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "Gym details button is displayed in search results in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: Desktop Chrome",
+                  "projectName": "Device: Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "failed",
+                      "duration": 101308,
+                      "error": {
+                        "message": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible') resolved to 10 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka getByRole('option', { name: 'Woodbury GYM DETAILS 8380' }).getByRole('button')\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-198').getByRole('button', { name: 'GYM DETAILS' })\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-253').getByRole('button', { name: 'GYM DETAILS' })\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-467').getByRole('button', { name: 'GYM DETAILS' })\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-212').getByRole('button', { name: 'GYM DETAILS' })\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5716').getByRole('button', { name: 'GYM DETAILS' })\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-251').getByRole('button', { name: 'GYM DETAILS' })\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5209').getByRole('button', { name: 'GYM DETAILS' })\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-971').getByRole('button', { name: 'GYM DETAILS' })\n    10) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-489').getByRole('button', { name: 'GYM DETAILS' })\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible')\u001b[22m\n",
+                        "stack": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible') resolved to 10 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka getByRole('option', { name: 'Woodbury GYM DETAILS 8380' }).getByRole('button')\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-198').getByRole('button', { name: 'GYM DETAILS' })\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-253').getByRole('button', { name: 'GYM DETAILS' })\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-467').getByRole('button', { name: 'GYM DETAILS' })\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-212').getByRole('button', { name: 'GYM DETAILS' })\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5716').getByRole('button', { name: 'GYM DETAILS' })\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-251').getByRole('button', { name: 'GYM DETAILS' })\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5209').getByRole('button', { name: 'GYM DETAILS' })\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-971').getByRole('button', { name: 'GYM DETAILS' })\n    10) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-489').getByRole('button', { name: 'GYM DETAILS' })\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible')\u001b[22m\n\n    at LocationSearchPage.isGymDetailsBtnVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:217:15)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:156:5)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:28:5",
+                        "location": {
+                          "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts",
+                          "column": 15,
+                          "line": 217
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\common\\LocationSearchPage.ts:217\n\n\u001b[0m \u001b[90m 215 |\u001b[39m   \u001b[36masync\u001b[39m isGymDetailsBtnVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 216 |\u001b[39m     \u001b[36mconst\u001b[39m btn \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgymDetailsBtn\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m btn\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 218 |\u001b[39m   }\n \u001b[90m 219 |\u001b[39m\n \u001b[90m 220 |\u001b[39m   \u001b[36masync\u001b[39m clickGymDetailsBtn()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts",
+                            "column": 15,
+                            "line": 217
+                          },
+                          "message": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible') resolved to 10 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka getByRole('option', { name: 'Woodbury GYM DETAILS 8380' }).getByRole('button')\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-198').getByRole('button', { name: 'GYM DETAILS' })\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-253').getByRole('button', { name: 'GYM DETAILS' })\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-467').getByRole('button', { name: 'GYM DETAILS' })\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-212').getByRole('button', { name: 'GYM DETAILS' })\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5716').getByRole('button', { name: 'GYM DETAILS' })\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-251').getByRole('button', { name: 'GYM DETAILS' })\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5209').getByRole('button', { name: 'GYM DETAILS' })\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-971').getByRole('button', { name: 'GYM DETAILS' })\n    10) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-489').getByRole('button', { name: 'GYM DETAILS' })\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\common\\LocationSearchPage.ts:217\n\n\u001b[0m \u001b[90m 215 |\u001b[39m   \u001b[36masync\u001b[39m isGymDetailsBtnVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 216 |\u001b[39m     \u001b[36mconst\u001b[39m btn \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgymDetailsBtn\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m btn\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 218 |\u001b[39m   }\n \u001b[90m 219 |\u001b[39m\n \u001b[90m 220 |\u001b[39m   \u001b[36masync\u001b[39m clickGymDetailsBtn()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at LocationSearchPage.isGymDetailsBtnVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:217:15)\u001b[22m\n\u001b[2m    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:156:5)\u001b[22m\n\u001b[2m    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:28:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 78652
+                        },
+                        {
+                          "title": "Then The GYM DETAILS button is displayed in the HSA-FSA search results for the gym",
+                          "duration": 280,
+                          "error": {
+                            "message": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible') resolved to 10 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka getByRole('option', { name: 'Woodbury GYM DETAILS 8380' }).getByRole('button')\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-198').getByRole('button', { name: 'GYM DETAILS' })\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-253').getByRole('button', { name: 'GYM DETAILS' })\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-467').getByRole('button', { name: 'GYM DETAILS' })\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-212').getByRole('button', { name: 'GYM DETAILS' })\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5716').getByRole('button', { name: 'GYM DETAILS' })\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-251').getByRole('button', { name: 'GYM DETAILS' })\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5209').getByRole('button', { name: 'GYM DETAILS' })\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-971').getByRole('button', { name: 'GYM DETAILS' })\n    10) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-489').getByRole('button', { name: 'GYM DETAILS' })\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible')\u001b[22m\n",
+                            "stack": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible') resolved to 10 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka getByRole('option', { name: 'Woodbury GYM DETAILS 8380' }).getByRole('button')\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-198').getByRole('button', { name: 'GYM DETAILS' })\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-253').getByRole('button', { name: 'GYM DETAILS' })\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-467').getByRole('button', { name: 'GYM DETAILS' })\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-212').getByRole('button', { name: 'GYM DETAILS' })\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5716').getByRole('button', { name: 'GYM DETAILS' })\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-251').getByRole('button', { name: 'GYM DETAILS' })\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-5209').getByRole('button', { name: 'GYM DETAILS' })\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-971').getByRole('button', { name: 'GYM DETAILS' })\n    10) <button type=\"button\" data-cta-type=\"cta\" aria-disabled=\"false\" aria-label=\"GYM DETAILS\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 font-extrabold rounded-full text-[14px] border-2 border-primary transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap bg-white text-primary hover:bg-primary hover:text-white\">GYM DETAILS</button> aka locator('#location-card-489').getByRole('button', { name: 'GYM DETAILS' })\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"GYM DETAILS\"]:visible')\u001b[22m\n\n    at LocationSearchPage.isGymDetailsBtnVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:217:15)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:156:5)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:28:5",
+                            "location": {
+                              "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts",
+                              "column": 15,
+                              "line": 217
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\common\\LocationSearchPage.ts:217\n\n\u001b[0m \u001b[90m 215 |\u001b[39m   \u001b[36masync\u001b[39m isGymDetailsBtnVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 216 |\u001b[39m     \u001b[36mconst\u001b[39m btn \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgymDetailsBtn\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m btn\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 218 |\u001b[39m   }\n \u001b[90m 219 |\u001b[39m\n \u001b[90m 220 |\u001b[39m   \u001b[36masync\u001b[39m clickGymDetailsBtn()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:05:50.665Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--de4e9-n-search-results-in-HSA-FSA-Device-Desktop-Chrome\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts",
+                        "column": 15,
+                        "line": 217
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 103822,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 79252
+                        },
+                        {
+                          "title": "Then The GYM DETAILS button is displayed in the HSA-FSA search results for the gym",
+                          "duration": 59
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:07:33.870Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--de4e9-n-search-results-in-HSA-FSA-Device-Desktop-Chrome-retry1\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--de4e9-n-search-results-in-HSA-FSA-Device-Desktop-Chrome-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-5d6e706be34681bdf6a3",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "Clicking Gym details button should redirect to Local Landing Page",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: Desktop Chrome",
+                  "projectName": "Device: Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 112295,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 79856
+                        },
+                        {
+                          "title": "When The GYM DETAILS button in the search results is clicked",
+                          "duration": 2648
+                        },
+                        {
+                          "title": "Then The page should redirect to the Local Landing Page",
+                          "duration": 1508
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:09:18.553Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-2e533a58d91c84f491a3",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "Join Now button is displayed in search results in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: Desktop Chrome",
+                  "projectName": "Device: Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 103268,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 79866
+                        },
+                        {
+                          "title": "Then The JOIN NOW button is displayed in the HSA-FSA search results for the gym",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:11:10.860Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--fea16-n-search-results-in-HSA-FSA-Device-Desktop-Chrome\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-68287d218ce1ddc2aca3",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "Clicking Join Now button should redirect to Plans Page",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: Desktop Chrome",
+                  "projectName": "Device: Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 105767,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 79276
+                        },
+                        {
+                          "title": "When The JOIN NOW button in the search results is clicked",
+                          "duration": 235
+                        },
+                        {
+                          "title": "Then The page should redirect to the Plans Page",
+                          "duration": 1512
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:12:54.152Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IERlc2t0b3AgQ2hyb21lIn1dfX0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--02d23-ould-redirect-to-Plans-Page-Device-Desktop-Chrome\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-b94b4e59f5ae040fad74",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "Display error message when the user searches an invalid location in the location search in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: iPhone 13 (Safari)",
+                  "projectName": "Device: iPhone 13 (Safari)",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 99780,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "When The user searches an invalid location in the HSA-FSA location search",
+                          "duration": 75558
+                        },
+                        {
+                          "title": "Then The invalid location error message is displayed in the HSA-FSA location search",
+                          "duration": 177
+                        }
+                      ],
+                      "startTime": "2026-03-26T13:53:05.768Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--60067--location-search-in-HSA-FSA-Device-iPhone-13-Safari-\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-25e7160cbb7a68e2c913",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "Display message when no nearby gyms are found in the searched location in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: iPhone 13 (Safari)",
+                  "projectName": "Device: iPhone 13 (Safari)",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 98117,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "When The user searches for a location with no nearby gyms in the HSA-FSA location search",
+                          "duration": 74986
+                        },
+                        {
+                          "title": "Then The no nearby locations error is displayed in the HSA-FSA location search",
+                          "duration": 194
+                        }
+                      ],
+                      "startTime": "2026-03-26T13:54:45.666Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--577ea-earched-location-in-HSA-FSA-Device-iPhone-13-Safari-\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-09e9e61735cc35751991",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "Display server-side error message when the search locations API is blocked in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Skipping API blocked tests on mobile devices"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "Device: iPhone 13 (Safari)",
+                  "projectName": "Device: iPhone 13 (Safari)",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "skipped",
+                      "duration": 22839,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The \"search locations\" API is blocked",
+                          "duration": 9,
+                          "error": {
+                            "message": "Error: Test is skipped: Skipping API blocked tests on mobile devices",
+                            "stack": "Error: Test is skipped: Skipping API blocked tests on mobile devices\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\common\\common.steps.ts:296:8)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:21:5",
+                            "location": {
+                              "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\common\\common.steps.ts",
+                              "column": 8,
+                              "line": 296
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\step-definitions\\common\\common.steps.ts:296\n\n\u001b[0m \u001b[90m 294 |\u001b[39m \u001b[33mGiven\u001b[39m(\u001b[32m'The {string} API is blocked'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }\u001b[33m,\u001b[39m resourceName\u001b[33m:\u001b[39m string) \u001b[33m=>\u001b[39m {\n \u001b[90m 295 |\u001b[39m   \u001b[36mconst\u001b[39m isMobile \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mHelpers\u001b[39m\u001b[33m.\u001b[39misMobileDevice(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 296 |\u001b[39m   test\u001b[33m.\u001b[39mskip(isMobile\u001b[33m,\u001b[39m \u001b[32m'Skipping API blocked tests on mobile devices'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 297 |\u001b[39m   \u001b[36mswitch\u001b[39m (resourceName\u001b[33m.\u001b[39mtoLowerCase()) {\n \u001b[90m 298 |\u001b[39m     \u001b[36mcase\u001b[39m \u001b[32m'search locations'\u001b[39m\u001b[33m:\u001b[39m\n \u001b[90m 299 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[33mNetworkUtils\u001b[39m\u001b[33m.\u001b[39mabortRequest(page\u001b[33m,\u001b[39m \u001b[33mAPI_PATHS\u001b[39m\u001b[33m.\u001b[39m\u001b[33mSEARCH_LOCATIONS_REQUEST\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-03-26T13:56:23.791Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--e5859-s-API-is-blocked-in-HSA-FSA-Device-iPhone-13-Safari-\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-9f7bd0a4716813ac8d38",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "Gym details button is displayed in search results in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: iPhone 13 (Safari)",
+                  "projectName": "Device: iPhone 13 (Safari)",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 101566,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 78115
+                        },
+                        {
+                          "title": "Then The GYM DETAILS button is displayed in the HSA-FSA search results for the gym",
+                          "duration": 14
+                        }
+                      ],
+                      "startTime": "2026-03-26T13:56:46.637Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--de4e9-n-search-results-in-HSA-FSA-Device-iPhone-13-Safari-\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-7067170e2fb02b69fd48",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "Clicking Gym details button should redirect to Local Landing Page",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: iPhone 13 (Safari)",
+                  "projectName": "Device: iPhone 13 (Safari)",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 105326,
+                      "error": {
+                        "message": "Error: Gym Details redirection is invalid. Actual URL: https://www.anytimefitness.com/resources/hsa-and-fsa-for-gym-membership?location=Woodbury%2C+MN",
+                        "stack": "Error: Gym Details redirection is invalid. Actual URL: https://www.anytimefitness.com/resources/hsa-and-fsa-for-gym-membership?location=Woodbury%2C+MN\n    at HsaFsaMembershipPage.gymDetailsRedirection (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\modules\\HsaFsaMembershipPage.ts:27:13)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:170:5)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:34:5",
+                        "location": {
+                          "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\modules\\HsaFsaMembershipPage.ts",
+                          "column": 13,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\modules\\HsaFsaMembershipPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mconst\u001b[39m currentUrl \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcurrentUrl\u001b[33m.\u001b[39mincludes(\u001b[32m'/locations'\u001b[39m))\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Gym Details redirection is invalid. Actual URL: ${currentUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mreturn\u001b[39m currentUrl\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\modules\\HsaFsaMembershipPage.ts",
+                            "column": 13,
+                            "line": 27
+                          },
+                          "message": "Error: Gym Details redirection is invalid. Actual URL: https://www.anytimefitness.com/resources/hsa-and-fsa-for-gym-membership?location=Woodbury%2C+MN\n\n\u001b[90m   at \u001b[39m..\\pages\\modules\\HsaFsaMembershipPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mconst\u001b[39m currentUrl \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcurrentUrl\u001b[33m.\u001b[39mincludes(\u001b[32m'/locations'\u001b[39m))\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Gym Details redirection is invalid. Actual URL: ${currentUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mreturn\u001b[39m currentUrl\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m   }\u001b[0m\n\u001b[2m    at HsaFsaMembershipPage.gymDetailsRedirection (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\modules\\HsaFsaMembershipPage.ts:27:13)\u001b[22m\n\u001b[2m    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:170:5)\u001b[22m\n\u001b[2m    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:34:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 78448
+                        },
+                        {
+                          "title": "When The GYM DETAILS button in the search results is clicked",
+                          "duration": 2255
+                        },
+                        {
+                          "title": "Then The page should redirect to the Local Landing Page",
+                          "duration": 1511,
+                          "error": {
+                            "message": "Error: Gym Details redirection is invalid. Actual URL: https://www.anytimefitness.com/resources/hsa-and-fsa-for-gym-membership?location=Woodbury%2C+MN",
+                            "stack": "Error: Gym Details redirection is invalid. Actual URL: https://www.anytimefitness.com/resources/hsa-and-fsa-for-gym-membership?location=Woodbury%2C+MN\n    at HsaFsaMembershipPage.gymDetailsRedirection (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\modules\\HsaFsaMembershipPage.ts:27:13)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:170:5)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:34:5",
+                            "location": {
+                              "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\modules\\HsaFsaMembershipPage.ts",
+                              "column": 13,
+                              "line": 27
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\modules\\HsaFsaMembershipPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mconst\u001b[39m currentUrl \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcurrentUrl\u001b[33m.\u001b[39mincludes(\u001b[32m'/locations'\u001b[39m))\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Gym Details redirection is invalid. Actual URL: ${currentUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mreturn\u001b[39m currentUrl\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m   }\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-03-26T13:58:28.211Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--3d4f1-irect-to-Local-Landing-Page-Device-iPhone-13-Safari-\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\modules\\HsaFsaMembershipPage.ts",
+                        "column": 13,
+                        "line": 27
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 111300,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 78873
+                        },
+                        {
+                          "title": "When The GYM DETAILS button in the search results is clicked",
+                          "duration": 5592
+                        },
+                        {
+                          "title": "Then The page should redirect to the Local Landing Page",
+                          "duration": 1784
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:00:14.799Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--3d4f1-irect-to-Local-Landing-Page-Device-iPhone-13-Safari--retry1\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--3d4f1-irect-to-Local-Landing-Page-Device-iPhone-13-Safari--retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-7766aa6642ce25e90fab",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "Join Now button is displayed in search results in HSA-FSA",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: iPhone 13 (Safari)",
+                  "projectName": "Device: iPhone 13 (Safari)",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "failed",
+                      "duration": 101461,
+                      "error": {
+                        "message": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible') resolved to 9 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Woodbury (Woodbury Dr) 1125' }).getByLabel('JOIN NOW').nth(1)\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Oakdale 7077 10th St N' }).getByLabel('JOIN NOW').nth(1)\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (East Side) 1700' }).getByLabel('JOIN NOW').nth(1)\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Cottage Grove 7750 Harkness' }).getByLabel('JOIN NOW').nth(1)\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'South St Paul 1205 Southview' }).getByLabel('JOIN NOW').nth(1)\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'West St. Paul 1201 S Robert' }).getByLabel('JOIN NOW').nth(1)\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Maplewood 2515 White Bear Ave' }).getByLabel('JOIN NOW').nth(1)\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (Spring St) 226' }).getByLabel('JOIN NOW').nth(1)\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Inver Grove Heights 9070' }).getByLabel('JOIN NOW').nth(1)\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible')\u001b[22m\n",
+                        "stack": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible') resolved to 9 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Woodbury (Woodbury Dr) 1125' }).getByLabel('JOIN NOW').nth(1)\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Oakdale 7077 10th St N' }).getByLabel('JOIN NOW').nth(1)\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (East Side) 1700' }).getByLabel('JOIN NOW').nth(1)\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Cottage Grove 7750 Harkness' }).getByLabel('JOIN NOW').nth(1)\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'South St Paul 1205 Southview' }).getByLabel('JOIN NOW').nth(1)\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'West St. Paul 1201 S Robert' }).getByLabel('JOIN NOW').nth(1)\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Maplewood 2515 White Bear Ave' }).getByLabel('JOIN NOW').nth(1)\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (Spring St) 226' }).getByLabel('JOIN NOW').nth(1)\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Inver Grove Heights 9070' }).getByLabel('JOIN NOW').nth(1)\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible')\u001b[22m\n\n    at LocationSearchPage.isJoinNowBtnVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:226:15)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:181:5)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:39:5",
+                        "location": {
+                          "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts",
+                          "column": 15,
+                          "line": 226
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\common\\LocationSearchPage.ts:226\n\n\u001b[0m \u001b[90m 224 |\u001b[39m   \u001b[36masync\u001b[39m isJoinNowBtnVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 225 |\u001b[39m     \u001b[36mconst\u001b[39m btn \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mjoinNowBtn\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 226 |\u001b[39m     \u001b[36mawait\u001b[39m btn\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 227 |\u001b[39m   }\n \u001b[90m 228 |\u001b[39m\n \u001b[90m 229 |\u001b[39m   \u001b[36masync\u001b[39m clickJoinNowBtn()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts",
+                            "column": 15,
+                            "line": 226
+                          },
+                          "message": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible') resolved to 9 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Woodbury (Woodbury Dr) 1125' }).getByLabel('JOIN NOW').nth(1)\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Oakdale 7077 10th St N' }).getByLabel('JOIN NOW').nth(1)\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (East Side) 1700' }).getByLabel('JOIN NOW').nth(1)\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Cottage Grove 7750 Harkness' }).getByLabel('JOIN NOW').nth(1)\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'South St Paul 1205 Southview' }).getByLabel('JOIN NOW').nth(1)\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'West St. Paul 1201 S Robert' }).getByLabel('JOIN NOW').nth(1)\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Maplewood 2515 White Bear Ave' }).getByLabel('JOIN NOW').nth(1)\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (Spring St) 226' }).getByLabel('JOIN NOW').nth(1)\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Inver Grove Heights 9070' }).getByLabel('JOIN NOW').nth(1)\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\common\\LocationSearchPage.ts:226\n\n\u001b[0m \u001b[90m 224 |\u001b[39m   \u001b[36masync\u001b[39m isJoinNowBtnVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 225 |\u001b[39m     \u001b[36mconst\u001b[39m btn \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mjoinNowBtn\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 226 |\u001b[39m     \u001b[36mawait\u001b[39m btn\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 227 |\u001b[39m   }\n \u001b[90m 228 |\u001b[39m\n \u001b[90m 229 |\u001b[39m   \u001b[36masync\u001b[39m clickJoinNowBtn()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at LocationSearchPage.isJoinNowBtnVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:226:15)\u001b[22m\n\u001b[2m    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:181:5)\u001b[22m\n\u001b[2m    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:39:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 78316
+                        },
+                        {
+                          "title": "Then The JOIN NOW button is displayed in the HSA-FSA search results for the gym",
+                          "duration": 326,
+                          "error": {
+                            "message": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible') resolved to 9 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Woodbury (Woodbury Dr) 1125' }).getByLabel('JOIN NOW').nth(1)\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Oakdale 7077 10th St N' }).getByLabel('JOIN NOW').nth(1)\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (East Side) 1700' }).getByLabel('JOIN NOW').nth(1)\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Cottage Grove 7750 Harkness' }).getByLabel('JOIN NOW').nth(1)\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'South St Paul 1205 Southview' }).getByLabel('JOIN NOW').nth(1)\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'West St. Paul 1201 S Robert' }).getByLabel('JOIN NOW').nth(1)\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Maplewood 2515 White Bear Ave' }).getByLabel('JOIN NOW').nth(1)\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (Spring St) 226' }).getByLabel('JOIN NOW').nth(1)\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Inver Grove Heights 9070' }).getByLabel('JOIN NOW').nth(1)\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible')\u001b[22m\n",
+                            "stack": "Error: locator.isVisible: Error: strict mode violation: locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible') resolved to 9 elements:\n    1) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Woodbury (Woodbury Dr) 1125' }).getByLabel('JOIN NOW').nth(1)\n    2) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Oakdale 7077 10th St N' }).getByLabel('JOIN NOW').nth(1)\n    3) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (East Side) 1700' }).getByLabel('JOIN NOW').nth(1)\n    4) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Cottage Grove 7750 Harkness' }).getByLabel('JOIN NOW').nth(1)\n    5) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'South St Paul 1205 Southview' }).getByLabel('JOIN NOW').nth(1)\n    6) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'West St. Paul 1201 S Robert' }).getByLabel('JOIN NOW').nth(1)\n    7) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Maplewood 2515 White Bear Ave' }).getByLabel('JOIN NOW').nth(1)\n    8) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'St. Paul (Spring St) 226' }).getByLabel('JOIN NOW').nth(1)\n    9) <button type=\"button\" data-cta-type=\"cta\" aria-label=\"JOIN NOW\" aria-disabled=\"false\" class=\"disabled:bg-gray-400 disabled:border-gray-400 font-textbold md:w-auto w-full py-2 px-5 bg-primary text-white font-extrabold rounded-full text-[14px] border-2 border-primary hover:bg-indigo-10 transition focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black whitespace-nowrap\">JOIN NOW</button> aka getByRole('option', { name: 'Inver Grove Heights 9070' }).getByLabel('JOIN NOW').nth(1)\n\nCall log:\n\u001b[2m    - checking visibility of locator('#tuf-hsa-fsa-event-iframe').contentFrame().locator('li[role=\"option\"]').locator('button[aria-label=\"JOIN NOW\"]:visible')\u001b[22m\n\n    at LocationSearchPage.isJoinNowBtnVisible (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts:226:15)\n    at Object.<anonymous> (C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\step-definitions\\hsaFsaMembership\\hsaFsaMembership.steps.ts:181:5)\n    at C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\.features-gen\\features\\hsaFsaMembership\\hsa-fsa-membership.feature.spec.js:39:5",
+                            "location": {
+                              "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts",
+                              "column": 15,
+                              "line": 226
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\common\\LocationSearchPage.ts:226\n\n\u001b[0m \u001b[90m 224 |\u001b[39m   \u001b[36masync\u001b[39m isJoinNowBtnVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 225 |\u001b[39m     \u001b[36mconst\u001b[39m btn \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mjoinNowBtn\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 226 |\u001b[39m     \u001b[36mawait\u001b[39m btn\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 227 |\u001b[39m   }\n \u001b[90m 228 |\u001b[39m\n \u001b[90m 229 |\u001b[39m   \u001b[36masync\u001b[39m clickJoinNowBtn()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:02:06.983Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--fea16-n-search-results-in-HSA-FSA-Device-iPhone-13-Safari-\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\pages\\common\\LocationSearchPage.ts",
+                        "column": 15,
+                        "line": 226
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 103661,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 79200
+                        },
+                        {
+                          "title": "Then The JOIN NOW button is displayed in the HSA-FSA search results for the gym",
+                          "duration": 35
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:03:49.934Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--fea16-n-search-results-in-HSA-FSA-Device-iPhone-13-Safari--retry1\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--fea16-n-search-results-in-HSA-FSA-Device-iPhone-13-Safari--retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-e5a3c22c313acc177914",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "Clicking Join Now button should redirect to Plans Page",
+              "ok": true,
+              "tags": [
+                "HsaFsaMembership",
+                "Regression",
+                "Sprint23",
+                "AFW-2345",
+                "US",
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Device: iPhone 13 (Safari)",
+                  "projectName": "Device: iPhone 13 (Safari)",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 103395,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://anytimefitness.com/resources/hsa-and-fsa-for-gym-membership\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given The user searches for the \"Locale Based\" location in the HSA-FSA location search",
+                          "duration": 78317
+                        },
+                        {
+                          "title": "When The JOIN NOW button in the search results is clicked",
+                          "duration": 702
+                        },
+                        {
+                          "title": "Then The page should redirect to the Plans Page",
+                          "duration": 1514
+                        }
+                      ],
+                      "startTime": "2026-03-26T14:05:34.255Z",
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkhTQS1GU0EifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InBhcmVudFN1aXRlIiwidmFsdWUiOiJIU0EtRlNBIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN1YlN1aXRlIiwidmFsdWUiOiJEZXZpY2U6IGlQaG9uZSAxMyAoU2FmYXJpKSJ9XX19"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NOLI\\Documents\\Github\\Ignite\\AF\\AF\\AF-Automation4\\test-results\\features-hsaFsaMembership--02d23-ould-redirect-to-Plans-Page-Device-iPhone-13-Safari-\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "59ad0ec44c5b03b360f1-fefcfd4374d5551d8f66",
+              "file": "features/hsaFsaMembership/hsa-fsa-membership.feature.spec.js",
+              "line": 42,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-26T13:53:04.051Z",
+    "duration": 1298022.815,
+    "expected": 8,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 5
+  }
+}
