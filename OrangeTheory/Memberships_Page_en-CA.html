@@ -1,0 +1,542 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Validation Report - Memberships Page - en-CA</title>
+        <style>
+          body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; color: #333; background-color: #f9fafb; }
+          h1 { color: #1e3a8a; margin-bottom: 14px; }
+          .summary {
+            background: #f1f5f9;
+            border-left: 6px solid #2563eb;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+          }
+          .summary a { color: #2563eb; text-decoration: none; }
+          .summary a:hover { text-decoration: underline; }
+        
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            table-layout: fixed;
+            word-wrap: break-word;
+          }
+          th, td {
+            padding: 6px 8px;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+          }
+          th {
+            background: #1f2937;
+            color: white;
+            position: sticky;
+            top: 0;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+          }
+          tr:nth-child(even) { background: #f9fafb; }
+          tr:hover { background: #eef2ff; }
+        
+          .text-cell {
+            white-space: pre-wrap;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #111827;
+            background-color: #fafafa;
+            border-radius: 6px;
+            padding: 6px 8px;
+          }
+        
+          /* Proportional column widths */
+          td:nth-child(1) { width: 8%; }    /* Page */
+          td:nth-child(2) { width: 6%; }    /* Iframe */
+          td:nth-child(3) { width: 20%; }   /* XPath */
+          td:nth-child(4), td:nth-child(5) { width: 16%; }  /* Desktop Text */
+          td:nth-child(6) { width: 8%; }    /* Desktop Status */
+          td:nth-child(7), td:nth-child(8) { width: 16%; }  /* Mobile Text */
+          td:nth-child(9) { width: 8%; }    /* Mobile Status */
+        
+          .highlight-status {
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+          }
+          .status-match {
+            background: #dcfce7;
+            color: #065f46;
+          }
+          .status-mismatch {
+            background: #fee2e2;
+            color: #991b1b;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Memberships Page (en-CA)</h1>
+        <div class="summary">
+          <b>Summary:</b><br>
+          Total: 36 |
+          <span style="color:green">Matches: 16</span> |
+          <span style="color:orange">Partial: 2</span> |
+          <span style="color:crimson">Mismatches: 15</span> |
+          Not Found: 3 |
+          Errors: 0<br>
+          <b>URL:</b> <a href="https://www.orangetheory.com/en-es/memberships" target="_blank">https://www.orangetheory.com/en-es/memberships</a>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Page</th>
+              <th>Iframe</th>
+              <th>XPath</th>
+              <th>Desktop Expected</th>
+              <th>Desktop Actual</th>
+              <th>Desktop Status</th>
+              <th>Mobile Expected</th>
+              <th>Mobile Actual</th>
+              <th>Mobile Status</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]</td>
+          <td class="text-cell">Flexible Memberships for All.</td>
+          <td class="text-cell">Flexible Memberships for Everyone.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Flexible Memberships for All.</td>
+          <td class="text-cell">Flexible Memberships for Everyone.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[1]/div[1]/div[1]/a[1]</td>
+          <td class="text-cell">Find Your Studio</td>
+          <td class="text-cell">Find Your Studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Find Your Studio</td>
+          <td class="text-cell">Find Your Studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[2]/div[1]/h2[1]</td>
+          <td class="text-cell">Membership Choices.</td>
+          <td class="text-cell">Membership Options.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Membership Choices.</td>
+          <td class="text-cell">Membership Options.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[2]/div[2]/div[1]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Premier</td>
+          <td class="text-cell">Premier</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Premier</td>
+          <td class="text-cell">Premier</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[2]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">Unlimited classes</td>
+          <td class="text-cell">Unlimited Classes (recommended for usage of 3x/week or more)</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Unlimited classes</td>
+          <td class="text-cell">Unlimited Classes (recommended for usage of 3x/week or more)</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[2]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">Reduced rate for families</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Reduced rate for families</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2df-3447f2d0&#39;]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Elite</td>
+          <td class="text-cell">Elite</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Elite</td>
+          <td class="text-cell">Elite</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2df-3447f2d0&#39;]/div[1]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">8 classes/month</td>
+          <td class="text-cell">8 Classes Monthly (avg. usage of 2x/week)</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">8 classes/month</td>
+          <td class="text-cell">8 Classes Monthly (avg. usage of 2x/week)</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2df-3447f2d0&#39;]/div[1]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">Extra classes at reduced rate</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Extra classes at reduced rate</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2ed-3447f2d0&#39;]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Basic</td>
+          <td class="text-cell">Basic</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Basic</td>
+          <td class="text-cell">Basic</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2ed-3447f2d0&#39;]/div[1]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">4 classes/month</td>
+          <td class="text-cell">4 Classes Monthly (avg. usage of 1x/week)</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">4 classes/month</td>
+          <td class="text-cell">4 Classes Monthly (avg. usage of 1x/week)</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2ed-3447f2d0&#39;]/div[1]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">Extra classes at reduced rate</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Extra classes at reduced rate</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2fb-3447f2d0&#39;]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Class Packs</td>
+          <td class="text-cell">Class Packs</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Class Packs</td>
+          <td class="text-cell">Class Packs</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2fb-3447f2d0&#39;]/div[1]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">10 Classes</td>
+          <td class="text-cell">10 Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">10 Classes</td>
+          <td class="text-cell">10 Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2fb-3447f2d0&#39;]/div[1]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">20 Classes</td>
+          <td class="text-cell">20 Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">20 Classes</td>
+          <td class="text-cell">20 Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-c79fcf28-375d-4917-7285-43fa3447f2fb-3447f2d0&#39;]/div[1]/div[2]/ul[1]/li[3]</td>
+          <td class="text-cell">30 Classes</td>
+          <td class="text-cell">30 Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">30 Classes</td>
+          <td class="text-cell">30 Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[3]/div[1]/h2[1]</td>
+          <td class="text-cell">Membership Advantages.</td>
+          <td class="text-cell">Membership Benefits.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Membership Advantages.</td>
+          <td class="text-cell">Membership Benefits.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[3]/div[1]/p[1]</td>
+          <td class="text-cell">Fitness is personal, which means having flexible membership options that work best for you. Studio staff are ready to help you decide based on how often you want to take classes at Orangetheory. 2-3 classes a week are recommended to maximize results and get the minimal weekly exercise recommended by the American Heart Association. With access to over 1,300 nationwide studios open 364 days a year, Orangetheory is a convenient way to stay on track toward your fitness goals.</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Fitness is personal, which means having flexible membership options that work best for you. Studio staff are ready to help you decide based on how often you want to take classes at Orangetheory. 2-3 classes a week are recommended to maximize results and get the minimal weekly exercise recommended by the American Heart Association. With access to over 1,300 nationwide studios open 364 days a year, Orangetheory is a convenient way to stay on track toward your fitness goals.</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;memberships-benefits&#39;]/div[1]/div[1]/div[1]</td>
+          <td class="text-cell">Nationwide Privileges‡</td>
+          <td class="text-cell">Access to 1,300 Studios Nationwide Privileges‡</td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell">Nationwide Privileges‡</td>
+          <td class="text-cell">Access to 1,300 Studios Nationwide Privileges‡</td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;memberships-benefits&#39;]/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">Flexible Class Times Open 7 Days Per Week</td>
+          <td class="text-cell">Flexible Class Times Open 7 Days Per Week</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Flexible Class Times Open 7 Days Per Week</td>
+          <td class="text-cell">Flexible Class Times Open 7 Days Per Week</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;memberships-benefits&#39;]/div[1]/div[3]/div[1]</td>
+          <td class="text-cell">Mobile App to Book Classes and Track Performance</td>
+          <td class="text-cell">Mobile App to Book Classes and Track Performance</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Mobile App to Book Classes and Track Performance</td>
+          <td class="text-cell">Mobile App to Book Classes and Track Performance</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;memberships-benefits&#39;]/div[1]/div[4]/div[1]</td>
+          <td class="text-cell">Freeze Privileges Max 60 Days up to 2x/Year</td>
+          <td class="text-cell">Freeze Privileges Max 60 Days up to 2x/Year</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Freeze Privileges Max 60 Days up to 2x/Year</td>
+          <td class="text-cell">Freeze Privileges Max 60 Days up to 2x/Year</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;memberships-benefits&#39;]/div[1]/div[5]/div[1]</td>
+          <td class="text-cell">No Long Term Contracts</td>
+          <td class="text-cell">No Long Term Contracts</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">No Long Term Contracts</td>
+          <td class="text-cell">No Long Term Contracts</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Make the most of your membership with the OTF app.</td>
+          <td class="text-cell">Get the most out of your membership with the OTF app.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Make the most of your membership with the OTF app.</td>
+          <td class="text-cell">Get the most out of your membership with the OTF app.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/div[1]/ul[1]/li[1]</td>
+          <td class="text-cell">Easy and quick class bookings at any studio.</td>
+          <td class="text-cell">Quick and easy class bookings at any studio</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Easy and quick class bookings at any studio.</td>
+          <td class="text-cell">Quick and easy class bookings at any studio</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/div[1]/ul[1]/li[2]</td>
+          <td class="text-cell">Locate and save your favourite studio locations.</td>
+          <td class="text-cell">Find and save your favorite studio locations</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Locate and save your favourite studio locations.</td>
+          <td class="text-cell">Find and save your favorite studio locations</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/div[1]/ul[1]/li[3]</td>
+          <td class="text-cell">Monitor your workout performance over time.</td>
+          <td class="text-cell">Track your workout performance over time</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Monitor your workout performance over time.</td>
+          <td class="text-cell">Track your workout performance over time</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/div[1]/ul[1]/li[4]</td>
+          <td class="text-cell">Track your body composition changes from your InBodyTM scans.</td>
+          <td class="text-cell">Track your body composition changes from your InBodyTM scans</td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell">Track your body composition changes from your InBodyTM scans.</td>
+          <td class="text-cell">Track your body composition changes from your InBodyTM scans</td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/div[1]/ul[1]/li[5]</td>
+          <td class="text-cell">View your challenge and benchmark results.</td>
+          <td class="text-cell">See your challenge and benchmark results</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">View your challenge and benchmark results.</td>
+          <td class="text-cell">See your challenge and benchmark results</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/div[1]/ul[1]/li[6]</td>
+          <td class="text-cell">Track out-of-studio and guided on-demand workouts</td>
+          <td class="text-cell">Track out-of-studio and guided on-demand workouts</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Track out-of-studio and guided on-demand workouts</td>
+          <td class="text-cell">Track out-of-studio and guided on-demand workouts</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/div[2]/a[1]/div[1]</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;get-app&#39;]/section[1]/div[1]/div[1]/div[2]/a[2]/div[1]</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[5]/div[1]/h2[1]</td>
+          <td class="text-cell">Love it or your money back.</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Love it or your money back.</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[5]/div[1]/p[1]</td>
+          <td class="text-cell">Orangetheory&#39;s total body workout energizes you from the inside out with results you&#39;ll see and feel. We&#39;re so confident you&#39;ll love Orangetheory that we guarantee it and offer a 30-day risk-free guarantee.**</td>
+          <td class="text-cell">Access to 1,300 Studios Nationwide Privileges‡</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Orangetheory&#39;s total body workout energizes you from the inside out with results you&#39;ll see and feel. We&#39;re so confident you&#39;ll love Orangetheory that we guarantee it and offer a 30-day risk-free guarantee.**</td>
+          <td class="text-cell">Access to 1,300 Studios Nationwide Privileges‡</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[6]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Start your fitness journey today.</td>
+          <td class="text-cell">Start your fitness journey today.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Start your fitness journey today.</td>
+          <td class="text-cell">Start your fitness journey today.</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Memberships Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[3]/main[1]/section[6]/div[1]/div[1]/a[1]</td>
+          <td class="text-cell">Search for studios</td>
+          <td class="text-cell">Continue</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Search for studios</td>
+          <td class="text-cell">Continue</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+        </tr></tbody>
+        </table>
+      </body>
+      </html>
