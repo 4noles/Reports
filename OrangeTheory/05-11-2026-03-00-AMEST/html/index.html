@@ -1,0 +1,71 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>OrangeTheory</title>
+      <style>
+        body { font-family: 'Segoe UI', Arial; padding: 20px; background: #f8fafc; }
+        .header-bar {
+          background: linear-gradient(90deg, #1e3a8a, #2563eb);
+          color: white;
+          padding: 16px 22px;
+          border-radius: 8px;
+          font-size: 1.4em;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+          background: white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+          padding: 8px 10px;
+          border: 1px solid #e5e7eb;
+          text-align: left;
+        }
+        th { background: #1f2937; color: white; }
+        tr:nth-child(even) { background: #f9fafb; }
+        tr:hover { background: #e0f2fe; }
+        a { color: #2563eb; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+      </style>
+    </head>
+    <body>
+      <div class="header-bar">OrangeTheory</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Page</th><th>Sheet</th><th>Report (URL)</th><th>Total</th>
+            <th>Matches</th><th>Partial</th><th>Mismatches</th><th>Not Found</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Standard Studio page</td>
+          <td>en-US</td>
+          <td><a href="./Standard_Studio_page_en-US.html" target="_blank">https://www.orangetheory.com/en-us/locations/boca-raton-florida-0011</a></td>
+          <td>96</td>
+          <td style="color:green">96</td>
+          <td style="color:orange">0</td>
+          <td style="color:red">0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>Standard Studio page</td>
+          <td>en-GB</td>
+          <td><a href="./Standard_Studio_page_en-GB.html" target="_blank">https://www.orangetheory.com/en-gb/locations/altrincham-great-britain-eng501</a></td>
+          <td>38</td>
+          <td style="color:green">0</td>
+          <td style="color:orange">2</td>
+          <td style="color:red">3</td>
+          <td>35</td>
+        </tr></tbody>
+      </table>
+    </body>
+    </html>
