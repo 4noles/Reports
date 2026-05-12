@@ -1,0 +1,1088 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Validation Report - Home Page - en-AU</title>
+        <style>
+          body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; color: #333; background-color: #f9fafb; }
+          h1 { color: #1e3a8a; margin-bottom: 14px; }
+          .summary {
+            background: #f1f5f9;
+            border-left: 6px solid #2563eb;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+          }
+          .summary a { color: #2563eb; text-decoration: none; }
+          .summary a:hover { text-decoration: underline; }
+        
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            table-layout: fixed;
+            word-wrap: break-word;
+          }
+          th, td {
+            padding: 6px 8px;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+          }
+          th {
+            background: #1f2937;
+            color: white;
+            position: sticky;
+            top: 0;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+          }
+          tr:nth-child(even) { background: #f9fafb; }
+          tr:hover { background: #eef2ff; }
+        
+          .text-cell {
+            white-space: pre-wrap;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #111827;
+            background-color: #fafafa;
+            border-radius: 6px;
+            padding: 6px 8px;
+          }
+        
+          .highlight-status {
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+          }
+          .status-match {
+            background: #dcfce7;
+            color: #065f46;
+          }
+          .status-mismatch {
+            background: #fee2e2;
+            color: #991b1b;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Home Page (en-AU)</h1>
+        <div class="summary">
+          <b>Summary:</b><br>
+          Total: 70 |
+          <span style="color:green">Matches: 70</span> |
+          <span style="color:orange">Partial: 0</span> |
+          <span style="color:crimson">Mismatches: 0</span> |
+          Not Found: 0 |
+          Errors: 0<br>
+          <b>URL:</b> <a href="https://www.anytimefitness.com/en-au" target="_blank">https://www.anytimefitness.com/en-au</a>
+        </div>
+
+        <table>
+          <thead>
+          <tr>
+            <th>Page</th>
+            <th>Iframe</th>
+            <th>XPath</th>
+            <th>Desktop Expected</th>
+            <th>Desktop Actual</th>
+            <th>Desktop Status</th>
+            <th>Mobile Expected</th>
+            <th>Mobile Actual</th>
+            <th>Mobile Status</th>
+            <th>WITHOUT_QUERY_PARAMS</th>
+            <th>WITH_QUERY_PARAMS</th>
+          </tr>
+        </thead>
+          <tbody>
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/header[1]/div[1]/h1[1]</td>
+          <td class="text-cell">FIND YOUR FITPHORIA</td>
+          <td class="text-cell">FIND YOUR FITPHORIA</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIND YOUR FITPHORIA</td>
+          <td class="text-cell">FIND YOUR FITPHORIA</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/header[1]/div[1]/p[1]</td>
+          <td class="text-cell">We’re chasing a feeling and it’s called Fitphoria.</td>
+          <td class="text-cell">We’re chasing a feeling and it’s called Fitphoria.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">We’re chasing a feeling and it’s called Fitphoria.</td>
+          <td class="text-cell">We’re chasing a feeling and it’s called Fitphoria.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/header[1]/div[1]/div[1]/a[1]</td>
+          <td class="text-cell">FIND A GYM NEAR YOU</td>
+          <td class="text-cell">FIND A GYM NEAR YOU</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIND A GYM NEAR YOU</td>
+          <td class="text-cell">FIND A GYM NEAR YOU</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">✅PASSED</td>
+          <td class="text-cell">Expected: https://www.anytimefitness.com/en-au/find-gym?test=query
+Actual: https://www.anytimefitness.com/en-au/find-gym</td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">FIND A GYM WITH ALL THE RIGHT BENEFITS</td>
+          <td class="text-cell">FIND A GYM WITH ALL THE RIGHT BENEFITS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIND A GYM WITH ALL THE RIGHT BENEFITS</td>
+          <td class="text-cell">FIND A GYM WITH ALL THE RIGHT BENEFITS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[1]/div[2]</td>
+          <td class="text-cell">Open 24 hours</td>
+          <td class="text-cell">Open 24 hours</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Open 24 hours</td>
+          <td class="text-cell">Open 24 hours</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[2]/div[2]/div[1]</td>
+          <td class="text-cell">Access to</td>
+          <td class="text-cell">Access to</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Access to</td>
+          <td class="text-cell">Access to</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[2]/div[2]/div[2]/div[1]</td>
+          <td class="text-cell">5,800+</td>
+          <td class="text-cell">5,800+</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">5,800+</td>
+          <td class="text-cell">5,800+</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[2]/div[2]/div[3]</td>
+          <td class="text-cell">gyms</td>
+          <td class="text-cell">gyms</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">gyms</td>
+          <td class="text-cell">gyms</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[3]/div[2]</td>
+          <td class="text-cell">Personalised plan</td>
+          <td class="text-cell">Personalised plan</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Personalised plan</td>
+          <td class="text-cell">Personalised plan</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[4]/div[2]</td>
+          <td class="text-cell">Personal &amp; group training</td>
+          <td class="text-cell">Personal &amp; group training</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Personal &amp; group training</td>
+          <td class="text-cell">Personal &amp; group training</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[5]/div[2]</td>
+          <td class="text-cell">Free fitness consultation</td>
+          <td class="text-cell">Free fitness consultation</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Free fitness consultation</td>
+          <td class="text-cell">Free fitness consultation</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[6]/div[2]/div[1]/a[1]</td>
+          <td class="text-cell">(See details)</td>
+          <td class="text-cell">(See details)</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">(See details)</td>
+          <td class="text-cell">(See details)</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-cf5d760d-9cd7-3456-c19c-e20fa07f3c44-a07f3c42&#39;]/h2[1]</td>
+          <td class="text-cell">TRY ANYTIME FITNESS FOR FREE AND GET UP TO 3 MONTHS OF APPLE FITNESS+ ACCESS ON US</td>
+          <td class="text-cell">TRY ANYTIME FITNESS FOR FREE AND GET UP TO 3 MONTHS OF APPLE FITNESS+ ACCESS ON US</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">TRY ANYTIME FITNESS FOR FREE AND GET UP TO 3 MONTHS OF APPLE FITNESS+ ACCESS ON US</td>
+          <td class="text-cell">TRY ANYTIME FITNESS FOR FREE AND GET UP TO 3 MONTHS OF APPLE FITNESS+ ACCESS ON US</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-cf5d760d-9cd7-3456-c19c-e20fa07f3c44-a07f3c42&#39;]/p[1]</td>
+          <td class="text-cell">Anytime Fitness and Apple Fitness+ are joining forces to create an unparalleled personalised wellness experience.</td>
+          <td class="text-cell">Anytime Fitness and Apple Fitness+ are joining forces to create an unparalleled personalised wellness experience.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Anytime Fitness and Apple Fitness+ are joining forces to create an unparalleled personalised wellness experience.</td>
+          <td class="text-cell">Anytime Fitness and Apple Fitness+ are joining forces to create an unparalleled personalised wellness experience.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-cf5d760d-9cd7-3456-c19c-e20fa07f3c44-a07f3c42&#39;]/div[1]/a[1]</td>
+          <td class="text-cell">GET STARTED</td>
+          <td class="text-cell">GET STARTED</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">GET STARTED</td>
+          <td class="text-cell">GET STARTED</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">✅PASSED</td>
+          <td class="text-cell">Expected: https://www.anytimefitness.com/en-au/apple-fitness-offer?test=query
+Actual: https://www.anytimefitness.com/en-au/apple-fitness-offer</td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[2]/div[1]/div[2]/div[1]/p[2]</td>
+          <td class="text-cell">Terms, conditions, &amp; restrictions apply.</td>
+          <td class="text-cell">Terms, conditions, &amp; restrictions apply.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Terms, conditions, &amp; restrictions apply.</td>
+          <td class="text-cell">Terms, conditions, &amp; restrictions apply.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[2]/div[1]/div[2]/div[1]/a[1]</td>
+          <td class="text-cell">See details</td>
+          <td class="text-cell">See details</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">See details</td>
+          <td class="text-cell">See details</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/h2[1]</td>
+          <td class="text-cell">ANYTIME, ANYWHERE MEMBER BENEFITS</td>
+          <td class="text-cell">ANYTIME, ANYWHERE MEMBER BENEFITS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">ANYTIME, ANYWHERE MEMBER BENEFITS</td>
+          <td class="text-cell">ANYTIME, ANYWHERE MEMBER BENEFITS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/p[1]</td>
+          <td class="text-cell">Get access to exclusive discounts across our favourite brands with your Anytime Fitness membership and enjoy benefits beyond your workout</td>
+          <td class="text-cell">Get access to exclusive discounts across our favourite brands with your Anytime Fitness membership and enjoy benefits beyond your workout</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get access to exclusive discounts across our favourite brands with your Anytime Fitness membership and enjoy benefits beyond your workout</td>
+          <td class="text-cell">Get access to exclusive discounts across our favourite brands with your Anytime Fitness membership and enjoy benefits beyond your workout</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Youfoodz - Up to 40% off</td>
+          <td class="text-cell">Youfoodz - Up to 40% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Youfoodz - Up to 40% off</td>
+          <td class="text-cell">Youfoodz - Up to 40% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Get up to 40% off Youfoodz across your next 13 boxes.</td>
+          <td class="text-cell">Get up to 40% off Youfoodz across your next 13 boxes.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get up to 40% off Youfoodz across your next 13 boxes.</td>
+          <td class="text-cell">Get up to 40% off Youfoodz across your next 13 boxes.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Workout Meals - Get up to $35 Off</td>
+          <td class="text-cell">Workout Meals - Get up to $35 Off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Workout Meals - Get up to $35 Off</td>
+          <td class="text-cell">Workout Meals - Get up to $35 Off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">$35 off your first order – No lock-in contracts. Backed by World-Class Nutrition to Feed Your Potential.</td>
+          <td class="text-cell">$35 off your first order – No lock-in contracts. Backed by World-Class Nutrition to Feed Your Potential.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$35 off your first order – No lock-in contracts. Backed by World-Class Nutrition to Feed Your Potential.</td>
+          <td class="text-cell">$35 off your first order – No lock-in contracts. Backed by World-Class Nutrition to Feed Your Potential.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Uber Eats - 4% off</td>
+          <td class="text-cell">Uber Eats - 4% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Uber Eats - 4% off</td>
+          <td class="text-cell">Uber Eats - 4% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">The Uber Eats app is the easy and reliable way to get the food you want, delivered quickly and fresh.</td>
+          <td class="text-cell">The Uber Eats app is the easy and reliable way to get the food you want, delivered quickly and fresh.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">The Uber Eats app is the easy and reliable way to get the food you want, delivered quickly and fresh.</td>
+          <td class="text-cell">The Uber Eats app is the easy and reliable way to get the food you want, delivered quickly and fresh.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[4]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">TWL - $25 off</td>
+          <td class="text-cell">TWL - $25 off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">TWL - $25 off</td>
+          <td class="text-cell">TWL - $25 off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[4]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">$25 off your order at TWL.</td>
+          <td class="text-cell">$25 off your order at TWL.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$25 off your order at TWL.</td>
+          <td class="text-cell">$25 off your order at TWL.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Reebok - 25% off</td>
+          <td class="text-cell">Reebok - 25% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Reebok - 25% off</td>
+          <td class="text-cell">Reebok - 25% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Reebok is a global brand icon, empowering individuals through sport, innovation, and inclusivity.</td>
+          <td class="text-cell">Reebok is a global brand icon, empowering individuals through sport, innovation, and inclusivity.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Reebok is a global brand icon, empowering individuals through sport, innovation, and inclusivity.</td>
+          <td class="text-cell">Reebok is a global brand icon, empowering individuals through sport, innovation, and inclusivity.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Rebel Sport (AU) - Save 8% on Rebel</td>
+          <td class="text-cell">Rebel Sport (AU) - Save 8% on Rebel</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Rebel Sport (AU) - Save 8% on Rebel</td>
+          <td class="text-cell">Rebel Sport (AU) - Save 8% on Rebel</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Australia’s leading authority on all things sport.</td>
+          <td class="text-cell">Australia’s leading authority on all things sport.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Australia’s leading authority on all things sport.</td>
+          <td class="text-cell">Australia’s leading authority on all things sport.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[7]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">EveryPlate - 40% off</td>
+          <td class="text-cell">EveryPlate - 40% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">EveryPlate - 40% off</td>
+          <td class="text-cell">EveryPlate - 40% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[7]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Delicious, Quick, Easy. That’s EveryPlate for you!</td>
+          <td class="text-cell">Delicious, Quick, Easy. That’s EveryPlate for you!</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Delicious, Quick, Easy. That’s EveryPlate for you!</td>
+          <td class="text-cell">Delicious, Quick, Easy. That’s EveryPlate for you!</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[8]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Uber (AU) - 4% off</td>
+          <td class="text-cell">Uber (AU) - 4% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Uber (AU) - 4% off</td>
+          <td class="text-cell">Uber (AU) - 4% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[8]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Gift Uber rides to friends and family, or add value directly to your own Uber account for greater convenience.</td>
+          <td class="text-cell">Gift Uber rides to friends and family, or add value directly to your own Uber account for greater convenience.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Gift Uber rides to friends and family, or add value directly to your own Uber account for greater convenience.</td>
+          <td class="text-cell">Gift Uber rides to friends and family, or add value directly to your own Uber account for greater convenience.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[9]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">REC GEN - 20% off</td>
+          <td class="text-cell">REC GEN - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">REC GEN - 20% off</td>
+          <td class="text-cell">REC GEN - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[9]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">For a limited time get 20% off REC GEN. Functional sport and lifestyle clothing.</td>
+          <td class="text-cell">For a limited time get 20% off REC GEN. Functional sport and lifestyle clothing.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">For a limited time get 20% off REC GEN. Functional sport and lifestyle clothing.</td>
+          <td class="text-cell">For a limited time get 20% off REC GEN. Functional sport and lifestyle clothing.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Posca Hydrate - 20% off</td>
+          <td class="text-cell">Posca Hydrate - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Posca Hydrate - 20% off</td>
+          <td class="text-cell">Posca Hydrate - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Stay Hydrated with Posca &amp; Anytime. Get 20% off at Posca Hydrate exclusively for members.</td>
+          <td class="text-cell">Stay Hydrated with Posca &amp; Anytime. Get 20% off at Posca Hydrate exclusively for members.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Stay Hydrated with Posca &amp; Anytime. Get 20% off at Posca Hydrate exclusively for members.</td>
+          <td class="text-cell">Stay Hydrated with Posca &amp; Anytime. Get 20% off at Posca Hydrate exclusively for members.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[11]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Macros - 20% off</td>
+          <td class="text-cell">Macros - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Macros - 20% off</td>
+          <td class="text-cell">Macros - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[11]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Use the code when you sign up and get 20% off recurring orders.</td>
+          <td class="text-cell">Use the code when you sign up and get 20% off recurring orders.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use the code when you sign up and get 20% off recurring orders.</td>
+          <td class="text-cell">Use the code when you sign up and get 20% off recurring orders.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[12]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Endota Gift Card - 10% off</td>
+          <td class="text-cell">Endota Gift Card - 10% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Endota Gift Card - 10% off</td>
+          <td class="text-cell">Endota Gift Card - 10% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[12]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Purchase an eGift card to redeem at any endota in Australia and receive 10% off.</td>
+          <td class="text-cell">Purchase an eGift card to redeem at any endota in Australia and receive 10% off.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Purchase an eGift card to redeem at any endota in Australia and receive 10% off.</td>
+          <td class="text-cell">Purchase an eGift card to redeem at any endota in Australia and receive 10% off.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[13]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Koala - 15% off</td>
+          <td class="text-cell">Koala - 15% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Koala - 15% off</td>
+          <td class="text-cell">Koala - 15% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[13]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Shop sustainably – get 15% off at Koala!</td>
+          <td class="text-cell">Shop sustainably – get 15% off at Koala!</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Shop sustainably – get 15% off at Koala!</td>
+          <td class="text-cell">Shop sustainably – get 15% off at Koala!</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[14]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">LSKD - 10% off</td>
+          <td class="text-cell">LSKD - 10% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">LSKD - 10% off</td>
+          <td class="text-cell">LSKD - 10% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[14]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Get 10% off LSKD.</td>
+          <td class="text-cell">Get 10% off LSKD.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get 10% off LSKD.</td>
+          <td class="text-cell">Get 10% off LSKD.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[15]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Soulara - 20% off</td>
+          <td class="text-cell">Soulara - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Soulara - 20% off</td>
+          <td class="text-cell">Soulara - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[15]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Use code AF20 when you sign up for 20% off recurring orders.</td>
+          <td class="text-cell">Use code AF20 when you sign up for 20% off recurring orders.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use code AF20 when you sign up for 20% off recurring orders.</td>
+          <td class="text-cell">Use code AF20 when you sign up for 20% off recurring orders.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[16]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Airbnb - 4% off</td>
+          <td class="text-cell">Airbnb - 4% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Airbnb - 4% off</td>
+          <td class="text-cell">Airbnb - 4% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[16]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Get 4% off on Airbnb Gift Cards.</td>
+          <td class="text-cell">Get 4% off on Airbnb Gift Cards.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get 4% off on Airbnb Gift Cards.</td>
+          <td class="text-cell">Get 4% off on Airbnb Gift Cards.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[17]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">HOYTS - Discounted tickets</td>
+          <td class="text-cell">HOYTS - Discounted tickets</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">HOYTS - Discounted tickets</td>
+          <td class="text-cell">HOYTS - Discounted tickets</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[17]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Flex your Anytime Fitness membership with discounted movie tickets at HOYTS.</td>
+          <td class="text-cell">Flex your Anytime Fitness membership with discounted movie tickets at HOYTS.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Flex your Anytime Fitness membership with discounted movie tickets at HOYTS.</td>
+          <td class="text-cell">Flex your Anytime Fitness membership with discounted movie tickets at HOYTS.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[18]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Everlast - 20% off</td>
+          <td class="text-cell">Everlast - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Everlast - 20% off</td>
+          <td class="text-cell">Everlast - 20% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[18]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">20% off Full Price Items. Empowering champions with tradition and innovation in sports gear.</td>
+          <td class="text-cell">20% off Full Price Items. Empowering champions with tradition and innovation in sports gear.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">20% off Full Price Items. Empowering champions with tradition and innovation in sports gear.</td>
+          <td class="text-cell">20% off Full Price Items. Empowering champions with tradition and innovation in sports gear.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[19]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">HelloFresh - Up to 40% off</td>
+          <td class="text-cell">HelloFresh - Up to 40% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">HelloFresh - Up to 40% off</td>
+          <td class="text-cell">HelloFresh - Up to 40% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[19]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Get up to 40% off HelloFresh on your next 13 boxes.</td>
+          <td class="text-cell">Get up to 40% off HelloFresh on your next 13 boxes.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get up to 40% off HelloFresh on your next 13 boxes.</td>
+          <td class="text-cell">Get up to 40% off HelloFresh on your next 13 boxes.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[20]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Gymshark - 10% off</td>
+          <td class="text-cell">Gymshark - 10% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Gymshark - 10% off</td>
+          <td class="text-cell">Gymshark - 10% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[20]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Get 10% off Gymshark products.</td>
+          <td class="text-cell">Get 10% off Gymshark products.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get 10% off Gymshark products.</td>
+          <td class="text-cell">Get 10% off Gymshark products.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[21]/div[1]/div[2]/h3[1]</td>
+          <td class="text-cell">Elite Supplements - 15% off</td>
+          <td class="text-cell">Elite Supplements - 15% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Elite Supplements - 15% off</td>
+          <td class="text-cell">Elite Supplements - 15% off</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[2]/div[1]/div[21]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">Get 15% off Elite Supplements for a limited time only.</td>
+          <td class="text-cell">Get 15% off Elite Supplements for a limited time only.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get 15% off Elite Supplements for a limited time only.</td>
+          <td class="text-cell">Get 15% off Elite Supplements for a limited time only.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[2]/a[1]</td>
+          <td class="text-cell">LEARN MORE ABOUT PURPLE PERKS</td>
+          <td class="text-cell">LEARN MORE ABOUT PURPLE PERKS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">LEARN MORE ABOUT PURPLE PERKS</td>
+          <td class="text-cell">LEARN MORE ABOUT PURPLE PERKS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">✅PASSED</td>
+          <td class="text-cell">Expected: https://www.anytimefitness.com/en-au/member-benefits?test=query
+Actual: https://www.anytimefitness.com/en-au/member-benefits</td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[4]/div[2]/div[1]/h2[1]</td>
+          <td class="text-cell">WHEN YOU JOIN ANYTIME FITNESS YOU JOIN AUSTRALIA&#39;S MOST WELCOMING GYM.</td>
+          <td class="text-cell">WHEN YOU JOIN ANYTIME FITNESS YOU JOIN AUSTRALIA&#39;S MOST WELCOMING GYM.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">WHEN YOU JOIN ANYTIME FITNESS YOU JOIN AUSTRALIA&#39;S MOST WELCOMING GYM.</td>
+          <td class="text-cell">WHEN YOU JOIN ANYTIME FITNESS YOU JOIN AUSTRALIA&#39;S MOST WELCOMING GYM.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[4]/div[2]/div[1]/p[1]</td>
+          <td class="text-cell">Finding your Fitphoria is easy at Anytime Fitness. Our team of staff, strong community of more than 720,000 members and our high quality gyms, make it easier than ever to achieve your goals.</td>
+          <td class="text-cell">Finding your Fitphoria is easy at Anytime Fitness. Our team of staff, strong community of more than 720,000 members and our high quality gyms, make it easier than ever to achieve your goals.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Finding your Fitphoria is easy at Anytime Fitness. Our team of staff, strong community of more than 720,000 members and our high quality gyms, make it easier than ever to achieve your goals.</td>
+          <td class="text-cell">Finding your Fitphoria is easy at Anytime Fitness. Our team of staff, strong community of more than 720,000 members and our high quality gyms, make it easier than ever to achieve your goals.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[4]/div[2]/div[1]/div[1]/a[1]</td>
+          <td class="text-cell">LEARN MORE ABOUT MEMBERSHIPS</td>
+          <td class="text-cell">LEARN MORE ABOUT MEMBERSHIPS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">LEARN MORE ABOUT MEMBERSHIPS</td>
+          <td class="text-cell">LEARN MORE ABOUT MEMBERSHIPS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">✅PASSED</td>
+          <td class="text-cell">Expected: https://www.anytimefitness.com/en-au/membership?test=query
+Actual: https://www.anytimefitness.com/en-au/membership</td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;disclaimer&#39;]/div[1]/h2[1]</td>
+          <td class="text-cell">TERMS &amp; CONDITIONS</td>
+          <td class="text-cell">TERMS &amp; CONDITIONS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">TERMS &amp; CONDITIONS</td>
+          <td class="text-cell">TERMS &amp; CONDITIONS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;disclaimer&#39;]/div[1]/p[1]/a[1]</td>
+          <td class="text-cell">website</td>
+          <td class="text-cell">website</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">website</td>
+          <td class="text-cell">website</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">✅PASSED</td>
+          <td class="text-cell">Expected: https://www.anytimefitness.com/en-au/terms-of-use?test=query
+Actual: https://www.anytimefitness.com/en-au/terms-of-use</td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;react-select-2-placeholder&#39;]</td>
+          <td class="text-cell">Search by city &amp; state or postcode</td>
+          <td class="text-cell">Search by city &amp; state or postcode</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search by city &amp; state or postcode</td>
+          <td class="text-cell">Search by city &amp; state or postcode</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-_586cab42-edde-fe34-2367-531cfd1ac675-a07f3c42&#39;]/p[2]</td>
+          <td class="text-cell">Terms, conditions, &amp; restrictions apply.</td>
+          <td class="text-cell">Terms, conditions, &amp; restrictions apply.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Terms, conditions, &amp; restrictions apply.</td>
+          <td class="text-cell">Terms, conditions, &amp; restrictions apply.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-_586cab42-edde-fe34-2367-531cfd1ac675-a07f3c42&#39;]/a[1]</td>
+          <td class="text-cell">See details</td>
+          <td class="text-cell">See details</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">See details</td>
+          <td class="text-cell">See details</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr></tbody>
+        </table>
+      </body>
+      </html>
