@@ -1,0 +1,271 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Validation Report - Schedule an appointment online - en-US</title>
+        <style>
+          body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; color: #333; background-color: #f9fafb; }
+          h1 { color: #1e3a8a; margin-bottom: 14px; }
+          .summary {
+            background: #f1f5f9;
+            border-left: 6px solid #2563eb;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+          }
+          .summary a { color: #2563eb; text-decoration: none; }
+          .summary a:hover { text-decoration: underline; }
+        
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            table-layout: fixed;
+            word-wrap: break-word;
+          }
+          th, td {
+            padding: 6px 8px;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+          }
+          th {
+            background: #1f2937;
+            color: white;
+            position: sticky;
+            top: 0;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+          }
+          tr:nth-child(even) { background: #f9fafb; }
+          tr:hover { background: #eef2ff; }
+        
+          .text-cell {
+            white-space: pre-wrap;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #111827;
+            background-color: #fafafa;
+            border-radius: 6px;
+            padding: 6px 8px;
+          }
+        
+          .highlight-status {
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+          }
+          .status-match {
+            background: #dcfce7;
+            color: #065f46;
+          }
+          .status-mismatch {
+            background: #fee2e2;
+            color: #991b1b;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Schedule an appointment online (en-US)</h1>
+        <div class="summary">
+          <b>Summary:</b><br>
+          Total: 12 |
+          <span style="color:green">Matches: 11</span> |
+          <span style="color:orange">Partial: 0</span> |
+          <span style="color:crimson">Mismatches: 1</span> |
+          Not Found: 0 |
+          Errors: 0<br>
+          <b>URL:</b> <a href="https://www.anytimefitness.com/schedule-an-appointment-online" target="_blank">https://www.anytimefitness.com/schedule-an-appointment-online</a>
+        </div>
+
+        <table>
+          <thead>
+          <tr>
+            <th>Page</th>
+            <th>Iframe</th>
+            <th>XPath</th>
+            <th>Desktop Expected</th>
+            <th>Desktop Actual</th>
+            <th>Desktop Status</th>
+            <th>Mobile Expected</th>
+            <th>Mobile Actual</th>
+            <th>Mobile Status</th>
+            <th>WITHOUT_QUERY_PARAMS</th>
+            <th>WITH_QUERY_PARAMS</th>
+          </tr>
+        </thead>
+          <tbody>
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html/body[1]/div[2]/div[1]</td>
+          <td class="text-cell">Step 2 Class schedule</td>
+          <td class="text-cell">/* Exception for long menu */ @media (min—width: 991px) and (max—width: 1000px) { .base_nav—link { font—size: 15px; } } .navbar—menu {list—style—type: none;} .base_nav—link.tablet.is—current { color: #2ED7DE; } /* Skip Navigation */ .navbar—skip—link:focus { top: 0; /* Hover the Navbar */ } .base_nav—link—wrap{ list—style: none; margin: 0; padding: 0; } document.addEventListener(&#39;DOMContentLoaded&#39;, function () { const trigger = document.querySelector(&quot;#mobMenu&quot;); const closeBtn = document.querySelector(&quot;#closeMobMenu&quot;); const wrapper = document.querySelector(&quot;#mobMenuWrapper&quot;); const sidebar = document.querySelector(&quot;#mobMenuSidebar&quot;); const navbarContainer = wrapper.closest(&#39;[class*=&quot;base_navbar—responsive&quot;]&#39;); const skipLink = document.querySelector(&quot;.navbar—skip—link&quot;); //———FOCUS LOGIC———const getFocusableElements = () =&gt; { return sidebar.querySelectorAll(&#39;a[href], button, input, textarea, select, [tabindex]:not([tabindex=&quot;—1&quot;])&#39;); }; const openMenu = () =&gt; { wrapper.style.display = &quot;flex&quot;; // Block Body Scroll document.body.style.overflow = &quot;hidden&quot;; if (navbarContainer) navbarContainer.style.zIndex = &quot;10000002&quot;; // Above region—selector if (skipLink) { skipLink.style.visibility = &quot;hidden&quot;; skipLink.setAttribute(&quot;aria—hidden&quot;, &quot;true&quot;); } wrapper.setAttribute(&quot;aria—hidden&quot;, &quot;false&quot;); trigger.setAttribute(&quot;aria—expanded&quot;, &quot;true&quot;); setTimeout(() =&gt; { sidebar.style.transform = &quot;translate(0%)&quot;; closeBtn.focus(); }, 300); }; const closeMenu = () =&gt; { sidebar.style.transform = &quot;translate(—100%)&quot;; trigger.setAttribute(&quot;aria—expanded&quot;, &quot;false&quot;); // Re—Enable Body Scroll document.body.style.overflow = &quot;&quot;; if (navbarContainer) navbarContainer.style.zIndex = &quot;&quot;; if (skipLink) { skipLink.style.visibility = &quot;&quot;; skipLink.setAttribute(&quot;aria—hidden&quot;, &quot;false&quot;); } setTimeout(() =&gt; { wrapper.style.display = &quot;none&quot;; wrapper.setAttribute(&quot;aria—hidden&quot;, &quot;true&quot;); trigger.focus(); }, 300); }; //———LISTEN TAB INSIDE MENU (Trap Focus)———wrapper.addEventListener(&#39;keydown&#39;, function(e) { if (e.key !== &#39;Tab&#39;) return; const focusableElements = getFocusableElements(); const firstElement = focusableElements[0]; const lastElement = focusableElements[focusableElements.length—1]; if (e.shiftKey) { if (document.activeElement === firstElement) { e.preventDefault(); lastElement.focus(); } } else { if (document.activeElement === lastElement) { e.preventDefault(); firstElement.focus(); } } }); // Click Events trigger.addEventListener(&quot;click&quot;, openMenu); closeBtn.addEventListener(&quot;click&quot;, closeMenu); // Close when clicking on overlay const overlay = document.querySelector(&quot;.close—sidebar—trigger&quot;); if (overlay) { overlay.addEventListener(&quot;click&quot;, closeMenu); } // Keyboard accessibility (Enter/Space) [trigger, closeBtn].forEach(el =&gt; { el.addEventListener(&quot;keydown&quot;, (e) =&gt; { if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) { e.preventDefault(); el.click(); } }); }); // Close with ESC document.addEventListener(&quot;keydown&quot;, (e) =&gt; { if (e.key === &quot;Escape&quot; &amp;&amp; wrapper.style.display === &quot;flex&quot;) { closeMenu(); } }); //———RESIZE LOGIC———window.addEventListener(&#39;resize&#39;, () =&gt; { if (window.innerWidth &gt;= 992) { // Back to Desktop &gt; Clean scroll just in case wrapper.style.display = &quot;none&quot;; wrapper.setAttribute(&quot;aria—hidden&quot;, &quot;true&quot;); trigger.setAttribute(&quot;aria—expanded&quot;, &quot;false&quot;); sidebar.style.transform = &quot;translate(—100%)&quot;; document.body.style.overflow = &quot;&quot;; } }); });</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Step 2 Class schedule</td>
+          <td class="text-cell">/* Exception for long menu */ @media (min—width: 991px) and (max—width: 1000px) { .base_nav—link { font—size: 15px; } } .navbar—menu {list—style—type: none;} .base_nav—link.tablet.is—current { color: #2ED7DE; } /* Skip Navigation */ .navbar—skip—link:focus { top: 0; /* Hover the Navbar */ } .base_nav—link—wrap{ list—style: none; margin: 0; padding: 0; } document.addEventListener(&#39;DOMContentLoaded&#39;, function () { const trigger = document.querySelector(&quot;#mobMenu&quot;); const closeBtn = document.querySelector(&quot;#closeMobMenu&quot;); const wrapper = document.querySelector(&quot;#mobMenuWrapper&quot;); const sidebar = document.querySelector(&quot;#mobMenuSidebar&quot;); const navbarContainer = wrapper.closest(&#39;[class*=&quot;base_navbar—responsive&quot;]&#39;); const skipLink = document.querySelector(&quot;.navbar—skip—link&quot;); //———FOCUS LOGIC———const getFocusableElements = () =&gt; { return sidebar.querySelectorAll(&#39;a[href], button, input, textarea, select, [tabindex]:not([tabindex=&quot;—1&quot;])&#39;); }; const openMenu = () =&gt; { wrapper.style.display = &quot;flex&quot;; // Block Body Scroll document.body.style.overflow = &quot;hidden&quot;; if (navbarContainer) navbarContainer.style.zIndex = &quot;10000002&quot;; // Above region—selector if (skipLink) { skipLink.style.visibility = &quot;hidden&quot;; skipLink.setAttribute(&quot;aria—hidden&quot;, &quot;true&quot;); } wrapper.setAttribute(&quot;aria—hidden&quot;, &quot;false&quot;); trigger.setAttribute(&quot;aria—expanded&quot;, &quot;true&quot;); setTimeout(() =&gt; { sidebar.style.transform = &quot;translate(0%)&quot;; closeBtn.focus(); }, 300); }; const closeMenu = () =&gt; { sidebar.style.transform = &quot;translate(—100%)&quot;; trigger.setAttribute(&quot;aria—expanded&quot;, &quot;false&quot;); // Re—Enable Body Scroll document.body.style.overflow = &quot;&quot;; if (navbarContainer) navbarContainer.style.zIndex = &quot;&quot;; if (skipLink) { skipLink.style.visibility = &quot;&quot;; skipLink.setAttribute(&quot;aria—hidden&quot;, &quot;false&quot;); } setTimeout(() =&gt; { wrapper.style.display = &quot;none&quot;; wrapper.setAttribute(&quot;aria—hidden&quot;, &quot;true&quot;); trigger.focus(); }, 300); }; //———LISTEN TAB INSIDE MENU (Trap Focus)———wrapper.addEventListener(&#39;keydown&#39;, function(e) { if (e.key !== &#39;Tab&#39;) return; const focusableElements = getFocusableElements(); const firstElement = focusableElements[0]; const lastElement = focusableElements[focusableElements.length—1]; if (e.shiftKey) { if (document.activeElement === firstElement) { e.preventDefault(); lastElement.focus(); } } else { if (document.activeElement === lastElement) { e.preventDefault(); firstElement.focus(); } } }); // Click Events trigger.addEventListener(&quot;click&quot;, openMenu); closeBtn.addEventListener(&quot;click&quot;, closeMenu); // Close when clicking on overlay const overlay = document.querySelector(&quot;.close—sidebar—trigger&quot;); if (overlay) { overlay.addEventListener(&quot;click&quot;, closeMenu); } // Keyboard accessibility (Enter/Space) [trigger, closeBtn].forEach(el =&gt; { el.addEventListener(&quot;keydown&quot;, (e) =&gt; { if (e.key === &quot;Enter&quot; || e.key === &quot; &quot;) { e.preventDefault(); el.click(); } }); }); // Close with ESC document.addEventListener(&quot;keydown&quot;, (e) =&gt; { if (e.key === &quot;Escape&quot; &amp;&amp; wrapper.style.display === &quot;flex&quot;) { closeMenu(); } }); //———RESIZE LOGIC———window.addEventListener(&#39;resize&#39;, () =&gt; { if (window.innerWidth &gt;= 992) { // Back to Desktop &gt; Clean scroll just in case wrapper.style.display = &quot;none&quot;; wrapper.setAttribute(&quot;aria—hidden&quot;, &quot;true&quot;); trigger.setAttribute(&quot;aria—expanded&quot;, &quot;false&quot;); sidebar.style.transform = &quot;translate(—100%)&quot;; document.body.style.overflow = &quot;&quot;; } }); });</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;banner-title&#39;]</td>
+          <td class="text-cell">BOOK A TOUR.</td>
+          <td class="text-cell">BOOK A TOUR.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">BOOK A TOUR.</td>
+          <td class="text-cell">BOOK A TOUR.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html/body[1]/div[2]/section[1]/div[2]/div[1]/p[1]</td>
+          <td class="text-cell">Take your first step on our purple turf. We&#39;ll show you around, tour the equipment, amenities, and everything else you need to get started.</td>
+          <td class="text-cell">Take your first step on our purple turf. We&#39;ll show you around, tour the equipment, amenities, and everything else you need to get started.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Take your first step on our purple turf. We&#39;ll show you around, tour the equipment, amenities, and everything else you need to get started.</td>
+          <td class="text-cell">Take your first step on our purple turf. We&#39;ll show you around, tour the equipment, amenities, and everything else you need to get started.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;find-location-heading&#39;]</td>
+          <td class="text-cell">FIRST, FIND YOUR GYM</td>
+          <td class="text-cell">FIRST, FIND YOUR GYM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIRST, FIND YOUR GYM</td>
+          <td class="text-cell">FIRST, FIND YOUR GYM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html/body[1]/div[2]/div[2]/div[1]/section[1]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;react-select-2-placeholder&#39;]</td>
+          <td class="text-cell">Search by city &amp; state or zip code</td>
+          <td class="text-cell">Search by city &amp; state or zip code</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search by city &amp; state or zip code</td>
+          <td class="text-cell">Search by city &amp; state or zip code</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html/body[1]/div[2]/div[2]/div[1]/section[1]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]</td>
+          <td class="text-cell">Use Current Location</td>
+          <td class="text-cell">Use Current Location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use Current Location</td>
+          <td class="text-cell">Use Current Location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;list-tab&#39;]</td>
+          <td class="text-cell">LIST</td>
+          <td class="text-cell">LIST</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">LIST</td>
+          <td class="text-cell">LIST</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;map-tab&#39;]</td>
+          <td class="text-cell">MAP</td>
+          <td class="text-cell">MAP</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">MAP</td>
+          <td class="text-cell">MAP</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;list-panel&#39;]/div[1]/h2[1]</td>
+          <td class="text-cell">LET&#39;S GET YOU TO THE RIGHT PLACE.</td>
+          <td class="text-cell">LET&#39;S GET YOU TO THE RIGHT PLACE.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">LET&#39;S GET YOU TO THE RIGHT PLACE.</td>
+          <td class="text-cell">LET&#39;S GET YOU TO THE RIGHT PLACE.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;list-panel&#39;]/div[1]/p[1]</td>
+          <td class="text-cell">It looks like you might be located outside of United States. To find a location in United States, search by city or zip code. Or, view all countries.</td>
+          <td class="text-cell">It looks like you might be located outside of United States. To find a location in United States, search by city or zip code. Or, view all countries.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">It looks like you might be located outside of United States. To find a location in United States, search by city or zip code. Or, view all countries.</td>
+          <td class="text-cell">It looks like you might be located outside of United States. To find a location in United States, search by city or zip code. Or, view all countries.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Schedule an appointment online</td>
+          <td>book-a-tour-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;list-panel&#39;]/div[1]/button[1]</td>
+          <td class="text-cell">VIEW ALL COUNTRIES</td>
+          <td class="text-cell">VIEW ALL COUNTRIES</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">VIEW ALL COUNTRIES</td>
+          <td class="text-cell">VIEW ALL COUNTRIES</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr></tbody>
+        </table>
+      </body>
+      </html>
