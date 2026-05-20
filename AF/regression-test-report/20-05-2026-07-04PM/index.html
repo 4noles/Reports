@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Meta vs Schema Comparison - @META-CONTENT-CHECK</title>
+<style>
+  body { font-family: system-ui, Arial; padding: 20px; margin: 0; overflow-x: hidden; }
+  h1, h2 { color: #222; margin: 0 0 10px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    table-layout: fixed;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    font-size: 12px;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;
+  }
+  th {
+    background: #f3f3f3;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  tr:nth-child(even) { background: #fafafa; }
+  a { color: #1a73e8; text-decoration: none; }
+  td a:hover { text-decoration: underline; }
+
+  th:nth-child(1) { width: 12%; }
+  th:nth-child(2) { width: 4%; }
+  th:nth-child(3) { width: 6%; }
+  th:nth-child(4), th:nth-child(5) { width: 10%; }
+  th:nth-child(6) { width: 7%; }
+  th:nth-child(7), th:nth-child(8) { width: 12%; }
+  th:nth-child(9) { width: 7%; }
+  th:nth-child(10), th:nth-child(11) { width: 10%; }
+  th:nth-child(12) { width: 7%; }
+  th:nth-child(13) { width: 4%; }
+
+  .highlight-col {
+    background-color: #e8f4ff !important;
+    font-weight: 600;
+    border-left: 2px solid #2196f3;
+    border-right: 2px solid #2196f3;
+  }
+
+  .summary {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+  }
+  .summary h2 { margin-top: 0; font-size: 16px; }
+  .summary-table {
+    border-collapse: collapse;
+    width: auto;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .summary-table th, .summary-table td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    text-align: center;
+  }
+  .summary-table th { background: #eee; }
+
+  @media print {
+    body { zoom: 0.9; }
+  }
+</style>
+</head>
+<body>
+  <h1>Meta, Description & Headline Comparison Report</h1>
+  <p><strong>Generated:</strong> 20-05-2026-07-04PM</p>
+
+  <div class="summary">
+    <h2>📊 Summary Overview</h2>
+    <table class="summary-table">
+      <tr><th>Metric</th><th>Passed</th><th>Failed</th><th>Total</th></tr>
+      <tr><td><b>Title Match</b></td><td>20</td><td>2</td><td>22</td></tr>
+      <tr><td><b>Description Match</b></td><td>20</td><td>2</td><td>22</td></tr>
+      <tr><td><b>H1 Match</b></td><td>0</td><td>22</td><td>22</td></tr>
+      <tr><td><b>H1 Count (exactly 1)</b></td><td>22</td><td>0</td><td>22</td></tr>
+    </table>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th>Locale</th>
+        <th>inLanguage</th>
+        <th>Actual Title</th>
+        <th>Schema Name</th>
+        <th class="highlight-col">Title Match</th>
+        <th>Actual Description</th>
+        <th>Schema Description</th>
+        <th class="highlight-col">Description Match</th>
+        <th>Schema Headline</th>
+        <th>Actual H1 Text</th>
+        <th class="highlight-col">H1 Match</th>
+        <th>H1 Count</th>
+      </tr>
+    </thead>
+    <tbody><tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/anytime-fitness-uk-and-ireland-welcomes-new-leadership-team" target="_blank">https://www.anytimefitness.com/en-gb/blog/anytime-fitness-uk-and-ireland-welcomes-new-leadership-team</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Anytime Fitness UK and Ireland Welcomes New Leadership Team - Anytime Fitness UK Blog</td>
+        <td >Anytime Fitness UK and Ireland Welcomes New Leadership Team - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >In a major development for the UK fitness and franchising sectors, Justin McDonell and Richard Peil, the entrepreneurs behind the success of Anytime Fitness Australia have acquired a majority shareholding in the Anytime Fitness UK and Ireland Master Franchise.</td>
+        <td >In a major development for the UK fitness and franchising sectors, Justin McDonell and Richard Peil, the entrepreneurs behind the success of Anytime Fitness Australia have acquired a majority shareholding in the Anytime Fitness UK and Ireland Master Franchise.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Anytime Fitness UK and Ireland Welcomes New Leadership Team</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/anytime-fitness-uk-reaches-membership-milestone-with-record-breaking-start-to-2024" target="_blank">https://www.anytimefitness.com/en-gb/blog/anytime-fitness-uk-reaches-membership-milestone-with-record-breaking-start-to-2024</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Anytime Fitness UK reaches membership milestone with record-breaking start to 2024 - Anytime Fitness UK Blog</td>
+        <td >Anytime Fitness UK reaches membership milestone with record-breaking start to 2024 - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Anytime Fitness UK has reached the milestone of 200,000 members and a record 1 million club visits per month in the first quarter of 2024.</td>
+        <td >Anytime Fitness UK has reached the milestone of 200,000 members and a record 1 million club visits per month in the first quarter of 2024.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Anytime Fitness UK reaches membership milestone with record-breaking start to 2024</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/best-breakfasts-for-exercise" target="_blank">https://www.anytimefitness.com/en-gb/blog/best-breakfasts-for-exercise</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Best breakfasts for exercise - Anytime Fitness UK Blog</td>
+        <td >Best breakfasts for exercise - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Fuel your workout with the best pre-exercise breakfasts. Discover nutritious meal ideas to boost your energy, improve performance, and sustain your training.</td>
+        <td >Fuel your workout with the best pre-exercise breakfasts. Discover nutritious meal ideas to boost your energy, improve performance, and sustain your training.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Best breakfasts for exercise</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/carrot-smoothie-recipe" target="_blank">https://www.anytimefitness.com/en-gb/blog/carrot-smoothie-recipe</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Carrot smoothie recipe - Anytime Fitness UK Blog</td>
+        <td >Carrot smoothie recipe - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Boost your vitamins with this delicious carrot smoothie recipe. Learn how to blend fresh carrots, fruits, and spices for a refreshing, nutrient-packed drink.</td>
+        <td >Boost your vitamins with this delicious carrot smoothie recipe. Learn how to blend fresh carrots, fruits, and spices for a refreshing, nutrient-packed drink.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Carrot smoothie recipe</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/chocolate-and-training" target="_blank">https://www.anytimefitness.com/en-gb/blog/chocolate-and-training</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Chocolate, fitness and training - Anytime Fitness UK Blog</td>
+        <td >Chocolate, fitness and training - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >We're taking a look at one of our favourite treats: How chocolate and training impact each other and how chocolate can be included in a balanced diet.</td>
+        <td >We&#39;re taking a look at one of our favourite treats: How chocolate and training impact each other and how chocolate can be included in a balanced diet.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Chocolate and Training</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/circuit-training-plan-womens-free-weights" target="_blank">https://www.anytimefitness.com/en-gb/blog/circuit-training-plan-womens-free-weights</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Circuit training plan: Women's free weights - Anytime Fitness UK Blog</td>
+        <td >Circuit training plan: Women&#39;s free weights - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Maximize your gym time with our women's circuit training plan. Use free weights to boost metabolism, build strength, and get a full-body workout in one session.</td>
+        <td >Maximize your gym time with our women&#39;s circuit training plan. Use free weights to boost metabolism, build strength, and get a full-body workout in one session.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Circuit training plan: Women’s free weights</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/core-strength-workout" target="_blank">https://www.anytimefitness.com/en-gb/blog/core-strength-workout</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Core Strength Workout - Anytime Fitness UK Blog</td>
+        <td >Core Strength Workout - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Build a rock-solid foundation with our core strength workout plan. Improve your stability, posture, and athletic performance with these essential exercises.</td>
+        <td >Build a rock-solid foundation with our core strength workout plan. Improve your stability, posture, and athletic performance with these essential exercises.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Core Strength Workout</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/getting-back-into-your-fitness-routine-after-fasting" target="_blank">https://www.anytimefitness.com/en-gb/blog/getting-back-into-your-fitness-routine-after-fasting</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Getting back into your fitness routine after fasting - Anytime Fitness UK Blog</td>
+        <td >Getting back into your fitness routine after fasting - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Ready to restart your workouts after fasting? Learn how to safely transition back to your fitness routine with expert tips on intensity, hydration, and diet.</td>
+        <td >Ready to restart your workouts after fasting? Learn how to safely transition back to your fitness routine with expert tips on intensity, hydration, and diet.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Getting back into your fitness routine after fasting</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/how-long-to-rest-between-sets" target="_blank">https://www.anytimefitness.com/en-gb/blog/how-long-to-rest-between-sets</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >How long to rest between sets - Anytime Fitness UK Blog</td>
+        <td >How long to rest between sets - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Do you know how long to rest between sets? There is often a good reason why someone is taking a break and texting between sets.</td>
+        <td >Do you know how long to rest between sets? There is often a good reason why someone is taking a break and texting between sets.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• How long to rest between sets</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/how-to-avoid-snacking-at-home" target="_blank">https://www.anytimefitness.com/en-gb/blog/how-to-avoid-snacking-at-home</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >How To Avoid Snacking at Home - Anytime Fitness UK Blog</td>
+        <td >How To Avoid Snacking at Home - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Are you struggling to avoid snacking at home? With more time spent between the same four walls this can be a major obstacle, but there are several things you can do.</td>
+        <td >Are you struggling to avoid snacking at home? With more time spent between the same four walls this can be a major obstacle, but there are several things you can do.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• How To Avoid Snacking at Home</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/how-to-recover-from-doms" target="_blank">https://www.anytimefitness.com/en-gb/blog/how-to-recover-from-doms</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >How to recover from DOMS - Anytime Fitness UK Blog</td>
+        <td >How to recover from DOMS - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Want to know how to recover from DOMS? It’s extremely normal to suffer from delayed onset muscle soreness after trying new exercises.</td>
+        <td >Want to know how to recover from DOMS? It’s extremely normal to suffer from delayed onset muscle soreness after trying new exercises.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• How to recover from DOMS</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/is-it-okay-to-go-to-the-gym-every-day" target="_blank">https://www.anytimefitness.com/en-gb/blog/is-it-okay-to-go-to-the-gym-every-day</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Is it okay to go to the gym every day? - Anytime Fitness UK Blog</td>
+        <td >Is it okay to go to the gym every day? - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Is it okay to go to the gym every day? Seeing someone else doing the same may raise the question or you might find having the same routine every day keeps you from taking accidental breaks.</td>
+        <td >Is it okay to go to the gym every day? Seeing someone else doing the same may raise the question or you might find having the same routine every day keeps you from taking accidental breaks.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Is it okay to go to the gym every day?</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/longevity-myths" target="_blank">https://www.anytimefitness.com/en-gb/blog/longevity-myths</a></td>
+        <td>en-gb</td>
+        <td>-</td>
+        <td style="background-color:#fff3cd;">Page Not Found - Anytime Fitness</td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema Title is not detected on the Organizational Schema</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Both Schema and the Actual Site don't have Description available</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• 404</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/lower-body-workout-plan" target="_blank">https://www.anytimefitness.com/en-gb/blog/lower-body-workout-plan</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Lower body workout plan - Anytime Fitness UK Blog</td>
+        <td >Lower body workout plan - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Ready for leg day? Improve your mobility and power with this effective lower body workout routine, featuring squats, lunges, and expert training tips.</td>
+        <td >Ready for leg day? Improve your mobility and power with this effective lower body workout routine, featuring squats, lunges, and expert training tips.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Lower body workout plan</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/mobility-strength-training" target="_blank">https://www.anytimefitness.com/en-gb/blog/mobility-strength-training</a></td>
+        <td>en-gb</td>
+        <td>-</td>
+        <td style="background-color:#fff3cd;">Page Not Found - Anytime Fitness</td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema Title is not detected on the Organizational Schema</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Both Schema and the Actual Site don't have Description available</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• 404</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/recovering-from-overtraining" target="_blank">https://www.anytimefitness.com/en-gb/blog/recovering-from-overtraining</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >recovering from overtraining - Anytime Fitness UK Blog</td>
+        <td >recovering from overtraining - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Feeling exhausted? Learn the signs of overtraining and discover the best recovery strategies to get your fitness journey back on track safely and effectively.</td>
+        <td >Feeling exhausted? Learn the signs of overtraining and discover the best recovery strategies to get your fitness journey back on track safely and effectively.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Recovering from overtraining</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/should-you-work-out-on-an-empty-stomach" target="_blank">https://www.anytimefitness.com/en-gb/blog/should-you-work-out-on-an-empty-stomach</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Should you work out on an empty stomach?</td>
+        <td >Should you work out on an empty stomach?</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Should you work out on an empty stomach? There are some benefits we can share, and studies to back these up but ultimately it must work for you.</td>
+        <td >Should you work out on an empty stomach? There are some benefits we can share, and studies to back these up but ultimately it must work for you.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Should you work out on an empty stomach?</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/simple-upper-body-workout-plan" target="_blank">https://www.anytimefitness.com/en-gb/blog/simple-upper-body-workout-plan</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Simple upper body workout plan - Anytime Fitness UK Blog</td>
+        <td >Simple upper body workout plan - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Build strength and definition with this simple upper body workout plan. Master key exercises for your chest, back, and shoulders. Start your training today!</td>
+        <td >Build strength and definition with this simple upper body workout plan. Master key exercises for your chest, back, and shoulders. Start your training today!</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Simple upper body workout plan</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/the-importance-of-protein-as-we-get-older" target="_blank">https://www.anytimefitness.com/en-gb/blog/the-importance-of-protein-as-we-get-older</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >The importance of protein as we get older - Anytime Fitness UK Blog</td>
+        <td >The importance of protein as we get older - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Discover why protein is essential as we age. Learn how to maintain muscle mass, support bone health, and find the right daily intake to stay active and strong.</td>
+        <td >Discover why protein is essential as we age. Learn how to maintain muscle mass, support bone health, and find the right daily intake to stay active and strong.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• The importance of protein as we get older</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/what-to-expect-from-your-free-anytime-fitness-gym-pass" target="_blank">https://www.anytimefitness.com/en-gb/blog/what-to-expect-from-your-free-anytime-fitness-gym-pass</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >What to expect from your free Anytime Fitness gym pass - Anytime Fitness UK Blog</td>
+        <td >What to expect from your free Anytime Fitness gym pass - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Ready to start your fitness journey? Get the full scoop on your free gym pass. Learn about our 24/7 access, supportive community, and how to make the most of your trial.</td>
+        <td >Ready to start your fitness journey? Get the full scoop on your free gym pass. Learn about our 24/7 access, supportive community, and how to make the most of your trial.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• What to expect from your free Anytime Fitness gym pass</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/whats-the-best-time-to-visit-the-gym" target="_blank">https://www.anytimefitness.com/en-gb/blog/whats-the-best-time-to-visit-the-gym</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >What's the best time to visit the gym? - Anytime Fitness UK Blog</td>
+        <td >What&#39;s the best time to visit the gym? - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Wondering when is the best time to visit the gym? Explore how to choose your ideal workout window based on equipment availability, sleep quality, and consistency.</td>
+        <td >Wondering when is the best time to visit the gym? Explore how to choose your ideal workout window based on equipment availability, sleep quality, and consistency.</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• What's the best time to visit the gym?</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr>
+<tr>
+        <td><a href="https://www.anytimefitness.com/en-gb/blog/womens-dumbbell-workout-plan" target="_blank">https://www.anytimefitness.com/en-gb/blog/womens-dumbbell-workout-plan</a></td>
+        <td>en-gb</td>
+        <td>en-GB</td>
+        <td >Women's dumbbell workout plan - Anytime Fitness UK Blog</td>
+        <td >Women&#39;s dumbbell workout plan - Anytime Fitness UK Blog</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td >Tone and strengthen your entire body with our women's dumbbell workout plan. Discover the best exercises for all fitness levels and start your journey today!</td>
+        <td >Tone and strengthen your entire body with our women&#39;s dumbbell workout plan. Discover the best exercises for all fitness levels and start your journey today!</td>
+        <td class="highlight-col"><span style="color:#2e7d32;font-weight:bold;">✅ Match</span></td>
+        <td style="background-color:#fff3cd;"><i>Missing</i></td>
+        <td style="background-color:#fff3cd;">• Women’s dumbbell workout plan</td>
+        <td class="highlight-col"><span style="color:#d32f2f;font-weight:bold;">⚠️ Mismatch - Schema H1 Text is not detected on the Organizational Schema</span></td>
+        <td >1</td>
+      </tr></tbody>
+  </table>
+</body>
+</html>
