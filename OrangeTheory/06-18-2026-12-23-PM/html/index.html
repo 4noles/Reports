@@ -1,0 +1,86 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+      <title>Automation Dashboard</title>
+      <style>
+        * { box-sizing: border-box; }
+        body { 
+          font-family: 'Segoe UI', Arial, sans-serif; 
+          padding: 20px; 
+          background: #f8fafc; 
+          color: #333; 
+          width: 100%;
+          max-width: 100vw;
+        }
+        .header-bar { background: linear-gradient(90deg, #1e3a8a, #2563eb); color: white; padding: 16px 22px; border-radius: 8px; font-size: 1.3rem; font-weight: 600; margin-bottom: 20px; word-break: break-word; }
+        
+        .table-wrapper {
+          width: 100%;
+          max-width: 100%;
+          overflow-x: auto;
+          max-height: calc(100vh - 140px);
+          border: 1px solid #e5e7eb;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+          background: white;
+        }
+        th { position: sticky; top: 0; z-index: 2; background: #1f2937; color: white; font-weight: 600; }
+        
+        .table-wrapper::-webkit-scrollbar {
+          height: 12px;
+          width: 12px;
+          display: block !important;
+        }
+        .table-wrapper::-webkit-scrollbar-track {
+          background: #f1f5f9;
+        }
+        .table-wrapper::-webkit-scrollbar-thumb {
+          background-color: #cbd5e1;
+          border-radius: 6px;
+          border: 3px solid #f1f5f9;
+        }
+        table { width: 100%; border-collapse: collapse; min-width: 950px; }
+        th, td { padding: 12px 14px; border: 1px solid #e5e7eb; text-align: left; font-size: 13px; }
+        tr:nth-child(even) { background: #f9fafb; }
+        tr:hover { background: #f0f4f8; }
+        a { color: #2563eb; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+      </style>
+    </head>
+    <body>
+      <div class="header-bar">Project Validation Dashboard: OrangeTheory</div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Page Name</th>
+              <th>Target Sheet</th>
+              <th>Report (Live Link)</th>
+              <th>Total Checked</th>
+              <th>Text Matches</th>
+              <th>Text Mismatches</th>
+              <th>Not Found</th>
+              <th>Expected VS Actual Redirect Status</th>
+            </tr>
+          </thead>
+          <tbody>
+      <tr>
+        <td>Test Standard Studio page</td>
+        <td>Imported Content Logs</td>
+        <td><a href="./Test_Standard_Studio_page_Imported_Content_Logs.html" target="_blank">https://www.sit.orangetheory.com/en-us/locations/online-join-prod-1</a></td>
+        <td>300</td>
+        <td style="color:green; font-weight:600;">0</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>300</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr></tbody>
+        </table>
+      </div>
+    </body>
+    </html>
