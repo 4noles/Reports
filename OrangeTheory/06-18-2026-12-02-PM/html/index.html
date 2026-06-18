@@ -1,0 +1,44 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Automation Dashboard</title>
+      <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 15px; background: #f8fafc; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header-bar { background: linear-gradient(90deg, #1e3a8a, #2563eb); color: white; padding: 14px 18px; border-radius: 8px; font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; text-align: center; }
+        .report-card { background: white; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: transform 0.15s, border-color 0.15s; }
+        .report-card:hover { transform: translateY(-1px); border-color: #cbd5e1; background: #f1f5f9; }
+        .card-summary { display: flex; justify-content: space-between; align-items: center; padding: 14px; gap: 10px; flex-wrap: wrap; }
+        .meta-block { display: flex; flex-direction: column; }
+        .page-title { font-weight: 600; color: #1e3a8a; }
+        .xpath-preview { font-size: 0.8rem; color: #64748b; margin-top: 2px; }
+        .badges-wrapper { display: flex; gap: 6px; }
+        .status-badge { font-size: 0.75rem; font-weight: 600; padding: 4px 8px; border-radius: 6px; }
+        .bg-pass { background: #dcfce7; color: #166534; }
+        .bg-fail { background: #fee2e2; color: #991b1b; }
+        .badge-success { background: #e0f2fe; color: #0369a1; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header-bar">Project Validation Dashboard: OrangeTheory</div>
+        <div class="cards-list">
+      <div class="report-card" onclick="window.open('./Test_Standard_Studio_page_en-US.html', '_blank')">
+        <div class="card-summary">
+          <div class="meta-block">
+            <span class="page-title">Test Standard Studio page</span>
+            <span class="xpath-preview">Target Sheet Tab: en-US</span>
+          </div>
+          <div class="badges-wrapper">
+            <span class="status-badge bg-pass">Pass: 101</span>
+            <span class="status-badge bg-fail">Fail: 0</span>
+            <span class="status-badge badge-success">Redirect Checked: 123</span>
+          </div>
+        </div>
+      </div></div>
+      </div>
+    </body>
+    </html>
