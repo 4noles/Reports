@@ -1,0 +1,2154 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Report - Test Standard Studio page</title>
+        <style>
+          body { font-family: 'Segoe UI', sans-serif; margin: 20px; background-color: #f9fafb; color: #333; }
+          h1 { color: #1e3a8a; }
+          .summary { background: #f1f5f9; border-left: 6px solid #2563eb; padding: 12px; border-radius: 6px; margin-bottom: 15px; }
+          
+          /* 🌟 SCROLL & RESPONSIVE GRID BOX FIXES */
+          .table-container { 
+            width: 100%; 
+            overflow-x: auto; 
+            background: white; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+          }
+          table { width: 100%; border-collapse: collapse; min-width: 1600px; table-layout: fixed; }
+          th, td { padding: 8px 10px; border: 1px solid #e5e7eb; vertical-align: top; font-size: 12px; word-wrap: break-word; }
+          th { background: #1f2937; color: white; position: sticky; top: 0; font-weight: 600; text-align: left; }
+          tr:nth-child(even) { background: #f9fafb; }
+          
+          /* 🌟 STRICT CELL COLUMN WIDTH CONSTRAINTS */
+          th:nth-child(1), td:nth-child(1) { width: 100px; } /* Page */
+          th:nth-child(2), td:nth-child(2) { width: 60px; }  /* Iframe */
+          th:nth-child(3), td:nth-child(3) { width: 180px; } /* XPath */
+          th:nth-child(6), td:nth-child(6),
+          th:nth-child(9), td:nth-child(9),
+          th:nth-child(13), td:nth-child(13) { width: 95px; } /* Status Blocks */
+          th:nth-child(14), td:nth-child(14) { width: 60px; }  /* HTTP Status */
+
+          .text-cell, .url-cell, .xpath-cell { 
+            white-space: pre-wrap; 
+            word-break: break-all; 
+          }
+          .highlight-status { font-weight: 600; text-align: center; }
+          .status-match { background: #dcfce7; color: #065f46; }
+          .status-mismatch { background: #fee2e2; color: #991b1b; }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Test Standard Studio page (en-US)</h1>
+        <div class="summary">
+          <b>Summary Table:</b> Total: 123 | <span style="color:green">Matches: 101</span> | <span style="color:crimson">Mismatches: 0</span>
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Page</th><th>Iframe</th><th>XPath</th>
+                <th>Desktop Expected</th><th>Desktop Actual</th><th>Desktop Status</th>
+                <th>Mobile Expected</th><th>Mobile Actual</th><th>Mobile Status</th>
+                <th>Expected Redirect</th><th>Actual Redirect</th><th>Redirect Full URL</th>
+                <th>Expected VS Actual</th><th>HTTP</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='new-studio-h1']/h1[1]</td>
+          <td class="text-cell">Fitness Studio &amp; Gym in Online Join PROD 1</td>
+          <td class="text-cell">Fitness Studio &amp; Gym in Online Join PROD 1</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Fitness Studio &amp; Gym in Online Join PROD 1</td>
+          <td class="text-cell">Fitness Studio &amp; Gym in Online Join PROD 1</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]</td>
+          <td class="text-cell">6000 Broken Sound Parkway</td>
+          <td class="text-cell">6000 Broken Sound Parkway</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">6000 Broken Sound Parkway</td>
+          <td class="text-cell">6000 Broken Sound Parkway</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">Miami</td>
+          <td class="text-cell">Miami</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Miami</td>
+          <td class="text-cell">Miami</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]</td>
+          <td class="text-cell">,</td>
+          <td class="text-cell">,</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">,</td>
+          <td class="text-cell">,</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]</td>
+          <td class="text-cell">CT</td>
+          <td class="text-cell">CT</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">CT</td>
+          <td class="text-cell">CT</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[4]</td>
+          <td class="text-cell">33487</td>
+          <td class="text-cell">33487</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">33487</td>
+          <td class="text-cell">33487</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/a[1]</td>
+          <td class="text-cell">(561) 237-8933</td>
+          <td class="text-cell">(561) 237-8933</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">(561) 237-8933</td>
+          <td class="text-cell">(561) 237-8933</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">tel:+15612378933</td>
+          <td class="url-cell">tel:+15612378933</td>
+          <td class="url-cell"><a href="tel:+15612378933" target="_blank">tel:+15612378933</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/a[1]/div[1]</td>
+          <td class="text-cell">(561) 237-8933</td>
+          <td class="text-cell">(561) 237-8933</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">(561) 237-8933</td>
+          <td class="text-cell">(561) 237-8933</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/button[1]</td>
+          <td class="text-cell">Text Us</td>
+          <td class="text-cell">Text Us</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Text Us</td>
+          <td class="text-cell">Text Us</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/button[1]/a[1]</td>
+          <td class="text-cell">Text Us</td>
+          <td class="text-cell">Text Us</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Text Us</td>
+          <td class="text-cell">Text Us</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell"><a href="#" target="_blank">#</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='try-class-banner']</td>
+          <td class="text-cell">Try a Class</td>
+          <td class="text-cell">Try a Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try a Class</td>
+          <td class="text-cell">Try a Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">/en-us/book-a-class-1?location_id=8aaa661e-2018-40ba-8e42-7feb9be49292</td>
+          <td class="url-cell">/en-us/book-a-class-1?location_id=8aaa661e-2018-40ba-8e42-7feb9be49292</td>
+          <td class="url-cell"><a href="https://www.sit.orangetheory.com/en-us/book-a-class-1?location_id=8aaa661e-2018-40ba-8e42-7feb9be49292" target="_blank">https://www.sit.orangetheory.com/en-us/book-a-class-1?location_id=8aaa661e-2018-40ba-8e42-7feb9be49292</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='studio_join-now-click']</td>
+          <td class="text-cell">Join Now</td>
+          <td class="text-cell">Join Now</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Join Now</td>
+          <td class="text-cell">Join Now</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell"><a href="#" target="_blank">#</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/h3[1]</td>
+          <td class="text-cell">What's Happening at This Studio</td>
+          <td class="text-cell">What's Happening at This Studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">What's Happening at This Studio</td>
+          <td class="text-cell">What's Happening at This Studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">This Is Your HYROX Studio</td>
+          <td class="text-cell">This Is Your HYROX Studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">This Is Your HYROX Studio</td>
+          <td class="text-cell">This Is Your HYROX Studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">Race-ready programming, right in your neighborhood. Our coaches design every session around the eight HYROX movements so the only surprise on race day is how prepared you feel.</td>
+          <td class="text-cell">Race-ready programming, right in your neighborhood. Our coaches design every session around the eight HYROX movements so the only surprise on race day is how prepared you feel.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Race-ready programming, right in your neighborhood. Our coaches design every session around the eight HYROX movements so the only surprise on race day is how prepared you feel.</td>
+          <td class="text-cell">Race-ready programming, right in your neighborhood. Our coaches design every session around the eight HYROX movements so the only surprise on race day is how prepared you feel.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/a[1]</td>
+          <td class="text-cell">Explore HYROX Training</td>
+          <td class="text-cell">Explore HYROX Training</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Explore HYROX Training</td>
+          <td class="text-cell">Explore HYROX Training</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell"><a href="#" target="_blank">#</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/a[2]</td>
+          <td class="text-cell">See Our HYROX Classes</td>
+          <td class="text-cell">See Our HYROX Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">See Our HYROX Classes</td>
+          <td class="text-cell">See Our HYROX Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell"><a href="#" target="_blank">#</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">A New Way to Get Stronger</td>
+          <td class="text-cell">A New Way to Get Stronger</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">A New Way to Get Stronger</td>
+          <td class="text-cell">A New Way to Get Stronger</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">We've reimagined strength training with cable machines, cushioned benches, and expanded weight selections at every station.</td>
+          <td class="text-cell">We've reimagined strength training with cable machines, cushioned benches, and expanded weight selections at every station.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">We've reimagined strength training with cable machines, cushioned benches, and expanded weight selections at every station.</td>
+          <td class="text-cell">We've reimagined strength training with cable machines, cushioned benches, and expanded weight selections at every station.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/a[1]</td>
+          <td class="text-cell">Explore OTStrong Training</td>
+          <td class="text-cell">Explore OTStrong Training</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Explore OTStrong Training</td>
+          <td class="text-cell">Explore OTStrong Training</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell"><a href="#" target="_blank">#</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/a[2]</td>
+          <td class="text-cell">See Our OTStrong Classes</td>
+          <td class="text-cell">See Our OTStrong Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">See Our OTStrong Classes</td>
+          <td class="text-cell">See Our OTStrong Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell">#</td>
+          <td class="url-cell"><a href="#" target="_blank">#</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='membershipOptions']/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Membership Options</td>
+          <td class="text-cell">Membership Options</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Membership Options</td>
+          <td class="text-cell">Membership Options</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='view-class-pack-text']/div[1]/div[1]</td>
+          <td class="text-cell">View Class Pack Options</td>
+          <td class="text-cell">View Class Pack Options</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">View Class Pack Options</td>
+          <td class="text-cell">View Class Pack Options</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[1]/div[1]/div[1]</td>
+          <td class="text-cell">PREMIER</td>
+          <td class="text-cell">PREMIER</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">PREMIER</td>
+          <td class="text-cell">PREMIER</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">COACH RECOMMENDED</td>
+          <td class="text-cell">COACH RECOMMENDED</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">COACH RECOMMENDED</td>
+          <td class="text-cell">COACH RECOMMENDED</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='12-premier-membership-name']</td>
+          <td class="text-cell">12 Month</td>
+          <td class="text-cell">12 Month</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">12 Month</td>
+          <td class="text-cell">12 Month</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='12-month-savings-text']</td>
+          <td class="text-cell">Save $40/mo</td>
+          <td class="text-cell">Save $40/mo</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Save $40/mo</td>
+          <td class="text-cell">Save $40/mo</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='12-premier-default-price']/div[1]</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='12-month-premier-price']</td>
+          <td class="text-cell">139</td>
+          <td class="text-cell">139</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">139</td>
+          <td class="text-cell">139</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='12-premier-default-price']/div[4]</td>
+          <td class="text-cell">/mo.</td>
+          <td class="text-cell">/mo.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/mo.</td>
+          <td class="text-cell">/mo.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='12-premier-price-per-class']</td>
+          <td class="text-cell">.</td>
+          <td class="text-cell">.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">.</td>
+          <td class="text-cell">.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[1]/div[4]/div[1]/div[14]/div[1]/div[4]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">Lowest guaranteed rate</td>
+          <td class="text-cell">Lowest guaranteed rate</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Lowest guaranteed rate</td>
+          <td class="text-cell">Lowest guaranteed rate</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[1]/div[4]/div[1]/div[14]/div[1]/div[4]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">$500+ in annual savings</td>
+          <td class="text-cell">$500+ in annual savings</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$500+ in annual savings</td>
+          <td class="text-cell">$500+ in annual savings</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[1]/div[4]/div[1]/div[14]/div[1]/div[4]/div[2]/ul[1]/li[3]</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[1]/div[4]/div[1]/div[14]/div[1]/div[4]/div[2]/ul[1]/li[4]</td>
+          <td class="text-cell">30-Day Risk-Free Guarantee†‍</td>
+          <td class="text-cell">30-Day Risk-Free Guarantee†‍</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">30-Day Risk-Free Guarantee†‍</td>
+          <td class="text-cell">30-Day Risk-Free Guarantee†‍</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[1]/div[6]/a[1]</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell"><a href="https://www.sit.orangetheory.com/en-us/purchase/get-started" target="_blank">https://www.sit.orangetheory.com/en-us/purchase/get-started</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='6-premier-membership-name']</td>
+          <td class="text-cell">6 Month</td>
+          <td class="text-cell">6 Month</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">6 Month</td>
+          <td class="text-cell">6 Month</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='6-month-savings-text']</td>
+          <td class="text-cell">Save $20/mo</td>
+          <td class="text-cell">Save $20/mo</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Save $20/mo</td>
+          <td class="text-cell">Save $20/mo</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='6-premier-default-price']/div[1]</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='6-month-premier-price']</td>
+          <td class="text-cell">159</td>
+          <td class="text-cell">159</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">159</td>
+          <td class="text-cell">159</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='6-premier-default-price']/div[3]</td>
+          <td class="text-cell">/mo.</td>
+          <td class="text-cell">/mo.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/mo.</td>
+          <td class="text-cell">/mo.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='6-premier-price-per-class']</td>
+          <td class="text-cell">.</td>
+          <td class="text-cell">.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">.</td>
+          <td class="text-cell">.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[2]/div[4]/div[1]/div[12]/div[1]/div[4]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[2]/div[4]/div[1]/div[12]/div[1]/div[4]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">30-Day Risk-Free Guarantee†</td>
+          <td class="text-cell">30-Day Risk-Free Guarantee†</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">30-Day Risk-Free Guarantee†</td>
+          <td class="text-cell">30-Day Risk-Free Guarantee†</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[2]/div[6]/a[1]</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell"><a href="https://www.sit.orangetheory.com/en-us/purchase/get-started" target="_blank">https://www.sit.orangetheory.com/en-us/purchase/get-started</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-membership-name']</td>
+          <td class="text-cell">Month to Month</td>
+          <td class="text-cell">Month to Month</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Month to Month</td>
+          <td class="text-cell">Month to Month</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">FIRST MONTH, ONLY $99</td>
+          <td class="text-cell">FIRST MONTH, ONLY $99</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIRST MONTH, ONLY $99</td>
+          <td class="text-cell">FIRST MONTH, ONLY $99</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[2]/div[2]/div[3]/div[1]/div[2]</td>
+          <td class="text-cell">99</td>
+          <td class="text-cell">99</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">99</td>
+          <td class="text-cell">99</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[2]/div[2]/div[3]/div[1]/div[4]</td>
+          <td class="text-cell">1ST MO.</td>
+          <td class="text-cell">1ST MO.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">1ST MO.</td>
+          <td class="text-cell">1ST MO.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[2]/div[2]/div[3]/div[2]/div[1]</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[2]/div[2]/div[3]/div[2]/div[2]</td>
+          <td class="text-cell">179</td>
+          <td class="text-cell">179</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">179</td>
+          <td class="text-cell">179</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[2]/div[2]/div[3]/div[2]/div[4]</td>
+          <td class="text-cell">/MO. AFTER</td>
+          <td class="text-cell">/MO. AFTER</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/MO. AFTER</td>
+          <td class="text-cell">/MO. AFTER</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">Join by June 30 and get your first month for $99.⁺⁺ Performance monitor purchase required.</td>
+          <td class="text-cell">Join by June 30 and get your first month for $99.⁺⁺ Performance monitor purchase required.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Join by June 30 and get your first month for $99.⁺⁺ Performance monitor purchase required.</td>
+          <td class="text-cell">Join by June 30 and get your first month for $99.⁺⁺ Performance monitor purchase required.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[4]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="text-cell">Unlimited Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[4]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">Available to new members only§</td>
+          <td class="text-cell">Available to new members only§</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Available to new members only§</td>
+          <td class="text-cell">Available to new members only§</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[5]/a[1]</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell"><a href="https://www.sit.orangetheory.com/en-us/purchase/get-started" target="_blank">https://www.sit.orangetheory.com/en-us/purchase/get-started</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='elite-membership-name']</td>
+          <td class="text-cell">Elite</td>
+          <td class="text-cell">Elite</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Elite</td>
+          <td class="text-cell">Elite</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='elite-default-price']/div[1]</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='elite-default-price']/div[2]</td>
+          <td class="text-cell">119</td>
+          <td class="text-cell">119</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">119</td>
+          <td class="text-cell">119</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='elite-default-price']/div[4]</td>
+          <td class="text-cell">/mo.</td>
+          <td class="text-cell">/mo.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/mo.</td>
+          <td class="text-cell">/mo.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='elite-price-per-class']</td>
+          <td class="text-cell">Price per class $14.88</td>
+          <td class="text-cell">Price per class $14.88</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Price per class $14.88</td>
+          <td class="text-cell">Price per class $14.88</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='default-card-elite']/div[2]/div[3]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[1]</td>
+          <td class="text-cell">8 Classes Monthly (avg. usage of 2x/week)</td>
+          <td class="text-cell">8 Classes Monthly (avg. usage of 2x/week)</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">8 Classes Monthly (avg. usage of 2x/week)</td>
+          <td class="text-cell">8 Classes Monthly (avg. usage of 2x/week)</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='default-card-elite']/div[2]/div[3]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[2]</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='default-card-elite']/div[2]/div[5]/a[1]</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell"><a href="https://www.sit.orangetheory.com/en-us/purchase/get-started" target="_blank">https://www.sit.orangetheory.com/en-us/purchase/get-started</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='basic-membership-name']</td>
+          <td class="text-cell">Basic</td>
+          <td class="text-cell">Basic</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Basic</td>
+          <td class="text-cell">Basic</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='basic-default-price']/div[1]</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">$</td>
+          <td class="text-cell">$</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='basic-default-price']/div[2]</td>
+          <td class="text-cell">79</td>
+          <td class="text-cell">79</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">79</td>
+          <td class="text-cell">79</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='basic-default-price']/div[4]</td>
+          <td class="text-cell">/mo.</td>
+          <td class="text-cell">/mo.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/mo.</td>
+          <td class="text-cell">/mo.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='basic-price-per-class']</td>
+          <td class="text-cell">Price per class $19.75</td>
+          <td class="text-cell">Price per class $19.75</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Price per class $19.75</td>
+          <td class="text-cell">Price per class $19.75</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='default-card-basic']/div[2]/div[3]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[1]</td>
+          <td class="text-cell">4 Classes Monthly (avg. usage of 1x/week)</td>
+          <td class="text-cell">4 Classes Monthly (avg. usage of 1x/week)</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">4 Classes Monthly (avg. usage of 1x/week)</td>
+          <td class="text-cell">4 Classes Monthly (avg. usage of 1x/week)</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='default-card-basic']/div[2]/div[3]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[2]</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="text-cell">Discounted Add-On Classes</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='default-card-basic']/div[2]/div[5]/a[1]</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Purchase</td>
+          <td class="text-cell">Purchase</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell">/en-us/purchase/get-started</td>
+          <td class="url-cell"><a href="https://www.sit.orangetheory.com/en-us/purchase/get-started" target="_blank">https://www.sit.orangetheory.com/en-us/purchase/get-started</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[4]/div[1]/h2[1]</td>
+          <td class="text-cell">Fitness Membership Benefits</td>
+          <td class="text-cell">Fitness Membership Benefits</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Fitness Membership Benefits</td>
+          <td class="text-cell">Fitness Membership Benefits</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[4]/div[1]/p[1]</td>
+          <td class="text-cell">Fitness is personal, which means having flexible membership options that work best for you. Studio staff are ready to help you decide based on how often you want to take classes at Orangetheory. 2-3 classes a week are recommended to maximize results and get the minimal weekly exercise recommended by the American Heart Association. With access to over 1,300 nationwide studios open 364 days a year, Orangetheory is a convenient way to stay on track toward your fitness goals.</td>
+          <td class="text-cell">Fitness is personal, which means having flexible membership options that work best for you. Studio staff are ready to help you decide based on how often you want to take classes at Orangetheory. 2-3 classes a week are recommended to maximize results and get the minimal weekly exercise recommended by the American Heart Association. With access to over 1,300 nationwide studios open 364 days a year, Orangetheory is a convenient way to stay on track toward your fitness goals.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Fitness is personal, which means having flexible membership options that work best for you. Studio staff are ready to help you decide based on how often you want to take classes at Orangetheory. 2-3 classes a week are recommended to maximize results and get the minimal weekly exercise recommended by the American Heart Association. With access to over 1,300 nationwide studios open 364 days a year, Orangetheory is a convenient way to stay on track toward your fitness goals.</td>
+          <td class="text-cell">Fitness is personal, which means having flexible membership options that work best for you. Studio staff are ready to help you decide based on how often you want to take classes at Orangetheory. 2-3 classes a week are recommended to maximize results and get the minimal weekly exercise recommended by the American Heart Association. With access to over 1,300 nationwide studios open 364 days a year, Orangetheory is a convenient way to stay on track toward your fitness goals.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='memberships-benefits']/div[1]/div[1]/div[1]</td>
+          <td class="text-cell">Access to 1,300 Studios Nationwide Privileges‡</td>
+          <td class="text-cell">Access to 1,300 Studios Nationwide Privileges‡</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Access to 1,300 Studios Nationwide Privileges‡</td>
+          <td class="text-cell">Access to 1,300 Studios Nationwide Privileges‡</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='memberships-benefits']/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">Month-to-Month Contract 30-Day Cancellation</td>
+          <td class="text-cell">Month-to-Month Contract 30-Day Cancellation</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Month-to-Month Contract 30-Day Cancellation</td>
+          <td class="text-cell">Month-to-Month Contract 30-Day Cancellation</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='memberships-benefits']/div[1]/div[3]/div[1]</td>
+          <td class="text-cell">Flexible Class Times Open 7 Days Per Week</td>
+          <td class="text-cell">Flexible Class Times Open 7 Days Per Week</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Flexible Class Times Open 7 Days Per Week</td>
+          <td class="text-cell">Flexible Class Times Open 7 Days Per Week</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='memberships-benefits']/div[1]/div[4]/div[1]</td>
+          <td class="text-cell">Mobile App to Book Classes and Track Performance</td>
+          <td class="text-cell">Mobile App to Book Classes and Track Performance</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Mobile App to Book Classes and Track Performance</td>
+          <td class="text-cell">Mobile App to Book Classes and Track Performance</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='memberships-benefits']/div[1]/div[5]/div[1]</td>
+          <td class="text-cell">Freeze Privileges Max 60 Days up to 2x/Year</td>
+          <td class="text-cell">Freeze Privileges Max 60 Days up to 2x/Year</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Freeze Privileges Max 60 Days up to 2x/Year</td>
+          <td class="text-cell">Freeze Privileges Max 60 Days up to 2x/Year</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='memberships-benefits']/div[1]/div[6]/div[1]</td>
+          <td class="text-cell">Flexible Contract Terms</td>
+          <td class="text-cell">Flexible Contract Terms</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Flexible Contract Terms</td>
+          <td class="text-cell">Flexible Contract Terms</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[4]/div[1]/div[3]/div[1]</td>
+          <td class="text-cell">‡Prices and sessions offered at each studio may vary and may require additional payments (i.e., surcharge per visit) at select higher priced locations that are not the member's home studio.</td>
+          <td class="text-cell">‡Prices and sessions offered at each studio may vary and may require additional payments (i.e., surcharge per visit) at select higher priced locations that are not the member's home studio.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">‡Prices and sessions offered at each studio may vary and may require additional payments (i.e., surcharge per visit) at select higher priced locations that are not the member's home studio.</td>
+          <td class="text-cell">‡Prices and sessions offered at each studio may vary and may require additional payments (i.e., surcharge per visit) at select higher priced locations that are not the member's home studio.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Get the most out of your membership with the OTF app.</td>
+          <td class="text-cell">Get the most out of your membership with the OTF app.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get the most out of your membership with the OTF app.</td>
+          <td class="text-cell">Get the most out of your membership with the OTF app.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[1]/ul[1]/li[1]</td>
+          <td class="text-cell">Quick and easy class bookings at any studio</td>
+          <td class="text-cell">Quick and easy class bookings at any studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Quick and easy class bookings at any studio</td>
+          <td class="text-cell">Quick and easy class bookings at any studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[1]/ul[1]/li[2]</td>
+          <td class="text-cell">Find and save your favorite studio locations</td>
+          <td class="text-cell">Find and save your favorite studio locations</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Find and save your favorite studio locations</td>
+          <td class="text-cell">Find and save your favorite studio locations</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[1]/ul[1]/li[3]</td>
+          <td class="text-cell">Track your workout performance over time</td>
+          <td class="text-cell">Track your workout performance over time</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Track your workout performance over time</td>
+          <td class="text-cell">Track your workout performance over time</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[1]/ul[1]/li[4]</td>
+          <td class="text-cell">Track your body composition changes from your InBodyTM scans</td>
+          <td class="text-cell">Track your body composition changes from your InBodyTM scans</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Track your body composition changes from your InBodyTM scans</td>
+          <td class="text-cell">Track your body composition changes from your InBodyTM scans</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[1]/ul[1]/li[5]</td>
+          <td class="text-cell">See your challenge and benchmark results</td>
+          <td class="text-cell">See your challenge and benchmark results</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">See your challenge and benchmark results</td>
+          <td class="text-cell">See your challenge and benchmark results</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[1]/ul[1]/li[6]</td>
+          <td class="text-cell">Track out-of-studio and guided on-demand workouts</td>
+          <td class="text-cell">Track out-of-studio and guided on-demand workouts</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Track out-of-studio and guided on-demand workouts</td>
+          <td class="text-cell">Track out-of-studio and guided on-demand workouts</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[2]/a[1]</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">https://apps.apple.com/us/app/orangetheory-fitness/id1424351827</td>
+          <td class="url-cell">https://apps.apple.com/us/app/orangetheory-fitness/id1424351827</td>
+          <td class="url-cell"><a href="https://apps.apple.com/us/app/orangetheory-fitness/id1424351827" target="_blank">https://apps.apple.com/us/app/orangetheory-fitness/id1424351827</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[2]/a[1]/div[1]</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[2]/a[2]</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=en_US</td>
+          <td class="url-cell">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=en_US</td>
+          <td class="url-cell"><a href="https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=en_US" target="_blank">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=en_US</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[2]/a[2]/div[1]</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[6]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Frequently Asked Questions</td>
+          <td class="text-cell">Frequently Asked Questions</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Frequently Asked Questions</td>
+          <td class="text-cell">Frequently Asked Questions</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='8AqxqSGImAQpWE-l5-aDy']/div[1]</td>
+          <td class="text-cell">What makes Orangetheory different from a regular gym in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">What makes Orangetheory different from a regular gym in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='yNarLiYlVRnDfNjqM5p6l']/div[1]</td>
+          <td class="text-cell">Does Orangetheory in Online Join PROD 1 offer workout classes for all fitness levels?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Does Orangetheory in Online Join PROD 1 offer workout classes for all fitness levels?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='LW8bJ5YZpztxgoDeo7ikr']/div[1]</td>
+          <td class="text-cell">What kind of workout classes does Orangetheory offer?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">What kind of workout classes does Orangetheory offer?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='cNRtCN2WsQxxsR62r7pDg']/div[1]</td>
+          <td class="text-cell">Is Orangetheory a HIIT workout?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Is Orangetheory a HIIT workout?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='ZqaoDEVoX-6xwEiWjpxBG']/div[1]</td>
+          <td class="text-cell">Is Orangetheory a good gym for beginners?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Is Orangetheory a good gym for beginners?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='WKEuiNwVTeTVqDjreB_2K']/div[1]</td>
+          <td class="text-cell">Can Orangetheory help with weight loss and strength training?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Can Orangetheory help with weight loss and strength training?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='x-XyKK45FFC13rfW4t_ty']/div[1]</td>
+          <td class="text-cell">Can Orangetheory help improve cardio fitness?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Can Orangetheory help improve cardio fitness?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='6qApXMXISmdlEGgtsJwoV']/div[1]</td>
+          <td class="text-cell">How does heart-rate-based training work at Orangetheory?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">How does heart-rate-based training work at Orangetheory?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='mM50Vbb5oxYfS29ZkN8Yb']/div[1]</td>
+          <td class="text-cell">Does Orangetheory offer flexible class times in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Does Orangetheory offer flexible class times in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='U6wM7nCURSCQ6DZpbqimU']/div[1]</td>
+          <td class="text-cell">How much does an Orangetheory membership cost in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">How much does an Orangetheory membership cost in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='K6O-SIlrmu2EL4BKHFZEx']/div[1]</td>
+          <td class="text-cell">Can Orangetheory help me stay motivated and accountable?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Can Orangetheory help me stay motivated and accountable?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[3]/h2[1]</td>
+          <td class="text-cell">Get more out of your membership with our OTconnect Beat™ performance monitor.</td>
+          <td class="text-cell">Get more out of your membership with our OTconnect Beat™ performance monitor.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get more out of your membership with our OTconnect Beat™ performance monitor.</td>
+          <td class="text-cell">Get more out of your membership with our OTconnect Beat™ performance monitor.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[3]/div[1]/ul[1]/li[1]</td>
+          <td class="text-cell">Less guesswork, more results. Your monitor gauges your level of effort in real-time, showing you when to push and when to pull back to get the most from every workout.</td>
+          <td class="text-cell">Less guesswork, more results. Your monitor gauges your level of effort in real-time, showing you when to push and when to pull back to get the most from every workout.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Less guesswork, more results. Your monitor gauges your level of effort in real-time, showing you when to push and when to pull back to get the most from every workout.</td>
+          <td class="text-cell">Less guesswork, more results. Your monitor gauges your level of effort in real-time, showing you when to push and when to pull back to get the most from every workout.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[3]/div[1]/ul[1]/li[2]</td>
+          <td class="text-cell">Heart rate zones that transform with you. Using data from each workout, your monitor adjusts your zones as you improve, so your workouts stay personalized and effective.</td>
+          <td class="text-cell">Heart rate zones that transform with you. Using data from each workout, your monitor adjusts your zones as you improve, so your workouts stay personalized and effective.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Heart rate zones that transform with you. Using data from each workout, your monitor adjusts your zones as you improve, so your workouts stay personalized and effective.</td>
+          <td class="text-cell">Heart rate zones that transform with you. Using data from each workout, your monitor adjusts your zones as you improve, so your workouts stay personalized and effective.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[3]/div[1]/ul[1]/li[3]</td>
+          <td class="text-cell">Progress you can measure. Your performance monitor stores a detailed performance summary after every class in your mobile app, making it easy to track your progress and share results.</td>
+          <td class="text-cell">Progress you can measure. Your performance monitor stores a detailed performance summary after every class in your mobile app, making it easy to track your progress and share results.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Progress you can measure. Your performance monitor stores a detailed performance summary after every class in your mobile app, making it easy to track your progress and share results.</td>
+          <td class="text-cell">Progress you can measure. Your performance monitor stores a detailed performance summary after every class in your mobile app, making it easy to track your progress and share results.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[3]/div[1]/ul[1]/li[4]</td>
+          <td class="text-cell">Ready when you are. You can get your monitor right from your studio so you can start maximizing your results from your very first class.</td>
+          <td class="text-cell">Ready when you are. You can get your monitor right from your studio so you can start maximizing your results from your very first class.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Ready when you are. You can get your monitor right from your studio so you can start maximizing your results from your very first class.</td>
+          <td class="text-cell">Ready when you are. You can get your monitor right from your studio so you can start maximizing your results from your very first class.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='premier-products-wrapper']/div[2]/div[3]/div[3]/div[1]/div[6]/div[1]/div[3]</td>
+          <td class="text-cell">.</td>
+          <td class="text-cell">.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">.</td>
+          <td class="text-cell">.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='K3HFHZTPCafRTCcvn0ShG']/div[1]</td>
+          <td class="text-cell">What makes Orangetheory different from a regular gym in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">What makes Orangetheory different from a regular gym in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='zVDqEN2GdVTkjO0RHSY0L']/div[1]</td>
+          <td class="text-cell">Does Orangetheory in Online Join PROD 1 offer workout classes for all fitness levels?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Does Orangetheory in Online Join PROD 1 offer workout classes for all fitness levels?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='29I2mY3OBvQ_v2lckSw3P']/div[1]</td>
+          <td class="text-cell">What kind of workout classes does Orangetheory offer?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">What kind of workout classes does Orangetheory offer?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='4rl1jqDIDNHOFDZC03hRm']/div[1]</td>
+          <td class="text-cell">Is Orangetheory a HIIT workout?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Is Orangetheory a HIIT workout?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='Uv91x3ySdrMq2guSyrlb8']/div[1]</td>
+          <td class="text-cell">Is Orangetheory a good gym for beginners?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Is Orangetheory a good gym for beginners?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='ZLOEDFHwo6V-rjBKjVFRu']/div[1]</td>
+          <td class="text-cell">Can Orangetheory help with weight loss and strength training?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Can Orangetheory help with weight loss and strength training?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='sb7pTID22hPb2UYDBhup4']/div[1]</td>
+          <td class="text-cell">Can Orangetheory help improve cardio fitness?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Can Orangetheory help improve cardio fitness?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='1TmsbtfKcCEzVWhK-J5p9']/div[1]</td>
+          <td class="text-cell">How does heart-rate-based training work at Orangetheory?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">How does heart-rate-based training work at Orangetheory?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='hL2kgqAs1XJ-KNPJYBelJ']/div[1]</td>
+          <td class="text-cell">Does Orangetheory offer flexible class times in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Does Orangetheory offer flexible class times in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='yZ0J5qIKrAjNLUstFIkhF']/div[1]</td>
+          <td class="text-cell">How much does an Orangetheory membership cost in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">How much does an Orangetheory membership cost in Online Join PROD 1?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Test Standard Studio page</td>
+          <td></td>
+          <td class="xpath-cell">//*[@id='fL85eiUvHtBM_F6ruZo82']/div[1]</td>
+          <td class="text-cell">Can Orangetheory help me stay motivated and accountable?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Can Orangetheory help me stay motivated and accountable?</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="url-cell"></td>
+          <td class="url-cell"></td>
+          <td class="url-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr></tbody>
+          </table>
+        </div>
+      </body>
+      </html>
