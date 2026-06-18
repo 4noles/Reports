@@ -1,0 +1,71 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "geolocation;configure-ip-geolocation-proxy-for-us-ca",
+        "keyword": "Scenario Outline",
+        "line": 3,
+        "name": "Configure IP geolocation proxy for US-CA",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Change IP geolocation to US-CA",
+            "match": {
+              "location": "features\\step-definitions\\geo-proxy-config.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "IP geolocation should match US-CA",
+            "match": {
+              "location": "features\\step-definitions\\geo-proxy-config.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3062000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@IP_US-CA",
+            "line": 27
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "geolocation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Geolocation",
+    "tags": [],
+    "uri": "features\\regression-features\\geolocation.feature"
+  }
+]

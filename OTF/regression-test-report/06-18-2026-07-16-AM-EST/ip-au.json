@@ -1,0 +1,71 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "geolocation;configure-ip-geolocation-proxy-for-au",
+        "keyword": "Scenario Outline",
+        "line": 3,
+        "name": "Configure IP geolocation proxy for AU",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Change IP geolocation to AU",
+            "match": {
+              "location": "features\\step-definitions\\geo-proxy-config.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "IP geolocation should match AU",
+            "match": {
+              "location": "features\\step-definitions\\geo-proxy-config.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3103000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@IP_AU",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "geolocation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Geolocation",
+    "tags": [],
+    "uri": "features\\regression-features\\geolocation.feature"
+  }
+]

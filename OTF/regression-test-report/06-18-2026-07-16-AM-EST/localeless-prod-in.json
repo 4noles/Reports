@@ -1,0 +1,111 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "localeless-request-redirect;localeless-request-redirect-in-home-using-in-ip-geolocation-on-prod---with-query-params",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Localeless request Redirect in Home using IN IP geolocation on PROD - With Query Params",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1984000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user verify localeless redirect in Home PROD - en-in and With Query Params",
+            "match": {
+              "location": "features\\step-definitions\\locale-less-redirect.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24912000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PROD_CONSOLIDATED",
+            "line": 140
+          },
+          {
+            "name": "@IN",
+            "line": 140
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "localeless-request-redirect;localeless-request-redirect-in-locations-using-in-ip-geolocation-on-prod---without-query-params",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Localeless request Redirect in Locations using IN IP geolocation on PROD - Without Query Params",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1748000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user verify localeless redirect in Locations PROD - en-in and Without Query Params",
+            "match": {
+              "location": "features\\step-definitions\\locale-less-redirect.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35162000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PROD_CONSOLIDATED",
+            "line": 140
+          },
+          {
+            "name": "@IN",
+            "line": 140
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "localeless-request-redirect",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Localeless Request Redirect",
+    "tags": [],
+    "uri": "features\\regression-features\\locale-less-redirect.feature"
+  }
+]
