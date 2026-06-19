@@ -1,0 +1,615 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Report - Home Page</title>
+        <style>
+          * { box-sizing: border-box; }
+          body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 15px 15px 20px 15px; 
+            background-color: #f9fafb; 
+            color: #333; 
+            width: 100%;
+            max-width: 100vw;
+          }
+          h1 { color: #1e3a8a; font-size: 1.5rem; word-break: break-word; }
+          .summary { background: #f1f5f9; border-left: 6px solid #2563eb; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-size: 0.9rem; }
+          
+          /* 🌟 FLOATING STICKY SCROLL CONTAINER IMPLEMENTATION */
+          .table-wrapper { 
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto; 
+            max-height: calc(100vh - 180px); /* 🌟 Locks table vertical viewport boundaries */
+            border: 1px solid #e5e7eb; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            background: white;
+            position: relative;
+          }
+
+          /* 🌟 Pins the Table Headers to the top as you vertical scroll */
+          th { 
+            background: #1f2937; 
+            color: white; 
+            position: sticky; 
+            top: 0; 
+            z-index: 2;
+            text-align: left; 
+          }
+          
+          /* 🌟 CUSTOM PERMANENT SCROLLBAR STYLE FOR THE VIEWPORT BASE */
+          .table-wrapper::-webkit-scrollbar {
+            height: 14px;
+            width: 14px;
+            display: block !important;
+          }
+          .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f5f9;
+          }
+          .table-wrapper::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 7px;
+            border: 3px solid #f1f5f9;
+          }
+          .table-wrapper::-webkit-scrollbar-thumb:hover {
+            background-color: #94a3b8;
+          }
+          
+          /* Fix layout corners inside sticky contexts */
+          .table-wrapper::-webkit-scrollbar-corner {
+            background: #f1f5f9;
+          }
+
+          table { width: 100%; border-collapse: collapse; min-width: 1750px; table-layout: fixed; }
+          th, td { padding: 8px 10px; border: 1px solid #e5e7eb; vertical-align: top; font-size: 12px; }
+          tr:nth-child(even) { background: #f9fafb; }
+          
+          th:nth-child(1), td:nth-child(1) { width: 110px; }
+          th:nth-child(2), td:nth-child(2) { width: 60px; }
+          th:nth-child(3), td:nth-child(3) { width: 220px; } 
+          th:nth-child(6), td:nth-child(6), 
+          th:nth-child(9), td:nth-child(9) { width: 100px; } 
+          th:nth-child(14), td:nth-child(14) { width: 65px; }
+
+          .text-cell { white-space: pre-wrap; word-break: break-word; }
+          .wrap-cell { white-space: pre-wrap; word-break: break-all; font-size: 11px; }
+          .highlight-status { font-weight: 600; text-align: center; }
+          .status-match { background: #dcfce7; color: #065f46; }
+          .status-mismatch { background: #fee2e2; color: #991b1b; }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Home Page (ja-JP)</h1>
+        <div class="summary">
+          <b>Summary Table:</b> Total: 30 | <span style="color:green">Matches: 30</span> | <span style="color:crimson">Mismatches: 0</span>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Page</th><th>Iframe</th><th>XPath</th>
+                <th>Desktop Expected</th><th>Desktop Actual</th><th>Desktop Status</th>
+                <th>Mobile Expected</th><th>Mobile Actual</th><th>Mobile Status</th>
+                <th>Expected Redirect</th><th>Actual Redirect</th><th>Redirect Full URL</th>
+                <th>Expected VS Actual</th><th>HTTP</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='main-content']</td>
+          <td class="text-cell">脂肪燃焼。 筋力増強。</td>
+          <td class="text-cell">脂肪燃焼。 筋力増強。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">脂肪燃焼。 筋力増強。</td>
+          <td class="text-cell">脂肪燃焼。 筋力増強。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[3]/main[1]/section[2]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">成果に繋がるワークアウト。</td>
+          <td class="text-cell">成果に繋がるワークアウト。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">成果に繋がるワークアウト。</td>
+          <td class="text-cell">成果に繋がるワークアウト。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[3]/main[1]/section[2]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">オレンジセオリーは、全身の筋力トレーニングと心拍数を上げる有酸素運動を組み合わせ、筋力を強化し、長期的な健康の土台を築くサポートをします。 数週間以内に、ほとんどのメンバーが変化（より多くのエネルギー、より良い気分、そして確かな成果）を実感します。 平均して、メンバーは8.6%の体脂肪を減らし、わずか8週間、18クラスから2.6%の筋肉量を増加させます。成果に繋がるワークアウト。</td>
+          <td class="text-cell">オレンジセオリーは、全身の筋力トレーニングと心拍数を上げる有酸素運動を組み合わせ、筋力を強化し、長期的な健康の土台を築くサポートをします。 数週間以内に、ほとんどのメンバーが変化（より多くのエネルギー、より良い気分、そして確かな成果）を実感します。 平均して、メンバーは8.6%の体脂肪を減らし、わずか8週間、18クラスから2.6%の筋肉量を増加させます。成果に繋がるワークアウト。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">オレンジセオリーは、全身の筋力トレーニングと心拍数を上げる有酸素運動を組み合わせ、筋力を強化し、長期的な健康の土台を築くサポートをします。 数週間以内に、ほとんどのメンバーが変化（より多くのエネルギー、より良い気分、そして確かな成果）を実感します。 平均して、メンバーは8.6%の体脂肪を減らし、わずか8週間、18クラスから2.6%の筋肉量を増加させます。成果に繋がるワークアウト。</td>
+          <td class="text-cell">オレンジセオリーは、全身の筋力トレーニングと心拍数を上げる有酸素運動を組み合わせ、筋力を強化し、長期的な健康の土台を築くサポートをします。 数週間以内に、ほとんどのメンバーが変化（より多くのエネルギー、より良い気分、そして確かな成果）を実感します。 平均して、メンバーは8.6%の体脂肪を減らし、わずか8週間、18クラスから2.6%の筋肉量を増加させます。成果に繋がるワークアウト。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[3]/main[1]/section[3]/div[1]/div[3]/div[1]/h2[1]</td>
+          <td class="text-cell">よりパーソナライズ。 自分のペースで。</td>
+          <td class="text-cell">よりパーソナライズ。 自分のペースで。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">よりパーソナライズ。 自分のペースで。</td>
+          <td class="text-cell">よりパーソナライズ。 自分のペースで。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[3]/main[1]/section[3]/div[1]/div[3]/div[1]/p[1]</td>
+          <td class="text-cell">始めるために体を整える必要はありません。 ただスタジオに来るだけで大丈夫—私たちがサポートします。 専門的なコーチングとOTconnect™テクノロジーにより、すべてのワークアウトはあなたのフィットネスレベルと目標に合わせて調整されます。 あなたが徐々に慣れていく時も、頑張りすぎる時も、私たちはプレッシャーをかけるのではなく、励ましとサポートであなたに寄り添います。 前に進む一歩一歩が、昨日よりも強い体とマインドセットを作ります。</td>
+          <td class="text-cell">始めるために体を整える必要はありません。 ただスタジオに来るだけで大丈夫—私たちがサポートします。 専門的なコーチングとOTconnect™テクノロジーにより、すべてのワークアウトはあなたのフィットネスレベルと目標に合わせて調整されます。 あなたが徐々に慣れていく時も、頑張りすぎる時も、私たちはプレッシャーをかけるのではなく、励ましとサポートであなたに寄り添います。 前に進む一歩一歩が、昨日よりも強い体とマインドセットを作ります。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">始めるために体を整える必要はありません。 ただスタジオに来るだけで大丈夫—私たちがサポートします。 専門的なコーチングとOTconnect™テクノロジーにより、すべてのワークアウトはあなたのフィットネスレベルと目標に合わせて調整されます。 あなたが徐々に慣れていく時も、頑張りすぎる時も、私たちはプレッシャーをかけるのではなく、励ましとサポートであなたに寄り添います。 前に進む一歩一歩が、昨日よりも強い体とマインドセットを作ります。</td>
+          <td class="text-cell">始めるために体を整える必要はありません。 ただスタジオに来るだけで大丈夫—私たちがサポートします。 専門的なコーチングとOTconnect™テクノロジーにより、すべてのワークアウトはあなたのフィットネスレベルと目標に合わせて調整されます。 あなたが徐々に慣れていく時も、頑張りすぎる時も、私たちはプレッシャーをかけるのではなく、励ましとサポートであなたに寄り添います。 前に進む一歩一歩が、昨日よりも強い体とマインドセットを作ります。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[3]/main[1]/section[3]/div[1]/div[3]/a[1]</td>
+          <td class="text-cell">ワークアウトについてもっと知る</td>
+          <td class="text-cell">ワークアウトについてもっと知る</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">ワークアウトについてもっと知る</td>
+          <td class="text-cell">ワークアウトについてもっと知る</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/ja-jp/workout</td>
+          <td class="text-cell">/ja-jp/workout</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/ja-jp/workout" target="_blank">https://www.uat.orangetheory.com/ja-jp/workout</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[3]/main[1]/section[4]/h2[1]</td>
+          <td class="text-cell">みんなにフィットするワークアウト。</td>
+          <td class="text-cell">みんなにフィットするワークアウト。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">みんなにフィットするワークアウト。</td>
+          <td class="text-cell">みんなにフィットするワークアウト。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">OTFは日々のルーティンの中で私を支え続けてくれました。 自分自身のために下した最高の決断のひとつです。</td>
+          <td class="text-cell">OTFは日々のルーティンの中で私を支え続けてくれました。 自分自身のために下した最高の決断のひとつです。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTFは日々のルーティンの中で私を支え続けてくれました。 自分自身のために下した最高の決断のひとつです。</td>
+          <td class="text-cell">OTFは日々のルーティンの中で私を支え続けてくれました。 自分自身のために下した最高の決断のひとつです。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">Brad G</td>
+          <td class="text-cell">Brad G</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Brad G</td>
+          <td class="text-cell">Brad G</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[1]/div[2]/div[2]</td>
+          <td class="text-cell">OTF ミッドランド</td>
+          <td class="text-cell">OTF ミッドランド</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTF ミッドランド</td>
+          <td class="text-cell">OTF ミッドランド</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[2]/div[1]/p[1]</td>
+          <td class="text-cell">コーチたちのサポートのおかげで、萎縮することなく前向きに取り組めています。OTconnectパフォーマンスモニターのおかげで、自分のペースで、自分に合ったワークアウトができています。</td>
+          <td class="text-cell">コーチたちのサポートのおかげで、萎縮することなく前向きに取り組めています。OTconnectパフォーマンスモニターのおかげで、自分のペースで、自分に合ったワークアウトができています。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">コーチたちのサポートのおかげで、萎縮することなく前向きに取り組めています。OTconnectパフォーマンスモニターのおかげで、自分のペースで、自分に合ったワークアウトができています。</td>
+          <td class="text-cell">コーチたちのサポートのおかげで、萎縮することなく前向きに取り組めています。OTconnectパフォーマンスモニターのおかげで、自分のペースで、自分に合ったワークアウトができています。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[2]/div[2]/div[1]</td>
+          <td class="text-cell">Nicole P</td>
+          <td class="text-cell">Nicole P</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Nicole P</td>
+          <td class="text-cell">Nicole P</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[2]/div[2]/div[2]</td>
+          <td class="text-cell">OTFウォーターフォード</td>
+          <td class="text-cell">OTFウォーターフォード</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTFウォーターフォード</td>
+          <td class="text-cell">OTFウォーターフォード</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[3]/div[1]/p[1]</td>
+          <td class="text-cell">最初の目標は、運動習慣を身につけてエネルギーレベルを高めることでした。 その過程で、9kg以上の減量に成功し、引き締まった筋肉を手に入れ、これまで以上に強くなったと実感しています。</td>
+          <td class="text-cell">最初の目標は、運動習慣を身につけてエネルギーレベルを高めることでした。 その過程で、9kg以上の減量に成功し、引き締まった筋肉を手に入れ、これまで以上に強くなったと実感しています。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">最初の目標は、運動習慣を身につけてエネルギーレベルを高めることでした。 その過程で、9kg以上の減量に成功し、引き締まった筋肉を手に入れ、これまで以上に強くなったと実感しています。</td>
+          <td class="text-cell">最初の目標は、運動習慣を身につけてエネルギーレベルを高めることでした。 その過程で、9kg以上の減量に成功し、引き締まった筋肉を手に入れ、これまで以上に強くなったと実感しています。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[3]/div[2]/div[1]</td>
+          <td class="text-cell">Max D</td>
+          <td class="text-cell">Max D</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Max D</td>
+          <td class="text-cell">Max D</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[3]/div[2]/div[2]</td>
+          <td class="text-cell">OTFロイヤルパームビーチ</td>
+          <td class="text-cell">OTFロイヤルパームビーチ</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTFロイヤルパームビーチ</td>
+          <td class="text-cell">OTFロイヤルパームビーチ</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[3]/main[1]/section[5]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">あなたのフィットネスの旅を今日開始します。</td>
+          <td class="text-cell">あなたのフィットネスの旅を今日開始します。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">あなたのフィットネスの旅を今日開始します。</td>
+          <td class="text-cell">あなたのフィットネスの旅を今日開始します。</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[3]/main[1]/section[5]/div[1]/div[1]/a[1]</td>
+          <td class="text-cell">スタジオを検索</td>
+          <td class="text-cell">スタジオを検索</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">スタジオを検索</td>
+          <td class="text-cell">スタジオを検索</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/ja-jp/locations</td>
+          <td class="text-cell">/ja-jp/locations</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/ja-jp/locations" target="_blank">https://www.uat.orangetheory.com/ja-jp/locations</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">市名を入力して「検索」をクリックしてください</td>
+          <td class="text-cell">市名を入力して「検索」をクリックしてください</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">市名を入力して「検索」をクリックしてください</td>
+          <td class="text-cell">市名を入力して「検索」をクリックしてください</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='react-select-3-placeholder']</td>
+          <td class="text-cell">現在地情報</td>
+          <td class="text-cell">現在地情報</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">現在地情報</td>
+          <td class="text-cell">現在地情報</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/button[1]</td>
+          <td class="text-cell">検索</td>
+          <td class="text-cell">検索</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">検索</td>
+          <td class="text-cell">検索</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[1]/div[1]/div[3]/button[1]</td>
+          <td class="text-cell">現在の場所を使用</td>
+          <td class="text-cell">現在の場所を使用</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">現在の場所を使用</td>
+          <td class="text-cell">現在の場所を使用</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='search-results-heading']</td>
+          <td class="text-cell">最も近いスタジオ</td>
+          <td class="text-cell">最も近いスタジオ</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">最も近いスタジオ</td>
+          <td class="text-cell">最も近いスタジオ</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='location-name-65523dab-b323-4990-a5d6-0adfb41fa5ea']</td>
+          <td class="text-cell">青葉台</td>
+          <td class="text-cell">青葉台</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">青葉台</td>
+          <td class="text-cell">青葉台</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='location-card-65523dab-b323-4990-a5d6-0adfb41fa5ea']/p[1]</td>
+          <td class="text-cell">〒227-0062 神奈川県横浜市青葉区青葉台2-8-20 パルテ青葉台2F</td>
+          <td class="text-cell">〒227-0062 神奈川県横浜市青葉区青葉台2-8-20 パルテ青葉台2F</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">〒227-0062 神奈川県横浜市青葉区青葉台2-8-20 パルテ青葉台2F</td>
+          <td class="text-cell">〒227-0062 神奈川県横浜市青葉区青葉台2-8-20 パルテ青葉台2F</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='location-card-65523dab-b323-4990-a5d6-0adfb41fa5ea']/div[2]/button[1]</td>
+          <td class="text-cell">0459882262</td>
+          <td class="text-cell">0459882262</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">0459882262</td>
+          <td class="text-cell">0459882262</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='location-card-65523dab-b323-4990-a5d6-0adfb41fa5ea']/div[3]/div[1]</td>
+          <td class="text-cell">初回体験無料*</td>
+          <td class="text-cell">初回体験無料*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">初回体験無料*</td>
+          <td class="text-cell">初回体験無料*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='location-card-65523dab-b323-4990-a5d6-0adfb41fa5ea']/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">今すぐ無料体験</td>
+          <td class="text-cell">今すぐ無料体験</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">今すぐ無料体験</td>
+          <td class="text-cell">今すぐ無料体験</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[2]/div[1]/button[1]</td>
+          <td class="text-cell">近くのすべての場所を表示</td>
+          <td class="text-cell">近くのすべての場所を表示</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">近くのすべての場所を表示</td>
+          <td class="text-cell">近くのすべての場所を表示</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Home Page</td>
+          <td>home-banner-iframe</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[2]/div[2]/a[1]</td>
+          <td class="text-cell">アプリをダウンロード</td>
+          <td class="text-cell">アプリをダウンロード</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">アプリをダウンロード</td>
+          <td class="text-cell">アプリをダウンロード</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=ja_JP</td>
+          <td class="text-cell">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=ja_JP</td>
+          <td class="wrap-cell"><a href="https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=ja_JP" target="_blank">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=ja_JP</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr></tbody>
+          </table>
+        </div>
+      </body>
+      </html>
