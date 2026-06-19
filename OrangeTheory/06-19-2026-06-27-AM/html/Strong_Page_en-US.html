@@ -1,0 +1,785 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Report - Strong Page</title>
+        <style>
+          * { box-sizing: border-box; }
+          body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 15px 15px 20px 15px; 
+            background-color: #f9fafb; 
+            color: #333; 
+            width: 100%;
+            max-width: 100vw;
+          }
+          h1 { color: #1e3a8a; font-size: 1.5rem; word-break: break-word; }
+          .summary { background: #f1f5f9; border-left: 6px solid #2563eb; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-size: 0.9rem; }
+          
+          /* 🌟 FLOATING STICKY SCROLL CONTAINER IMPLEMENTATION */
+          .table-wrapper { 
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto; 
+            max-height: calc(100vh - 180px); /* 🌟 Locks table vertical viewport boundaries */
+            border: 1px solid #e5e7eb; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            background: white;
+            position: relative;
+          }
+
+          /* 🌟 Pins the Table Headers to the top as you vertical scroll */
+          th { 
+            background: #1f2937; 
+            color: white; 
+            position: sticky; 
+            top: 0; 
+            z-index: 2;
+            text-align: left; 
+          }
+          
+          /* 🌟 CUSTOM PERMANENT SCROLLBAR STYLE FOR THE VIEWPORT BASE */
+          .table-wrapper::-webkit-scrollbar {
+            height: 14px;
+            width: 14px;
+            display: block !important;
+          }
+          .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f5f9;
+          }
+          .table-wrapper::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 7px;
+            border: 3px solid #f1f5f9;
+          }
+          .table-wrapper::-webkit-scrollbar-thumb:hover {
+            background-color: #94a3b8;
+          }
+          
+          /* Fix layout corners inside sticky contexts */
+          .table-wrapper::-webkit-scrollbar-corner {
+            background: #f1f5f9;
+          }
+
+          table { width: 100%; border-collapse: collapse; min-width: 1750px; table-layout: fixed; }
+          th, td { padding: 8px 10px; border: 1px solid #e5e7eb; vertical-align: top; font-size: 12px; }
+          tr:nth-child(even) { background: #f9fafb; }
+          
+          th:nth-child(1), td:nth-child(1) { width: 110px; }
+          th:nth-child(2), td:nth-child(2) { width: 60px; }
+          th:nth-child(3), td:nth-child(3) { width: 220px; } 
+          th:nth-child(6), td:nth-child(6), 
+          th:nth-child(9), td:nth-child(9) { width: 100px; } 
+          th:nth-child(14), td:nth-child(14) { width: 65px; }
+
+          .text-cell { white-space: pre-wrap; word-break: break-word; }
+          .wrap-cell { white-space: pre-wrap; word-break: break-all; font-size: 11px; }
+          .highlight-status { font-weight: 600; text-align: center; }
+          .status-match { background: #dcfce7; color: #065f46; }
+          .status-mismatch { background: #fee2e2; color: #991b1b; }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Strong Page (en-US)</h1>
+        <div class="summary">
+          <b>Summary Table:</b> Total: 40 | <span style="color:green">Matches: 40</span> | <span style="color:crimson">Mismatches: 0</span>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Page</th><th>Iframe</th><th>XPath</th>
+                <th>Desktop Expected</th><th>Desktop Actual</th><th>Desktop Status</th>
+                <th>Mobile Expected</th><th>Mobile Actual</th><th>Mobile Status</th>
+                <th>Expected Redirect</th><th>Actual Redirect</th><th>Redirect Full URL</th>
+                <th>Expected VS Actual</th><th>HTTP</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='main-content']</td>
+          <td class="text-cell">A New Way to Get Stronger</td>
+          <td class="text-cell">A New Way to Get Stronger</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">A New Way to Get Stronger</td>
+          <td class="text-cell">A New Way to Get Stronger</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">Try our NEW ‖Orangetheory Strong experience, built with next-generation equipment to help you train with purpose and see measurable progress over time.</td>
+          <td class="text-cell">Try our NEW ‖Orangetheory Strong experience, built with next-generation equipment to help you train with purpose and see measurable progress over time.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try our NEW ‖Orangetheory Strong experience, built with next-generation equipment to help you train with purpose and see measurable progress over time.</td>
+          <td class="text-cell">Try our NEW ‖Orangetheory Strong experience, built with next-generation equipment to help you train with purpose and see measurable progress over time.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[1]/div[1]/div[1]/div[2]/div[2]/p[1]</td>
+          <td class="text-cell">∥At participating studios.</td>
+          <td class="text-cell">∥At participating studios.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">∥At participating studios.</td>
+          <td class="text-cell">∥At participating studios.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[2]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Built to Build Strength</td>
+          <td class="text-cell">Built to Build Strength</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Built to Build Strength</td>
+          <td class="text-cell">Built to Build Strength</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[2]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">We've reimagined strength training with cable machines, cushioned benches, and expanded weight selections at every station.</td>
+          <td class="text-cell">We've reimagined strength training with cable machines, cushioned benches, and expanded weight selections at every station.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">We've reimagined strength training with cable machines, cushioned benches, and expanded weight selections at every station.</td>
+          <td class="text-cell">We've reimagined strength training with cable machines, cushioned benches, and expanded weight selections at every station.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[2]/div[1]/div[1]/div[1]/p[2]</td>
+          <td class="text-cell">Each coach-led strength block is supported by digital tracking, letting you log reps and weights to track progress and get personalized recommendations.</td>
+          <td class="text-cell">Each coach-led strength block is supported by digital tracking, letting you log reps and weights to track progress and get personalized recommendations.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Each coach-led strength block is supported by digital tracking, letting you log reps and weights to track progress and get personalized recommendations.</td>
+          <td class="text-cell">Each coach-led strength block is supported by digital tracking, letting you log reps and weights to track progress and get personalized recommendations.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[3]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Cardio to Boost Stamina</td>
+          <td class="text-cell">Cardio to Boost Stamina</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Cardio to Boost Stamina</td>
+          <td class="text-cell">Cardio to Boost Stamina</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[3]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">Orangetheory Strong uses a blended strength and cardio approach, combining focused lifting with dynamic cardio blocks in every one-hour workout.</td>
+          <td class="text-cell">Orangetheory Strong uses a blended strength and cardio approach, combining focused lifting with dynamic cardio blocks in every one-hour workout.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Orangetheory Strong uses a blended strength and cardio approach, combining focused lifting with dynamic cardio blocks in every one-hour workout.</td>
+          <td class="text-cell">Orangetheory Strong uses a blended strength and cardio approach, combining focused lifting with dynamic cardio blocks in every one-hour workout.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[3]/div[1]/div[1]/div[1]/p[2]</td>
+          <td class="text-cell">Classes are led by expert coaches and designed for all fitness levels, with a range of cardio equipment — including low-impact options — so you can train at your pace while staying challenged.</td>
+          <td class="text-cell">Classes are led by expert coaches and designed for all fitness levels, with a range of cardio equipment — including low-impact options — so you can train at your pace while staying challenged.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Classes are led by expert coaches and designed for all fitness levels, with a range of cardio equipment — including low-impact options — so you can train at your pace while staying challenged.</td>
+          <td class="text-cell">Classes are led by expert coaches and designed for all fitness levels, with a range of cardio equipment — including low-impact options — so you can train at your pace while staying challenged.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[4]/div[1]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Recovery That Works as Hard as You Do</td>
+          <td class="text-cell">Recovery That Works as Hard as You Do</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Recovery That Works as Hard as You Do</td>
+          <td class="text-cell">Recovery That Works as Hard as You Do</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[4]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">Strength isn’t just built in the workout — it’s built in recovery.</td>
+          <td class="text-cell">Strength isn’t just built in the workout — it’s built in recovery.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Strength isn’t just built in the workout — it’s built in recovery.</td>
+          <td class="text-cell">Strength isn’t just built in the workout — it’s built in recovery.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[4]/div[1]/div[1]/div[1]/p[2]</td>
+          <td class="text-cell">That’s why we’ve built recovery directly into the workout, with guided mobility and in-station massage tools to help support muscle repair, reduce soreness, and improve long-term performance.</td>
+          <td class="text-cell">That’s why we’ve built recovery directly into the workout, with guided mobility and in-station massage tools to help support muscle repair, reduce soreness, and improve long-term performance.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">That’s why we’ve built recovery directly into the workout, with guided mobility and in-station massage tools to help support muscle repair, reduce soreness, and improve long-term performance.</td>
+          <td class="text-cell">That’s why we’ve built recovery directly into the workout, with guided mobility and in-station massage tools to help support muscle repair, reduce soreness, and improve long-term performance.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[4]/div[1]/div[1]/div[1]/p[3]</td>
+          <td class="text-cell">Real progress comes from training smarter, not just pushing harder.</td>
+          <td class="text-cell">Real progress comes from training smarter, not just pushing harder.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Real progress comes from training smarter, not just pushing harder.</td>
+          <td class="text-cell">Real progress comes from training smarter, not just pushing harder.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[5]/section[5]/h2[1]</td>
+          <td class="text-cell">Why Members Love Orangetheory Strong</td>
+          <td class="text-cell">Why Members Love Orangetheory Strong</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Why Members Love Orangetheory Strong</td>
+          <td class="text-cell">Why Members Love Orangetheory Strong</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">Orangetheory Strong keeps me consistent. The structured cycles make it easy to show up and actually watch myself getting stronger.</td>
+          <td class="text-cell">Orangetheory Strong keeps me consistent. The structured cycles make it easy to show up and actually watch myself getting stronger.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Orangetheory Strong keeps me consistent. The structured cycles make it easy to show up and actually watch myself getting stronger.</td>
+          <td class="text-cell">Orangetheory Strong keeps me consistent. The structured cycles make it easy to show up and actually watch myself getting stronger.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">Zoe G.</td>
+          <td class="text-cell">Zoe G.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Zoe G.</td>
+          <td class="text-cell">Zoe G.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[1]/div[2]/div[2]</td>
+          <td class="text-cell">OTF Fort Lauderdale</td>
+          <td class="text-cell">OTF Fort Lauderdale</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTF Fort Lauderdale</td>
+          <td class="text-cell">OTF Fort Lauderdale</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[2]/div[1]/p[1]</td>
+          <td class="text-cell">I like that I’m getting stronger but still get the cardio I want. This is the do-it-all workout I’ve been waiting for!</td>
+          <td class="text-cell">I like that I’m getting stronger but still get the cardio I want. This is the do-it-all workout I’ve been waiting for!</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">I like that I’m getting stronger but still get the cardio I want. This is the do-it-all workout I’ve been waiting for!</td>
+          <td class="text-cell">I like that I’m getting stronger but still get the cardio I want. This is the do-it-all workout I’ve been waiting for!</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[2]/div[2]/div[1]</td>
+          <td class="text-cell">Nicole P.</td>
+          <td class="text-cell">Nicole P.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Nicole P.</td>
+          <td class="text-cell">Nicole P.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[2]/div[2]/div[2]</td>
+          <td class="text-cell">OTF South Jordan</td>
+          <td class="text-cell">OTF South Jordan</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTF South Jordan</td>
+          <td class="text-cell">OTF South Jordan</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[3]/div[1]/p[1]</td>
+          <td class="text-cell">Five weeks in, I’m already lifting heavier, recovering faster and my clothes fit better. It’s the first time strength has felt doable for me.</td>
+          <td class="text-cell">Five weeks in, I’m already lifting heavier, recovering faster and my clothes fit better. It’s the first time strength has felt doable for me.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Five weeks in, I’m already lifting heavier, recovering faster and my clothes fit better. It’s the first time strength has felt doable for me.</td>
+          <td class="text-cell">Five weeks in, I’m already lifting heavier, recovering faster and my clothes fit better. It’s the first time strength has felt doable for me.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[3]/div[2]/div[1]</td>
+          <td class="text-cell">Monica D.</td>
+          <td class="text-cell">Monica D.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Monica D.</td>
+          <td class="text-cell">Monica D.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='swiper-wrapper']/div[3]/div[2]/div[2]</td>
+          <td class="text-cell">OTF Boca Raton - West</td>
+          <td class="text-cell">OTF Boca Raton - West</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTF Boca Raton - West</td>
+          <td class="text-cell">OTF Boca Raton - West</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='find-your-studio']</td>
+          <td class="text-cell">Find Your Orangetheory Strong Studio</td>
+          <td class="text-cell">Find Your Orangetheory Strong Studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Find Your Orangetheory Strong Studio</td>
+          <td class="text-cell">Find Your Orangetheory Strong Studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="text-cell">Enter your city name &amp; click &quot;search&quot;</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='react-select-2-placeholder']</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/button[1]</td>
+          <td class="text-cell">Search</td>
+          <td class="text-cell">Search</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search</td>
+          <td class="text-cell">Search</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[1]/div[1]/div[3]/button[1]</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use current location</td>
+          <td class="text-cell">Use current location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='search-results-heading']</td>
+          <td class="text-cell">Closest studio to you</td>
+          <td class="text-cell">Closest studio to you</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Closest studio to you</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='location-name-3faf5e12-327c-42e6-adb7-1363b57c4d04']</td>
+          <td class="text-cell">Boca Raton - Central, FL</td>
+          <td class="text-cell">Boca Raton - Central, FL</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Boca Raton - Central, FL</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='location-card-3faf5e12-327c-42e6-adb7-1363b57c4d04']/a[1]/p[1]</td>
+          <td class="text-cell">5050 Town Center Cir Suite 205 Boca Raton, FL 33486</td>
+          <td class="text-cell">5050 Town Center Cir Suite 205 Boca Raton, FL 33486</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">5050 Town Center Cir Suite 205 Boca Raton, FL 33486</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='location-card-3faf5e12-327c-42e6-adb7-1363b57c4d04']/div[2]/button[1]</td>
+          <td class="text-cell">(561) 369-6396</td>
+          <td class="text-cell">(561) 369-6396</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">(561) 369-6396</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='location-card-3faf5e12-327c-42e6-adb7-1363b57c4d04']/div[2]/button[2]</td>
+          <td class="text-cell">Text Us</td>
+          <td class="text-cell">Text Us</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Text Us</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='location-card-3faf5e12-327c-42e6-adb7-1363b57c4d04']/div[3]/div[1]</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">First Class Free*</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='location-card-3faf5e12-327c-42e6-adb7-1363b57c4d04']/div[4]/div[1]/button[1]</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Try A Class</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='location-card-3faf5e12-327c-42e6-adb7-1363b57c4d04']/div[4]/div[1]/button[2]</td>
+          <td class="text-cell">Join Now</td>
+          <td class="text-cell">Join Now</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Join Now</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[2]/div[1]/button[1]</td>
+          <td class="text-cell">Display All Nearby Locations</td>
+          <td class="text-cell">Display All Nearby Locations</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Display All Nearby Locations</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">PARTIAL_MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='root']/div[1]/div[1]/div[2]/div[2]/a[1]</td>
+          <td class="text-cell">Download the App</td>
+          <td class="text-cell">Download the App</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Download the App</td>
+          <td class="text-cell">Download the App</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=en_US</td>
+          <td class="text-cell">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=en_US</td>
+          <td class="wrap-cell"><a href="https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=en_US" target="_blank">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=en_US</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignWidget']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='react-select-3-placeholder']</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="text-cell">Search for a studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Strong Page</td>
+          <td>//*[@id='campaignMap']/iframe[1]</td>
+          <td class="wrap-cell">//*[@id='toggle-map']</td>
+          <td class="text-cell">ON OFF</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">ON OFF</td>
+          <td class="text-cell">ON OFF</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr></tbody>
+          </table>
+        </div>
+      </body>
+      </html>
