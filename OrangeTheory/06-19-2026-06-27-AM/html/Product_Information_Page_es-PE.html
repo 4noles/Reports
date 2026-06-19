@@ -1,0 +1,717 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Report - Product Information Page</title>
+        <style>
+          * { box-sizing: border-box; }
+          body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 15px 15px 20px 15px; 
+            background-color: #f9fafb; 
+            color: #333; 
+            width: 100%;
+            max-width: 100vw;
+          }
+          h1 { color: #1e3a8a; font-size: 1.5rem; word-break: break-word; }
+          .summary { background: #f1f5f9; border-left: 6px solid #2563eb; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-size: 0.9rem; }
+          
+          /* 🌟 FLOATING STICKY SCROLL CONTAINER IMPLEMENTATION */
+          .table-wrapper { 
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto; 
+            max-height: calc(100vh - 180px); /* 🌟 Locks table vertical viewport boundaries */
+            border: 1px solid #e5e7eb; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            background: white;
+            position: relative;
+          }
+
+          /* 🌟 Pins the Table Headers to the top as you vertical scroll */
+          th { 
+            background: #1f2937; 
+            color: white; 
+            position: sticky; 
+            top: 0; 
+            z-index: 2;
+            text-align: left; 
+          }
+          
+          /* 🌟 CUSTOM PERMANENT SCROLLBAR STYLE FOR THE VIEWPORT BASE */
+          .table-wrapper::-webkit-scrollbar {
+            height: 14px;
+            width: 14px;
+            display: block !important;
+          }
+          .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f5f9;
+          }
+          .table-wrapper::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 7px;
+            border: 3px solid #f1f5f9;
+          }
+          .table-wrapper::-webkit-scrollbar-thumb:hover {
+            background-color: #94a3b8;
+          }
+          
+          /* Fix layout corners inside sticky contexts */
+          .table-wrapper::-webkit-scrollbar-corner {
+            background: #f1f5f9;
+          }
+
+          table { width: 100%; border-collapse: collapse; min-width: 1750px; table-layout: fixed; }
+          th, td { padding: 8px 10px; border: 1px solid #e5e7eb; vertical-align: top; font-size: 12px; }
+          tr:nth-child(even) { background: #f9fafb; }
+          
+          th:nth-child(1), td:nth-child(1) { width: 110px; }
+          th:nth-child(2), td:nth-child(2) { width: 60px; }
+          th:nth-child(3), td:nth-child(3) { width: 220px; } 
+          th:nth-child(6), td:nth-child(6), 
+          th:nth-child(9), td:nth-child(9) { width: 100px; } 
+          th:nth-child(14), td:nth-child(14) { width: 65px; }
+
+          .text-cell { white-space: pre-wrap; word-break: break-word; }
+          .wrap-cell { white-space: pre-wrap; word-break: break-all; font-size: 11px; }
+          .highlight-status { font-weight: 600; text-align: center; }
+          .status-match { background: #dcfce7; color: #065f46; }
+          .status-mismatch { background: #fee2e2; color: #991b1b; }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Product Information Page (es-PE)</h1>
+        <div class="summary">
+          <b>Summary Table:</b> Total: 36 | <span style="color:green">Matches: 36</span> | <span style="color:crimson">Mismatches: 0</span>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Page</th><th>Iframe</th><th>XPath</th>
+                <th>Desktop Expected</th><th>Desktop Actual</th><th>Desktop Status</th>
+                <th>Mobile Expected</th><th>Mobile Actual</th><th>Mobile Status</th>
+                <th>Expected Redirect</th><th>Actual Redirect</th><th>Redirect Full URL</th>
+                <th>Expected VS Actual</th><th>HTTP</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='main-content']</td>
+          <td class="text-cell">Información del Producto Orangetheory.</td>
+          <td class="text-cell">Información del Producto Orangetheory.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Información del Producto Orangetheory.</td>
+          <td class="text-cell">Información del Producto Orangetheory.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_1fddcb45-633e-23ab-06a7-a5988bcf0e25-49d4815d']/div[1]/h3[1]</td>
+          <td class="text-cell">OTBeat Burn</td>
+          <td class="text-cell">OTBeat Burn</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTBeat Burn</td>
+          <td class="text-cell">OTBeat Burn</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_1fddcb45-633e-23ab-06a7-a5988bcf0e25-49d4815d']/div[1]/a[1]</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/otbeat/pe/burn-product-information.pdf</td>
+          <td class="text-cell">/otbeat/pe/burn-product-information.pdf</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/otbeat/pe/burn-product-information.pdf" target="_blank">https://www.uat.orangetheory.com/otbeat/pe/burn-product-information.pdf</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_1fddcb45-633e-23ab-06a7-a5988bcf0e25-49d4815d']/div[1]/a[1]/div[1]</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_1fddcb45-633e-23ab-06a7-a5988bcf0e25-49d4815d']/div[1]/a[2]</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/otbeat/pe/user-guide.pdf</td>
+          <td class="text-cell">/otbeat/pe/user-guide.pdf</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/otbeat/pe/user-guide.pdf" target="_blank">https://www.uat.orangetheory.com/otbeat/pe/user-guide.pdf</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_1fddcb45-633e-23ab-06a7-a5988bcf0e25-49d4815d']/div[1]/a[2]/div[1]</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_1fddcb45-633e-23ab-06a7-a5988bcf0e25-49d4815d']/div[1]/a[3]</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/otbeat/pe/peru-mtc-lona-ot-burn-6.0.pdf</td>
+          <td class="text-cell">/otbeat/pe/peru-mtc-lona-ot-burn-6.0.pdf</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/otbeat/pe/peru-mtc-lona-ot-burn-6.0.pdf" target="_blank">https://www.uat.orangetheory.com/otbeat/pe/peru-mtc-lona-ot-burn-6.0.pdf</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_1fddcb45-633e-23ab-06a7-a5988bcf0e25-49d4815d']/div[1]/a[3]/div[1]</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_14e778d6-ee6e-dd86-eb2c-98f65eb95b69-49d4815d']/div[1]/h2[1]</td>
+          <td class="text-cell">OTconnect BeatTM</td>
+          <td class="text-cell">OTconnect BeatTM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">OTconnect BeatTM</td>
+          <td class="text-cell">OTconnect BeatTM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_14e778d6-ee6e-dd86-eb2c-98f65eb95b69-49d4815d']/div[1]/a[1]</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/otconnect/pe/product-information.pdf</td>
+          <td class="text-cell">/otconnect/pe/product-information.pdf</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/otconnect/pe/product-information.pdf" target="_blank">https://www.uat.orangetheory.com/otconnect/pe/product-information.pdf</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_14e778d6-ee6e-dd86-eb2c-98f65eb95b69-49d4815d']/div[1]/a[1]/div[1]</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="text-cell">Información del Producto</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_14e778d6-ee6e-dd86-eb2c-98f65eb95b69-49d4815d']/div[1]/a[2]</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-pe/product-information/otconnect-beat</td>
+          <td class="text-cell">/es-pe/product-information/otconnect-beat</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-pe/product-information/otconnect-beat" target="_blank">https://www.uat.orangetheory.com/es-pe/product-information/otconnect-beat</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_14e778d6-ee6e-dd86-eb2c-98f65eb95b69-49d4815d']/div[1]/a[2]/div[1]</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="text-cell">Guía del Usuario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_14e778d6-ee6e-dd86-eb2c-98f65eb95b69-49d4815d']/div[1]/a[3]</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/otconnect/pe/mtc-lona-pm-1a.pdf</td>
+          <td class="text-cell">/otconnect/pe/mtc-lona-pm-1a.pdf</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/otconnect/pe/mtc-lona-pm-1a.pdf" target="_blank">https://www.uat.orangetheory.com/otconnect/pe/mtc-lona-pm-1a.pdf</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-_14e778d6-ee6e-dd86-eb2c-98f65eb95b69-49d4815d']/div[1]/a[3]/div[1]</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="text-cell">Certificado de Cumplimiento</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/h2[1]</td>
+          <td class="text-cell">Busca información del producto en otra región.</td>
+          <td class="text-cell">Busca información del producto en otra región.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Busca información del producto en otra región.</td>
+          <td class="text-cell">Busca información del producto en otra región.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[1]</td>
+          <td class="text-cell">Australia</td>
+          <td class="text-cell">Australia</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Australia</td>
+          <td class="text-cell">Australia</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/en-au/product-information</td>
+          <td class="text-cell">/en-au/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/en-au/product-information" target="_blank">https://www.uat.orangetheory.com/en-au/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[2]</td>
+          <td class="text-cell">Bahréin</td>
+          <td class="text-cell">Bahréin</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Bahréin</td>
+          <td class="text-cell">Bahréin</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/en-bh/product-information</td>
+          <td class="text-cell">/en-bh/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/en-bh/product-information" target="_blank">https://www.uat.orangetheory.com/en-bh/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[3]</td>
+          <td class="text-cell">Canadá</td>
+          <td class="text-cell">Canadá</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Canadá</td>
+          <td class="text-cell">Canadá</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/fr-ca/product-information</td>
+          <td class="text-cell">/fr-ca/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/fr-ca/product-information" target="_blank">https://www.uat.orangetheory.com/fr-ca/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[4]</td>
+          <td class="text-cell">Colombia</td>
+          <td class="text-cell">Colombia</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Colombia</td>
+          <td class="text-cell">Colombia</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-co/product-information</td>
+          <td class="text-cell">/es-co/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-co/product-information" target="_blank">https://www.uat.orangetheory.com/es-co/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[5]</td>
+          <td class="text-cell">Costa Rica</td>
+          <td class="text-cell">Costa Rica</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Costa Rica</td>
+          <td class="text-cell">Costa Rica</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-cr/product-information</td>
+          <td class="text-cell">/es-cr/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-cr/product-information" target="_blank">https://www.uat.orangetheory.com/es-cr/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[6]</td>
+          <td class="text-cell">República Dominicana</td>
+          <td class="text-cell">República Dominicana</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">República Dominicana</td>
+          <td class="text-cell">República Dominicana</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-do/product-information</td>
+          <td class="text-cell">/es-do/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-do/product-information" target="_blank">https://www.uat.orangetheory.com/es-do/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[7]</td>
+          <td class="text-cell">Alemania</td>
+          <td class="text-cell">Alemania</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Alemania</td>
+          <td class="text-cell">Alemania</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/de-de/product-information</td>
+          <td class="text-cell">/de-de/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/de-de/product-information" target="_blank">https://www.uat.orangetheory.com/de-de/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[8]</td>
+          <td class="text-cell">Guatemala</td>
+          <td class="text-cell">Guatemala</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Guatemala</td>
+          <td class="text-cell">Guatemala</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-gt/product-information</td>
+          <td class="text-cell">/es-gt/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-gt/product-information" target="_blank">https://www.uat.orangetheory.com/es-gt/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[9]</td>
+          <td class="text-cell">India</td>
+          <td class="text-cell">India</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">India</td>
+          <td class="text-cell">India</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/en-in/product-information</td>
+          <td class="text-cell">/en-in/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/en-in/product-information" target="_blank">https://www.uat.orangetheory.com/en-in/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[10]</td>
+          <td class="text-cell">Japón</td>
+          <td class="text-cell">Japón</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Japón</td>
+          <td class="text-cell">Japón</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/ja-jp/product-information</td>
+          <td class="text-cell">/ja-jp/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/ja-jp/product-information" target="_blank">https://www.uat.orangetheory.com/ja-jp/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[11]</td>
+          <td class="text-cell">Kuwait</td>
+          <td class="text-cell">Kuwait</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Kuwait</td>
+          <td class="text-cell">Kuwait</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/en-kw/product-information</td>
+          <td class="text-cell">/en-kw/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/en-kw/product-information" target="_blank">https://www.uat.orangetheory.com/en-kw/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[12]</td>
+          <td class="text-cell">México</td>
+          <td class="text-cell">México</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">México</td>
+          <td class="text-cell">México</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-mx/product-information</td>
+          <td class="text-cell">/es-mx/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-mx/product-information" target="_blank">https://www.uat.orangetheory.com/es-mx/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[13]</td>
+          <td class="text-cell">Panamá</td>
+          <td class="text-cell">Panamá</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Panamá</td>
+          <td class="text-cell">Panamá</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-pa/product-information</td>
+          <td class="text-cell">/es-pa/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-pa/product-information" target="_blank">https://www.uat.orangetheory.com/es-pa/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[14]</td>
+          <td class="text-cell">Perú</td>
+          <td class="text-cell">Perú</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Perú</td>
+          <td class="text-cell">Perú</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-pe/product-information</td>
+          <td class="text-cell">/es-pe/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-pe/product-information" target="_blank">https://www.uat.orangetheory.com/es-pe/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[15]</td>
+          <td class="text-cell">Puerto Rico</td>
+          <td class="text-cell">Puerto Rico</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Puerto Rico</td>
+          <td class="text-cell">Puerto Rico</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-pr/product-information</td>
+          <td class="text-cell">/es-pr/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-pr/product-information" target="_blank">https://www.uat.orangetheory.com/es-pr/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[16]</td>
+          <td class="text-cell">Catar</td>
+          <td class="text-cell">Catar</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Catar</td>
+          <td class="text-cell">Catar</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/en-qa/product-information</td>
+          <td class="text-cell">/en-qa/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/en-qa/product-information" target="_blank">https://www.uat.orangetheory.com/en-qa/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[17]</td>
+          <td class="text-cell">Arabia Saudita</td>
+          <td class="text-cell">Arabia Saudita</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Arabia Saudita</td>
+          <td class="text-cell">Arabia Saudita</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/en-sa/product-information</td>
+          <td class="text-cell">/en-sa/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/en-sa/product-information" target="_blank">https://www.uat.orangetheory.com/en-sa/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[18]</td>
+          <td class="text-cell">España</td>
+          <td class="text-cell">España</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">España</td>
+          <td class="text-cell">España</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/es-es/product-information</td>
+          <td class="text-cell">/es-es/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/es-es/product-information" target="_blank">https://www.uat.orangetheory.com/es-es/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[19]</td>
+          <td class="text-cell">Reino Unido</td>
+          <td class="text-cell">Reino Unido</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Reino Unido</td>
+          <td class="text-cell">Reino Unido</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/en-gb/product-information</td>
+          <td class="text-cell">/en-gb/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/en-gb/product-information" target="_blank">https://www.uat.orangetheory.com/en-gb/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Product Information Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[4]/main[1]/section[1]/article[1]/div[1]/a[20]</td>
+          <td class="text-cell">Estados Unidos</td>
+          <td class="text-cell">Estados Unidos</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Estados Unidos</td>
+          <td class="text-cell">Estados Unidos</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/en-us/product-information</td>
+          <td class="text-cell">/en-us/product-information</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/en-us/product-information" target="_blank">https://www.uat.orangetheory.com/en-us/product-information</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr></tbody>
+          </table>
+        </div>
+      </body>
+      </html>
