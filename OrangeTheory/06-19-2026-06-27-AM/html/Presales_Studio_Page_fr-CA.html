@@ -1,0 +1,887 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Report - Presales Studio Page</title>
+        <style>
+          * { box-sizing: border-box; }
+          body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 15px 15px 20px 15px; 
+            background-color: #f9fafb; 
+            color: #333; 
+            width: 100%;
+            max-width: 100vw;
+          }
+          h1 { color: #1e3a8a; font-size: 1.5rem; word-break: break-word; }
+          .summary { background: #f1f5f9; border-left: 6px solid #2563eb; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-size: 0.9rem; }
+          
+          /* 🌟 FLOATING STICKY SCROLL CONTAINER IMPLEMENTATION */
+          .table-wrapper { 
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto; 
+            max-height: calc(100vh - 180px); /* 🌟 Locks table vertical viewport boundaries */
+            border: 1px solid #e5e7eb; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            background: white;
+            position: relative;
+          }
+
+          /* 🌟 Pins the Table Headers to the top as you vertical scroll */
+          th { 
+            background: #1f2937; 
+            color: white; 
+            position: sticky; 
+            top: 0; 
+            z-index: 2;
+            text-align: left; 
+          }
+          
+          /* 🌟 CUSTOM PERMANENT SCROLLBAR STYLE FOR THE VIEWPORT BASE */
+          .table-wrapper::-webkit-scrollbar {
+            height: 14px;
+            width: 14px;
+            display: block !important;
+          }
+          .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f5f9;
+          }
+          .table-wrapper::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 7px;
+            border: 3px solid #f1f5f9;
+          }
+          .table-wrapper::-webkit-scrollbar-thumb:hover {
+            background-color: #94a3b8;
+          }
+          
+          /* Fix layout corners inside sticky contexts */
+          .table-wrapper::-webkit-scrollbar-corner {
+            background: #f1f5f9;
+          }
+
+          table { width: 100%; border-collapse: collapse; min-width: 1750px; table-layout: fixed; }
+          th, td { padding: 8px 10px; border: 1px solid #e5e7eb; vertical-align: top; font-size: 12px; }
+          tr:nth-child(even) { background: #f9fafb; }
+          
+          th:nth-child(1), td:nth-child(1) { width: 110px; }
+          th:nth-child(2), td:nth-child(2) { width: 60px; }
+          th:nth-child(3), td:nth-child(3) { width: 220px; } 
+          th:nth-child(6), td:nth-child(6), 
+          th:nth-child(9), td:nth-child(9) { width: 100px; } 
+          th:nth-child(14), td:nth-child(14) { width: 65px; }
+
+          .text-cell { white-space: pre-wrap; word-break: break-word; }
+          .wrap-cell { white-space: pre-wrap; word-break: break-all; font-size: 11px; }
+          .highlight-status { font-weight: 600; text-align: center; }
+          .status-match { background: #dcfce7; color: #065f46; }
+          .status-mismatch { background: #fee2e2; color: #991b1b; }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Presales Studio Page (fr-CA)</h1>
+        <div class="summary">
+          <b>Summary Table:</b> Total: 46 | <span style="color:green">Matches: 46</span> | <span style="color:crimson">Mismatches: 0</span>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Page</th><th>Iframe</th><th>XPath</th>
+                <th>Desktop Expected</th><th>Desktop Actual</th><th>Desktop Status</th>
+                <th>Mobile Expected</th><th>Mobile Actual</th><th>Mobile Status</th>
+                <th>Expected Redirect</th><th>Actual Redirect</th><th>Redirect Full URL</th>
+                <th>Expected VS Actual</th><th>HTTP</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='main-content']</td>
+          <td class="text-cell">Offre limitée dans le temps. Résultats illimités.</td>
+          <td class="text-cell">Offre limitée dans le temps. Résultats illimités.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Offre limitée dans le temps. Résultats illimités.</td>
+          <td class="text-cell">Offre limitée dans le temps. Résultats illimités.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">À venir prochainement</td>
+          <td class="text-cell">À venir prochainement</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">À venir prochainement</td>
+          <td class="text-cell">À venir prochainement</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[2]</td>
+          <td class="text-cell">PROD INTL 4</td>
+          <td class="text-cell">PROD INTL 4</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">PROD INTL 4</td>
+          <td class="text-cell">PROD INTL 4</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/div[1]</td>
+          <td class="text-cell">196 McEwan Road East. Unit 13</td>
+          <td class="text-cell">196 McEwan Road East. Unit 13</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">196 McEwan Road East. Unit 13</td>
+          <td class="text-cell">196 McEwan Road East. Unit 13</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">Bolton</td>
+          <td class="text-cell">Bolton</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Bolton</td>
+          <td class="text-cell">Bolton</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div[2]</td>
+          <td class="text-cell">,</td>
+          <td class="text-cell">,</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">,</td>
+          <td class="text-cell">,</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div[3]</td>
+          <td class="text-cell">Ontario</td>
+          <td class="text-cell">Ontario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Ontario</td>
+          <td class="text-cell">Ontario</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div[4]</td>
+          <td class="text-cell">L7E 4E5</td>
+          <td class="text-cell">L7E 4E5</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">L7E 4E5</td>
+          <td class="text-cell">L7E 4E5</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/a[1]/div[1]</td>
+          <td class="text-cell">289.206.5000</td>
+          <td class="text-cell">289.206.5000</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">289.206.5000</td>
+          <td class="text-cell">289.206.5000</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/button[1]/a[1]</td>
+          <td class="text-cell">Textez-nous</td>
+          <td class="text-cell">Textez-nous</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Textez-nous</td>
+          <td class="text-cell">Textez-nous</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">#</td>
+          <td class="text-cell">#</td>
+          <td class="wrap-cell"><a href="#" target="_blank">#</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[3]/div[1]</td>
+          <td class="text-cell">Première classe gratuite*</td>
+          <td class="text-cell">Première classe gratuite*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Première classe gratuite*</td>
+          <td class="text-cell">Première classe gratuite*</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='contact-studio-presale']/div[1]</td>
+          <td class="text-cell">Réclamer l'offre</td>
+          <td class="text-cell">Réclamer l'offre</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Réclamer l'offre</td>
+          <td class="text-cell">Réclamer l'offre</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[1]/div[1]/div[2]/div[1]/div[8]/div[1]</td>
+          <td class="text-cell">Déjà membre ?</td>
+          <td class="text-cell">Déjà membre ?</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Déjà membre ?</td>
+          <td class="text-cell">Déjà membre ?</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='click-download-app']</td>
+          <td class="text-cell">Télécharger l’application.</td>
+          <td class="text-cell">Télécharger l’application.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Télécharger l’application.</td>
+          <td class="text-cell">Télécharger l’application.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=fr_CA</td>
+          <td class="text-cell">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=fr_CA</td>
+          <td class="wrap-cell"><a href="https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=fr_CA" target="_blank">https://play.google.com/store/apps/details?id=com.orangetheoryfitness.orangetheory&amp;hl=fr_CA</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[2]/div[1]/h2[1]</td>
+          <td class="text-cell">PROD INTL 4</td>
+          <td class="text-cell">PROD INTL 4</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">PROD INTL 4</td>
+          <td class="text-cell">PROD INTL 4</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[3]/div[1]/h2[1]</td>
+          <td class="text-cell">Devenez membre fondateur.</td>
+          <td class="text-cell">Devenez membre fondateur.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Devenez membre fondateur.</td>
+          <td class="text-cell">Devenez membre fondateur.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[3]/div[1]/div[1]</td>
+          <td class="text-cell">Lorsque vous vous inscrivez en tant que membre fondateur, vous vous inscrivez à des tarifs de réduction exclusifs pour la durée de votre adhésion. Vous aurez également un accès anticipé au studio avant que nous n'ouvrions officiellement nos portes et d'autres avantages.</td>
+          <td class="text-cell">Lorsque vous vous inscrivez en tant que membre fondateur, vous vous inscrivez à des tarifs de réduction exclusifs pour la durée de votre adhésion. Vous aurez également un accès anticipé au studio avant que nous n'ouvrions officiellement nos portes et d'autres avantages.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Lorsque vous vous inscrivez en tant que membre fondateur, vous vous inscrivez à des tarifs de réduction exclusifs pour la durée de votre adhésion. Vous aurez également un accès anticipé au studio avant que nous n'ouvrions officiellement nos portes et d'autres avantages.</td>
+          <td class="text-cell">Lorsque vous vous inscrivez en tant que membre fondateur, vous vous inscrivez à des tarifs de réduction exclusifs pour la durée de votre adhésion. Vous aurez également un accès anticipé au studio avant que nous n'ouvrions officiellement nos portes et d'autres avantages.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='products-cards-not-set']/div[1]/div[1]/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Abonnement Illimité</td>
+          <td class="text-cell">Abonnement Illimité</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Abonnement Illimité</td>
+          <td class="text-cell">Abonnement Illimité</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='products-cards-not-set']/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">Séances illimitées</td>
+          <td class="text-cell">Séances illimitées</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Séances illimitées</td>
+          <td class="text-cell">Séances illimitées</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='products-cards-not-set']/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">Taux réduit pour les familles</td>
+          <td class="text-cell">Taux réduit pour les familles</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Taux réduit pour les familles</td>
+          <td class="text-cell">Taux réduit pour les familles</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2df-3447f2d0']/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Élite</td>
+          <td class="text-cell">Élite</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Élite</td>
+          <td class="text-cell">Élite</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2df-3447f2d0']/div[1]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">8 séances/mois</td>
+          <td class="text-cell">8 séances/mois</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">8 séances/mois</td>
+          <td class="text-cell">8 séances/mois</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2df-3447f2d0']/div[1]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">Séances supplémentaires à tarif réduit</td>
+          <td class="text-cell">Séances supplémentaires à tarif réduit</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Séances supplémentaires à tarif réduit</td>
+          <td class="text-cell">Séances supplémentaires à tarif réduit</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2ed-3447f2d0']/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">De base</td>
+          <td class="text-cell">De base</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">De base</td>
+          <td class="text-cell">De base</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2ed-3447f2d0']/div[1]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">4 séances/mois</td>
+          <td class="text-cell">4 séances/mois</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">4 séances/mois</td>
+          <td class="text-cell">4 séances/mois</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2ed-3447f2d0']/div[1]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">Séances supplémentaires à tarif réduit</td>
+          <td class="text-cell">Séances supplémentaires à tarif réduit</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Séances supplémentaires à tarif réduit</td>
+          <td class="text-cell">Séances supplémentaires à tarif réduit</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2fb-3447f2d0']/div[1]/div[1]/h3[1]</td>
+          <td class="text-cell">Cartes de classe</td>
+          <td class="text-cell">Cartes de classe</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Cartes de classe</td>
+          <td class="text-cell">Cartes de classe</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2fb-3447f2d0']/div[1]/div[2]/ul[1]/li[1]</td>
+          <td class="text-cell">10 Séances</td>
+          <td class="text-cell">10 Séances</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">10 Séances</td>
+          <td class="text-cell">10 Séances</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2fb-3447f2d0']/div[1]/div[2]/ul[1]/li[2]</td>
+          <td class="text-cell">20 Séances</td>
+          <td class="text-cell">20 Séances</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">20 Séances</td>
+          <td class="text-cell">20 Séances</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">//*[@id='w-node-c79fcf28-375d-4917-7285-43fa3447f2fb-3447f2d0']/div[1]/div[2]/ul[1]/li[3]</td>
+          <td class="text-cell">30 Séances</td>
+          <td class="text-cell">30 Séances</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">30 Séances</td>
+          <td class="text-cell">30 Séances</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[3]/div[3]</td>
+          <td class="text-cell">Contactez la réception pour plus de détails.</td>
+          <td class="text-cell">Contactez la réception pour plus de détails.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Contactez la réception pour plus de détails.</td>
+          <td class="text-cell">Contactez la réception pour plus de détails.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[4]/article[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Prêt à réclamer votre tarif exclusif de membre fondateur? ‍ Contactez notre studio aujourd'hui.</td>
+          <td class="text-cell">Prêt à réclamer votre tarif exclusif de membre fondateur? ‍ Contactez notre studio aujourd'hui.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Prêt à réclamer votre tarif exclusif de membre fondateur? ‍ Contactez notre studio aujourd'hui.</td>
+          <td class="text-cell">Prêt à réclamer votre tarif exclusif de membre fondateur? ‍ Contactez notre studio aujourd'hui.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">L'entraînement qui fonctionne bien.</td>
+          <td class="text-cell">L'entraînement qui fonctionne bien.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">L'entraînement qui fonctionne bien.</td>
+          <td class="text-cell">L'entraînement qui fonctionne bien.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[5]/div[1]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">Orangetheory combine un entraînement de force complet avec un cardio palpitant pour vous aider à renforcer votre force dès maintenant, tout en posant les bases d'une santé à long terme. En quelques semaines, la plupart des membres remarquent le changement : plus d'énergie, un meilleur moral et un véritable élan. En moyenne, les membres perdent 8,6 % de graisse corporelle et gagnent 2,6 % de muscle maigre après 18 cours en seulement 8 semaines.1 Ce type de progrès est la raison pour laquelle des millions de membres à travers 1 500 studios dans le monde entier ont choisi Orangetheory pour atteindre leurs objectifs de conditionnement physique. Pas votre truc après 30 jours ? Pas de souci — nous vous rembourserons.†</td>
+          <td class="text-cell">Orangetheory combine un entraînement de force complet avec un cardio palpitant pour vous aider à renforcer votre force dès maintenant, tout en posant les bases d'une santé à long terme. En quelques semaines, la plupart des membres remarquent le changement : plus d'énergie, un meilleur moral et un véritable élan. En moyenne, les membres perdent 8,6 % de graisse corporelle et gagnent 2,6 % de muscle maigre après 18 cours en seulement 8 semaines.1 Ce type de progrès est la raison pour laquelle des millions de membres à travers 1 500 studios dans le monde entier ont choisi Orangetheory pour atteindre leurs objectifs de conditionnement physique. Pas votre truc après 30 jours ? Pas de souci — nous vous rembourserons.†</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Orangetheory combine un entraînement de force complet avec un cardio palpitant pour vous aider à renforcer votre force dès maintenant, tout en posant les bases d'une santé à long terme. En quelques semaines, la plupart des membres remarquent le changement : plus d'énergie, un meilleur moral et un véritable élan. En moyenne, les membres perdent 8,6 % de graisse corporelle et gagnent 2,6 % de muscle maigre après 18 cours en seulement 8 semaines.1 Ce type de progrès est la raison pour laquelle des millions de membres à travers 1 500 studios dans le monde entier ont choisi Orangetheory pour atteindre leurs objectifs de conditionnement physique. Pas votre truc après 30 jours ? Pas de souci — nous vous rembourserons.†</td>
+          <td class="text-cell">Orangetheory combine un entraînement de force complet avec un cardio palpitant pour vous aider à renforcer votre force dès maintenant, tout en posant les bases d'une santé à long terme. En quelques semaines, la plupart des membres remarquent le changement : plus d'énergie, un meilleur moral et un véritable élan. En moyenne, les membres perdent 8,6 % de graisse corporelle et gagnent 2,6 % de muscle maigre après 18 cours en seulement 8 semaines.1 Ce type de progrès est la raison pour laquelle des millions de membres à travers 1 500 studios dans le monde entier ont choisi Orangetheory pour atteindre leurs objectifs de conditionnement physique. Pas votre truc après 30 jours ? Pas de souci — nous vous rembourserons.†</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[6]/div[1]/div[3]/div[1]/h2[1]</td>
+          <td class="text-cell">Plus personnalisé. Moins de pression.</td>
+          <td class="text-cell">Plus personnalisé. Moins de pression.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Plus personnalisé. Moins de pression.</td>
+          <td class="text-cell">Plus personnalisé. Moins de pression.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[6]/div[1]/div[3]/div[1]/p[1]</td>
+          <td class="text-cell">Vous n'avez pas besoin d'être en forme pour commencer. Il suffit de se présenter, nous nous occupons de vous. Avec un entraînement expert et la technologie OTconnect™, chaque entraînement s'adapte à votre niveau de condition physique et à vos objectifs. Que vous commenciez doucement ou que vous poussiez fort, nous vous rencontrons avec encouragement et soutien, sans pression. Chaque pas en avant construit un corps—et un état d'esprit—plus fort qu'hier.</td>
+          <td class="text-cell">Vous n'avez pas besoin d'être en forme pour commencer. Il suffit de se présenter, nous nous occupons de vous. Avec un entraînement expert et la technologie OTconnect™, chaque entraînement s'adapte à votre niveau de condition physique et à vos objectifs. Que vous commenciez doucement ou que vous poussiez fort, nous vous rencontrons avec encouragement et soutien, sans pression. Chaque pas en avant construit un corps—et un état d'esprit—plus fort qu'hier.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Vous n'avez pas besoin d'être en forme pour commencer. Il suffit de se présenter, nous nous occupons de vous. Avec un entraînement expert et la technologie OTconnect™, chaque entraînement s'adapte à votre niveau de condition physique et à vos objectifs. Que vous commenciez doucement ou que vous poussiez fort, nous vous rencontrons avec encouragement et soutien, sans pression. Chaque pas en avant construit un corps—et un état d'esprit—plus fort qu'hier.</td>
+          <td class="text-cell">Vous n'avez pas besoin d'être en forme pour commencer. Il suffit de se présenter, nous nous occupons de vous. Avec un entraînement expert et la technologie OTconnect™, chaque entraînement s'adapte à votre niveau de condition physique et à vos objectifs. Que vous commenciez doucement ou que vous poussiez fort, nous vous rencontrons avec encouragement et soutien, sans pression. Chaque pas en avant construit un corps—et un état d'esprit—plus fort qu'hier.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[6]/div[1]/div[3]/a[1]</td>
+          <td class="text-cell">En savoir plus sur l'entraînement.</td>
+          <td class="text-cell">En savoir plus sur l'entraînement.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">En savoir plus sur l'entraînement.</td>
+          <td class="text-cell">En savoir plus sur l'entraînement.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">/fr-ca/workout</td>
+          <td class="text-cell">/fr-ca/workout</td>
+          <td class="wrap-cell"><a href="https://www.uat.orangetheory.com/fr-ca/workout" target="_blank">https://www.uat.orangetheory.com/fr-ca/workout</a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class="status-match highlight-status">200</td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">Tirez le meilleur parti de votre abonnement avec l'application OTF.</td>
+          <td class="text-cell">Tirez le meilleur parti de votre abonnement avec l'application OTF.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Tirez le meilleur parti de votre abonnement avec l'application OTF.</td>
+          <td class="text-cell">Tirez le meilleur parti de votre abonnement avec l'application OTF.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/div[1]/ul[1]/li[1]</td>
+          <td class="text-cell">Réservations de cours rapides et faciles dans n'importe quel studio</td>
+          <td class="text-cell">Réservations de cours rapides et faciles dans n'importe quel studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Réservations de cours rapides et faciles dans n'importe quel studio</td>
+          <td class="text-cell">Réservations de cours rapides et faciles dans n'importe quel studio</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/div[1]/ul[1]/li[2]</td>
+          <td class="text-cell">Trouvez et enregistrez vos studios préférés</td>
+          <td class="text-cell">Trouvez et enregistrez vos studios préférés</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Trouvez et enregistrez vos studios préférés</td>
+          <td class="text-cell">Trouvez et enregistrez vos studios préférés</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/div[1]/ul[1]/li[3]</td>
+          <td class="text-cell">Suivez vos performances d'entraînement au fil du temps</td>
+          <td class="text-cell">Suivez vos performances d'entraînement au fil du temps</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Suivez vos performances d'entraînement au fil du temps</td>
+          <td class="text-cell">Suivez vos performances d'entraînement au fil du temps</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/div[1]/ul[1]/li[4]</td>
+          <td class="text-cell">Suivez les changements de votre composition corporelle grâce à vos scans InBodyTM</td>
+          <td class="text-cell">Suivez les changements de votre composition corporelle grâce à vos scans InBodyTM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Suivez les changements de votre composition corporelle grâce à vos scans InBodyTM</td>
+          <td class="text-cell">Suivez les changements de votre composition corporelle grâce à vos scans InBodyTM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/div[1]/ul[1]/li[5]</td>
+          <td class="text-cell">Voyez vos résultats de défi et de référence</td>
+          <td class="text-cell">Voyez vos résultats de défi et de référence</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Voyez vos résultats de défi et de référence</td>
+          <td class="text-cell">Voyez vos résultats de défi et de référence</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/div[1]/ul[1]/li[6]</td>
+          <td class="text-cell">Suivez les entraînements à domicile et les entraînements guidés à la demande</td>
+          <td class="text-cell">Suivez les entraînements à domicile et les entraînements guidés à la demande</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Suivez les entraînements à domicile et les entraînements guidés à la demande</td>
+          <td class="text-cell">Suivez les entraînements à domicile et les entraînements guidés à la demande</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/div[2]/a[1]/div[1]</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="text-cell">Download on the App Store</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr>
+
+        <tr>
+          <td>Presales Studio Page</td>
+          <td></td>
+          <td class="wrap-cell">/html[1]/body[1]/div[2]/div[8]/section[7]/div[1]/div[1]/div[2]/a[2]/div[1]</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="text-cell">Get it on Google Play</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+          <td class="wrap-cell"><a href="" target="_blank"></a></td>
+          <td class="status-match highlight-status">PASSED</td>
+          <td class=" highlight-status"></td>
+        </tr></tbody>
+          </table>
+        </div>
+      </body>
+      </html>
