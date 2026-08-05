@@ -1,0 +1,92 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>Automation Dashboard</title>
+      <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 30px; background: #f8fafc; color: #333; }
+        .header-bar { background: linear-gradient(90deg, #1e3a8a, #2563eb); color: white; padding: 16px 22px; border-radius: 8px; font-size: 1.4em; font-weight: 600; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        th, td { padding: 12px 14px; border: 1px solid #e5e7eb; text-align: left; font-size: 13px; }
+        th { background: #1f2937; color: white; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        tr:hover { background: #f0f4f8; }
+        a { color: #2563eb; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+      </style>
+    </head>
+    <body>
+      <div class="header-bar">Project Validation Dashboard: OrangeTheory</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Page Name</th>
+            <th>Target Sheet</th>
+            <th>Report (Live Link)</th>
+            <th>Total Checked</th>
+            <th>Text Matches</th>
+            <th>Text Mismatches</th>
+            <th>Not Found</th>
+            <th>Expected VS Actual Redirect Status</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td>Pilates Alternative Page</td>
+        <td>en-US</td>
+        <td><a href="./Pilates_Alternative_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/pilates-alternative</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>1</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Gyms Near Me Page</td>
+        <td>en-US</td>
+        <td><a href="./Gyms_Near_Me_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/gyms-near-me</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>1</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>DriTri Evergreen</td>
+        <td>en-US</td>
+        <td><a href="./DriTri_Evergreen_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/events/dritri</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">35</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Strong Page</td>
+        <td>en-US</td>
+        <td><a href="./Strong_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/workout/strong</a></td>
+        <td>40</td>
+        <td style="color:green; font-weight:600;">40</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>1</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 1</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr></tbody>
+      </table>
+    </body>
+    </html>
