@@ -1,0 +1,148 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>Automation Dashboard</title>
+      <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 30px; background: #f8fafc; color: #333; }
+        .header-bar { background: linear-gradient(90deg, #1e3a8a, #2563eb); color: white; padding: 16px 22px; border-radius: 8px; font-size: 1.4em; font-weight: 600; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        th, td { padding: 12px 14px; border: 1px solid #e5e7eb; text-align: left; font-size: 13px; }
+        th { background: #1f2937; color: white; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        tr:hover { background: #f0f4f8; }
+        a { color: #2563eb; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+      </style>
+    </head>
+    <body>
+      <div class="header-bar">Project Validation Dashboard: OrangeTheory</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Page Name</th>
+            <th>Target Sheet</th>
+            <th>Report (Live Link)</th>
+            <th>Total Checked</th>
+            <th>Text Matches</th>
+            <th>Text Mismatches</th>
+            <th>Not Found</th>
+            <th>Expected VS Actual Redirect Status</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td>Workout Page</td>
+        <td>en-CA</td>
+        <td><a href="./Workout_Page_en-CA.html" target="_blank">https://www.orangetheory.com/en-ca/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-US</td>
+        <td><a href="./Home_Page_en-US.html" target="_blank">https://www.orangetheory.com/en-us</a></td>
+        <td>33</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>1</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-CA</td>
+        <td><a href="./Locations_Page_en-CA.html" target="_blank">https://www.orangetheory.com/en-ca/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-CA</td>
+        <td><a href="./Memberships_Page_en-CA.html" target="_blank">https://www.orangetheory.com/en-ca/memberships</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-US</td>
+        <td><a href="./Presales_Studio_Page_en-US.html" target="_blank">https://www.orangetheory.com/en-us/locations/online-join-prod-3</a></td>
+        <td>46</td>
+        <td style="color:green; font-weight:600;">45</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-US</td>
+        <td><a href="./Standard_Studio_page_en-US.html" target="_blank">https://www.orangetheory.com/en-us/locations/boca-raton-florida-0011</a></td>
+        <td>96</td>
+        <td style="color:green; font-weight:600;">85</td>
+        <td style="color:red; font-weight:600;">7</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 10</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-CA</td>
+        <td><a href="./OTconnect_Beat_Page_en-CA.html" target="_blank">https://www.orangetheory.com/en-ca/product-information/otconnect-beat</a></td>
+        <td>120</td>
+        <td style="color:green; font-weight:600;">120</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-US</td>
+        <td><a href="./Product_Information_Page_en-US.html" target="_blank">https://www.orangetheory.com/en-us/product-information</a></td>
+        <td>37</td>
+        <td style="color:green; font-weight:600;">37</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 26</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr></tbody>
+      </table>
+    </body>
+    </html>
