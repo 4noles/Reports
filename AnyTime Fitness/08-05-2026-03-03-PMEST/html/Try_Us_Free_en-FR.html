@@ -1,0 +1,772 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Validation Report - Try Us Free - en-FR</title>
+        <style>
+          body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; color: #333; background-color: #f9fafb; }
+          h1 { color: #1e3a8a; margin-bottom: 14px; }
+          .summary {
+            background: #f1f5f9;
+            border-left: 6px solid #2563eb;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+          }
+          .summary a { color: #2563eb; text-decoration: none; }
+          .summary a:hover { text-decoration: underline; }
+        
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            table-layout: fixed;
+            word-wrap: break-word;
+          }
+          th, td {
+            padding: 6px 8px;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+          }
+          th {
+            background: #1f2937;
+            color: white;
+            position: sticky;
+            top: 0;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+          }
+          tr:nth-child(even) { background: #f9fafb; }
+          tr:hover { background: #eef2ff; }
+        
+          .text-cell {
+            white-space: pre-wrap;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #111827;
+            background-color: #fafafa;
+            border-radius: 6px;
+            padding: 6px 8px;
+          }
+        
+          .highlight-status {
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+          }
+          .status-match {
+            background: #dcfce7;
+            color: #065f46;
+          }
+          .status-mismatch {
+            background: #fee2e2;
+            color: #991b1b;
+          }
+          .status-skipped {
+            background: #f3f4f6;
+            color: #6b7280;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Try Us Free (en-FR)</h1>
+        <div class="summary">
+          <b>Summary:</b><br>
+          Total: 43 |
+          <span style="color:green">Matches: 4</span> |
+          <span style="color:orange">Partial: 0</span> |
+          <span style="color:crimson">Mismatches: 33</span> |
+          Not Found: 6 |
+          Errors: 0<br>
+          <b>URL:</b> <a href="https://sit.anytimefitness.com/fr-ca/try-us-free" target="_blank">https://sit.anytimefitness.com/fr-ca/try-us-free</a>
+        </div>
+
+        <table>
+          <thead>
+          <tr>
+            <th>Page</th>
+            <th>Iframe</th>
+            <th>XPath</th>
+            <th>Desktop Expected</th>
+            <th>Desktop Actual</th>
+            <th>Desktop Status</th>
+            <th>Mobile Expected</th>
+            <th>Mobile Actual</th>
+            <th>Mobile Status</th>
+            <th>WITHOUT_QUERY_PARAMS</th>
+            <th>WITH_QUERY_PARAMS</th>
+          </tr>
+        </thead>
+          <tbody>
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]</td>
+          <td class="text-cell">Download Our App</td>
+          <td class="text-cell">Téléchargez notre application</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Download Our App</td>
+          <td class="text-cell">Téléchargez notre application</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[1]/div[1]</td>
+          <td class="text-cell">COMPANY</td>
+          <td class="text-cell">ENTREPRISE</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">COMPANY</td>
+          <td class="text-cell">ENTREPRISE</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[2]/a[1]</td>
+          <td class="text-cell">Employee Wellness</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Employee Wellness</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /employee-wellness
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/employee-wellness?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[3]/a[1]</td>
+          <td class="text-cell">Media</td>
+          <td class="text-cell">Carrières</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Media</td>
+          <td class="text-cell">Carrières</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website
+Actual: /fr-ca/employment</td>
+          <td class="text-cell">Expected: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website&amp;test=query
+Actual: https://sit.anytimefitness.com/fr-ca/employment</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[4]/a[1]</td>
+          <td class="text-cell">Careers</td>
+          <td class="text-cell">Politique de confidentialité</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Careers</td>
+          <td class="text-cell">Politique de confidentialité</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /employment
+Actual: /fr-ca/privacy</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/employment?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/privacy</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[5]/a[1]</td>
+          <td class="text-cell">Privacy Policy</td>
+          <td class="text-cell">Politique DMCA</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Privacy Policy</td>
+          <td class="text-cell">Politique DMCA</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /privacy
+Actual: /fr-ca/dmca</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/privacy?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/dmca</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[6]/a[1]</td>
+          <td class="text-cell">Consumer Health Privacy Notice (Washington)</td>
+          <td class="text-cell">Modalités et conditions</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Consumer Health Privacy Notice (Washington)</td>
+          <td class="text-cell">Modalités et conditions</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: https://www.anytimefitness.com/privacy#washington-residents
+Actual: /fr-ca/terms-of-use</td>
+          <td class="text-cell">Expected: https://www.anytimefitness.com/privacy#washington-residents?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/terms-of-use</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[7]/a[1]</td>
+          <td class="text-cell">DMCA Policy</td>
+          <td class="text-cell">Modalités et conditions des promotions</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">DMCA Policy</td>
+          <td class="text-cell">Modalités et conditions des promotions</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /dmca
+Actual: /fr-ca/offer-terms</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/dmca?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/offer-terms</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[8]/a[1]</td>
+          <td class="text-cell">Terms &amp; Conditions</td>
+          <td class="text-cell">Continuité des opérations, accessibilité et maintenance</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Terms &amp; Conditions</td>
+          <td class="text-cell">Continuité des opérations, accessibilité et maintenance</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /terms-of-use
+Actual: /fr-ca/continued-operations-accessibility-maintenance</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/terms-of-use?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/continued-operations-accessibility-maintenance</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[9]/a[1]</td>
+          <td class="text-cell">Promotions Terms &amp; Conditions</td>
+          <td class="text-cell">Fournisseurs privilégiés</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Promotions Terms &amp; Conditions</td>
+          <td class="text-cell">Fournisseurs privilégiés</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /offer-terms
+Actual: /fr-ca/preferred-vendors</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/offer-terms?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/preferred-vendors</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[10]/a[1]</td>
+          <td class="text-cell">Text Messaging Terms</td>
+          <td class="text-cell">Plan du site</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Text Messaging Terms</td>
+          <td class="text-cell">Plan du site</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /text-messaging-terms
+Actual: /fr-ca/sitemap</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/text-messaging-terms?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/sitemap</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[11]/a[1]</td>
+          <td class="text-cell">Continued Operations, Accessibility and Maintenance</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Continued Operations, Accessibility and Maintenance</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /continued-operations-accessibility-maintenance
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/continued-operations-accessibility-maintenance?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[12]/a[1]</td>
+          <td class="text-cell">Preferred Vendors</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Preferred Vendors</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /preferred-vendors
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/preferred-vendors?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[13]/a[1]</td>
+          <td class="text-cell">Sitemap</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Sitemap</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /sitemap
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/sitemap?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]</td>
+          <td class="text-cell">GYMS</td>
+          <td class="text-cell">GYMS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">GYMS</td>
+          <td class="text-cell">GYMS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]</td>
+          <td class="text-cell">Find a Gym</td>
+          <td class="text-cell">Trouver un gym</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Find a Gym</td>
+          <td class="text-cell">Trouver un gym</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /locations
+Actual: /fr-ca/locations</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/locations?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/locations</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]</td>
+          <td class="text-cell">Own a Gym</td>
+          <td class="text-cell">Avoir un gym</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Own a Gym</td>
+          <td class="text-cell">Avoir un gym</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: https://franchise.anytimefitness.com/
+Actual: /fr-ca/own-a-gym</td>
+          <td class="text-cell">Expected: https://franchise.anytimefitness.com/?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/own-a-gym</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]</td>
+          <td class="text-cell">Franchise Login</td>
+          <td class="text-cell">Connexion franchisé</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Franchise Login</td>
+          <td class="text-cell">Connexion franchisé</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: https://db.anytimefitness.com
+Actual: https://db.anytimefitness.quebec/</td>
+          <td class="text-cell">Expected: https://db.anytimefitness.com?test=query
+Actual: https://db.anytimefitness.quebec/</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[2]/li[1]/div[1]</td>
+          <td class="text-cell">MEMBERS</td>
+          <td class="text-cell">MEMBRES</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">MEMBERS</td>
+          <td class="text-cell">MEMBRES</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[2]/li[2]/a[1]</td>
+          <td class="text-cell">The Anytime Fitness App</td>
+          <td class="text-cell">L&#39;application Anytime Fitness</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">The Anytime Fitness App</td>
+          <td class="text-cell">L&#39;application Anytime Fitness</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /apps
+Actual: /fr-ca/apps</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/apps?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/apps</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[2]/li[3]/a[1]</td>
+          <td class="text-cell">Coach Care Connect</td>
+          <td class="text-cell">FAQ</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Coach Care Connect</td>
+          <td class="text-cell">FAQ</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /blog
+Actual: /fr-ca/faqs</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/blog?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/faqs</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[2]/li[4]/a[1]</td>
+          <td class="text-cell">FAQs</td>
+          <td class="text-cell">Nous joindre</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">FAQs</td>
+          <td class="text-cell">Nous joindre</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /faqs
+Actual: /fr-ca/contact</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/faqs?test=query
+Actual: https://sit.anytimefitness.com/fr-ca/contact</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[2]/li[5]/a[1]</td>
+          <td class="text-cell">Contact Us</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Contact Us</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: /contact
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/contact?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[2]/li[1]/div[1]</td>
+          <td class="text-cell">SHOP</td>
+          <td class="text-cell">ENTREPRISE</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">SHOP</td>
+          <td class="text-cell">ENTREPRISE</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[2]/li[2]/a[1]</td>
+          <td class="text-cell">My Account</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">My Account</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/customer/account
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/customer/account?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[2]/li[3]/a[1]</td>
+          <td class="text-cell">Returns &amp; Exchanges</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Returns &amp; Exchanges</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/contact
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/contact?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[2]/li[4]/a[1]</td>
+          <td class="text-cell">Shop FAQ</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Shop FAQ</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/shop-faq
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/shop-faq?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[1]/div[2]/ul[2]/li[5]/a[1]</td>
+          <td class="text-cell">Vendor Login</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Vendor Login</td>
+          <td class="text-cell">Médias</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/marketplace/account/approval/
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/marketplace/account/approval/?test=query
+Actual: mailto:mediainquiries@sebrands.com?subject=Contact%20from%20website</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]</td>
+          <td class="text-cell">Anytime Fitness is member of Purpose Brands™ A family of purpose-driven wellness brands:</td>
+          <td class="text-cell">Anytime Fitness fait partie de Purpose BrandsTM Une famille de marques de bien-être axées sur un objectif:</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Anytime Fitness is member of Purpose Brands™ A family of purpose-driven wellness brands:</td>
+          <td class="text-cell">Anytime Fitness fait partie de Purpose BrandsTM Une famille de marques de bien-être axées sur un objectif:</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[2]/div[1]/ul[1]/li[1]/a[1]</td>
+          <td class="text-cell">Orangetheory Fitness</td>
+          <td class="text-cell">Orangetheory Fitness</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Orangetheory Fitness</td>
+          <td class="text-cell">Orangetheory Fitness</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">✅PASSED</td>
+          <td class="text-cell">Expected: https://www.orangetheory.com/?test=query
+Actual: https://www.orangetheory.com/</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[2]/div[1]/ul[1]/li[2]/a[1]</td>
+          <td class="text-cell">The Bar Method</td>
+          <td class="text-cell">The Bar Method</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">The Bar Method</td>
+          <td class="text-cell">The Bar Method</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">✅PASSED</td>
+          <td class="text-cell">Expected: https://barmethod.com/?test=query
+Actual: https://barmethod.com/</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[2]/div[1]/ul[1]/li[3]/a[1]</td>
+          <td class="text-cell">Waxing the City</td>
+          <td class="text-cell">Waxing the City</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Waxing the City</td>
+          <td class="text-cell">Waxing the City</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">✅PASSED</td>
+          <td class="text-cell">Expected: https://www.waxingthecity.com/?test=query
+Actual: https://www.waxingthecity.com/</td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[2]/div[1]/div[2]/div[1]</td>
+          <td class="text-cell">© Anytime Fitness 2026. All rights reserved.</td>
+          <td class="text-cell">© Anytime Fitness 2026. Tous droits réservés.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">© Anytime Fitness 2026. All rights reserved.</td>
+          <td class="text-cell">© Anytime Fitness 2026. Tous droits réservés.</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;footerSelectedLanguage&#39;]</td>
+          <td class="text-cell">United States (English)</td>
+          <td class="text-cell">Canada (Quebec) (Français)</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">United States (English)</td>
+          <td class="text-cell">Canada (Quebec) (Français)</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;ot-sdk-link&#39;]</td>
+          <td class="text-cell">Cookie Settings</td>
+          <td class="text-cell">Paramètres des témoins</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Cookie Settings</td>
+          <td class="text-cell">Paramètres des témoins</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/footer[1]/div[2]/div[2]/div[1]</td>
+          <td class="text-cell">Cookie Settings</td>
+          <td class="text-cell">Paramètres des témoins</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">Cookie Settings</td>
+          <td class="text-cell">Paramètres des témoins</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell"></td>
+          <td class="text-cell"></td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;white-nav-main-links&#39;]/li[1]/a[1]</td>
+          <td class="text-cell">Find a Gym</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Find a Gym</td>
+          <td class="text-cell"></td>
+          <td class="status-skipped highlight-status">SKIPPED</td>
+          <td class="text-cell">Expected: /locations
+Actual: </td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/locations?test=query
+Actual: </td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;white-nav-main-links&#39;]/li[2]/a[1]</td>
+          <td class="text-cell">Training</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Training</td>
+          <td class="text-cell"></td>
+          <td class="status-skipped highlight-status">SKIPPED</td>
+          <td class="text-cell">Expected: /training
+Actual: </td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/training?test=query
+Actual: </td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;white-nav-main-links&#39;]/li[3]/a[1]</td>
+          <td class="text-cell">Blog</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Blog</td>
+          <td class="text-cell"></td>
+          <td class="status-skipped highlight-status">SKIPPED</td>
+          <td class="text-cell">Expected: /blog
+Actual: </td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/blog?test=query
+Actual: </td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;white-nav-main-links&#39;]/li[4]/a[1]</td>
+          <td class="text-cell">Why Join</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Why Join</td>
+          <td class="text-cell"></td>
+          <td class="status-skipped highlight-status">SKIPPED</td>
+          <td class="text-cell">Expected: /membership
+Actual: </td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/membership?test=query
+Actual: </td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;white-nav-main-links&#39;]/li[5]/a[1]</td>
+          <td class="text-cell">Shop</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Shop</td>
+          <td class="text-cell"></td>
+          <td class="status-skipped highlight-status">SKIPPED</td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/
+Actual: </td>
+          <td class="text-cell">Expected: https://shop.anytimefitness.com/?test=query
+Actual: </td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;white-nav-main-links&#39;]/li[6]/a[1]</td>
+          <td class="text-cell">Own a Gym</td>
+          <td class="text-cell"></td>
+          <td class=" highlight-status">NOT_FOUND</td>
+          <td class="text-cell">Own a Gym</td>
+          <td class="text-cell"></td>
+          <td class="status-skipped highlight-status">SKIPPED</td>
+          <td class="text-cell">Expected: https://franchise.anytimefitness.com/
+Actual: </td>
+          <td class="text-cell">Expected: https://franchise.anytimefitness.com/?test=query
+Actual: </td>
+        </tr>
+
+        <tr>
+          <td>Try Us Free</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/a[1]</td>
+          <td class="text-cell">TRY US FREE</td>
+          <td class="text-cell">CONTINUE</td>
+          <td class="status-mismatch highlight-status">MISMATCH</td>
+          <td class="text-cell">TRY US FREE</td>
+          <td class="text-cell">CONTINUE</td>
+          <td class="status-skipped highlight-status">SKIPPED</td>
+          <td class="text-cell">Expected: /try-us-free
+Actual: </td>
+          <td class="text-cell">Expected: https://sit.anytimefitness.com/try-us-free?test=query
+Actual: </td>
+        </tr></tbody>
+        </table>
+      </body>
+      </html>
