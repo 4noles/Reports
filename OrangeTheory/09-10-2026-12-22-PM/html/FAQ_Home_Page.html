@@ -1,0 +1,44 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8"/>
+        <title>FAQ Validation Report - Home Page</title>
+        <style>
+          body { font-family: 'Segoe UI', sans-serif; margin: 20px; background-color: #f9fafb; color: #333; }
+          h1 { color: #1e3a8a; }
+          .summary { background: #f1f5f9; border-left: 6px solid #2563eb; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-size: 14px; }
+          table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+          th, td { padding: 8px; border: 1px solid #e5e7eb; vertical-align: top; font-size: 11px; }
+          th { background: #1f2937; color: white; }
+          .text-cell { white-space: pre-line; word-break: break-all; max-width: 250px; }
+          .url-cell { font-family: monospace; font-size: 10.5px; line-height: 1.5; color: #1e293b; }
+          .highlight-status { font-weight: 600; text-align: center; }
+          .status-match { background: #dcfce7; color: #065f46; }
+          .status-mismatch { background: #fee2e2; color: #991b1b; }
+          .status-notfound { background: #f1f5f9; color: #475569; } /* Slate Blue / Gray for NOT_FOUND */
+        </style>
+      </head>
+      <body>
+        <h1>FAQ Validation Report — Home Page (approved_faq)</h1>
+        <div class="summary">
+          <b>Summary:</b> Total Checked: 0 | 
+          <span style="color:green; font-weight:600;">Matches: 0</span> | 
+          <span style="color:crimson; font-weight:600;">Mismatches: 0</span> | 
+          <span style="color:#475569; font-weight:600;">Not Found: 0</span><br/>
+          <b>URL:</b> <a href="https://www.sit.orangetheory.com/en-us" target="_blank">https://www.sit.orangetheory.com/en-us</a>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Pos</th>
+              <th>Exp Question</th><th>Act Question</th><th>Q Status</th>
+              <th>Exp Answer</th><th>Act Answer</th><th>A Status</th>
+              <th>Exp Link</th><th>Act Link</th><th>Link Status</th>
+              <th>Overall</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </body>
+      </html>
