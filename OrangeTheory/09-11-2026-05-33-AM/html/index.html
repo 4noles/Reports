@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ Localization Report</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a222c;
+      --surface-2: #243041;
+      --border: #334155;
+      --text: #e8eef6;
+      --muted: #94a3b8;
+      --accent: #f97316;
+      --ok: #22c55e;
+      --bad: #ef4444;
+      --warn: #eab308;
+      --focus: #38bdf8;
+      --radius: 10px;
+      --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+      --mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #1e293b 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #431407 0%, transparent 45%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      padding: 1.75rem 1.5rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.65rem;
+      letter-spacing: -0.02em;
+    }
+    .subtitle { color: var(--muted); margin: 0; font-size: 0.95rem; }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.85rem 1rem;
+      min-width: 140px;
+    }
+    .stat .label { display: block; color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .stat .value { font-size: 1.4rem; font-weight: 700; margin-top: 0.2rem; }
+    .stat.bad .value { color: var(--bad); }
+    .stat.ok .value { color: var(--ok); }
+    .controls {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+      align-items: end;
+    }
+    label { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.8rem; color: var(--muted); }
+    select, input[type="search"] {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.55rem 0.7rem;
+      min-width: 180px;
+      font: inherit;
+    }
+    select:focus, input:focus { outline: 2px solid var(--focus); outline-offset: 1px; }
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .page {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .page-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      justify-content: space-between;
+      align-items: start;
+      padding: 1rem 1.1rem;
+      background: var(--surface-2);
+      cursor: pointer;
+    }
+    .page-header:hover { filter: brightness(1.05); }
+    .page-title { margin: 0; font-size: 1.05rem; word-break: break-all; }
+    .page-title a { color: var(--text); text-decoration: none; }
+    .page-title a:hover { color: var(--accent); text-decoration: underline; }
+    .page-meta { color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; word-break: break-all; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      border-radius: 999px;
+      padding: 0.25rem 0.65rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+    }
+    .badge.ok { background: rgba(34,197,94,0.15); color: var(--ok); border-color: rgba(34,197,94,0.35); }
+    .badge.bad { background: rgba(239,68,68,0.15); color: var(--bad); border-color: rgba(239,68,68,0.35); }
+    .badge.warn { background: rgba(234,179,8,0.15); color: var(--warn); border-color: rgba(234,179,8,0.35); }
+    .page-body { display: none; padding: 0 1.1rem 1.1rem; }
+    .page.open .page-body { display: block; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.55rem 0.45rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .mono { font-family: var(--mono); font-size: 0.82rem; }
+    .empty {
+      text-align: center;
+      color: var(--muted);
+      padding: 2.5rem 1rem;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+    }
+    footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FAQ Localization Report</h1>
+    <p class="subtitle">Scraped FAQ Q/A validated with Cursor AI against page locale · high-confidence fails CI · low/medium needs review</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="controls">
+    <label>
+      Filter
+      <select id="filter" aria-label="Filter pages">
+        <option value="all">All links</option>
+        <option value="failing">Links with CI fails</option>
+        <option value="review">Links needing review</option>
+        <option value="issues">Links with any finding</option>
+        <option value="clean">Clean links</option>
+      </select>
+    </label>
+    <label>
+      Sort by URL
+      <select id="sort" aria-label="Sort by URL">
+        <option value="asc">URL A → Z</option>
+        <option value="desc">URL Z → A</option>
+      </select>
+    </label>
+    <label>
+      Search
+      <input id="search" type="search" placeholder="Search by URL…" aria-label="Search by URL" />
+    </label>
+  </div>
+
+  <main id="results" aria-live="polite"></main>
+  <footer id="footer"></footer>
+
+  <script id="report-data" type="application/json">{"generatedAt":"2026-09-11T09:33:00.888Z","totalPages":22,"pagesWithIssues":0,"totalIssues":0,"failingIssues":0,"reviewIssues":0,"results":[{"url":"https://www.sit.orangetheory.com/fr-ca/locations/vancouver-british-columbia-can073","name":"vancouver-british-columbia-can073","locale":"fr-ca","expectedLanguage":"French","scannedAt":"2026-09-11T09:24:06.908Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-co/locations/bogota-cundinamarca-col001","name":"bogota-cundinamarca-col001","locale":"es-co","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:24:44.075Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-cr/locations/escazu-san-jose-cri001","name":"escazu-san-jose-cri001","locale":"es-cr","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:25:08.038Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-do/locations/arroyo-hondo-santiago-dom005","name":"arroyo-hondo-santiago-dom005","locale":"es-do","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:25:36.671Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-gt/locations/guatemala-city-guatemala-gtm001","name":"guatemala-city-guatemala-gtm001","locale":"es-gt","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:26:01.898Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-mx/locations/mexico-city-mexico-mex011","name":"mexico-city-mexico-mex011","locale":"es-mx","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:26:28.236Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-pa/locations/panama-pa-pan003","name":"panama-pa-pan003","locale":"es-pa","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:26:56.316Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-pr/locations/condado-san-juan-pri002","name":"condado-san-juan-pri002","locale":"es-pr","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:27:20.509Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/ja-jp/locations/yokohama-city-kanagawa-jpn001","name":"yokohama-city-kanagawa-jpn001","locale":"ja-jp","expectedLanguage":"Japanese","scannedAt":"2026-09-11T09:28:19.224Z","attributesChecked":3,"issues":[]},{"url":"https://www.sit.orangetheory.com/de-de/locations/hamburg-hamburg-deu002","name":"hamburg-hamburg-deu002","locale":"de-de","expectedLanguage":"German","scannedAt":"2026-09-11T09:28:37.501Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-es/locations/barcelona-baleares-balearic-islands-esp005","name":"barcelona-baleares-balearic-islands-esp005","locale":"es-es","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:29:11.274Z","attributesChecked":22,"issues":[]},{"url":"https://www.sit.orangetheory.com/fr-ca/locations/prod-intl-4","name":"prod-intl-4","locale":"fr-ca","expectedLanguage":"French","scannedAt":"2026-09-11T09:29:36.460Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-co/locations/prod-intl-4","name":"prod-intl-4","locale":"es-co","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:30:00.689Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-cr/locations/prod-intl-4","name":"prod-intl-4","locale":"es-cr","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:30:18.970Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-do/locations/prod-intl-4","name":"prod-intl-4","locale":"es-do","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:30:37.396Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-gt/locations/prod-intl-4","name":"prod-intl-4","locale":"es-gt","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:30:56.446Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-mx/locations/prod-intl-4","name":"prod-intl-4","locale":"es-mx","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:31:13.666Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-pa/locations/prod-intl-4","name":"prod-intl-4","locale":"es-pa","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:31:36.313Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-pr/locations/prod-intl-4","name":"prod-intl-4","locale":"es-pr","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:31:55.494Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/ja-jp/locations/prod-intl-4","name":"prod-intl-4","locale":"ja-jp","expectedLanguage":"Japanese","scannedAt":"2026-09-11T09:32:16.201Z","attributesChecked":9,"issues":[]},{"url":"https://www.sit.orangetheory.com/de-de/locations/prod-intl-4","name":"prod-intl-4","locale":"de-de","expectedLanguage":"German","scannedAt":"2026-09-11T09:32:26.194Z","attributesChecked":20,"issues":[]},{"url":"https://www.sit.orangetheory.com/es-es/locations/prod-intl-5","name":"prod-intl-5","locale":"es-es","expectedLanguage":"Spanish","scannedAt":"2026-09-11T09:32:44.949Z","attributesChecked":20,"issues":[]}]}</script>
+  <script>
+    const data = JSON.parse(document.getElementById("report-data").textContent);
+    const resultsEl = document.getElementById("results");
+    const filterEl = document.getElementById("filter");
+    const sortEl = document.getElementById("sort");
+    const searchEl = document.getElementById("search");
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function pageFailCount(page) {
+      return page.issues.filter((i) => i.failsCi === true).length;
+    }
+    function pageReviewCount(page) {
+      return page.issues.filter((i) => i.type === "needs_review").length;
+    }
+
+    function renderStats() {
+      const failing = data.failingIssues ?? 0;
+      const review = data.reviewIssues ?? 0;
+      document.getElementById("stats").innerHTML = `
+        <div class="stat"><span class="label">Pages</span><div class="value">${data.totalPages}</div></div>
+        <div class="stat ${failing ? "bad" : "ok"}"><span class="label">CI fails</span><div class="value">${failing}</div></div>
+        <div class="stat"><span class="label">Needs review</span><div class="value" style="color:var(--warn)">${review}</div></div>
+        <div class="stat"><span class="label">Generated</span><div class="value" style="font-size:0.95rem">${escapeHtml(new Date(data.generatedAt).toLocaleString())}</div></div>
+      `;
+      document.getElementById("footer").textContent =
+        "CI fails = high-confidence language mismatches + page errors · Needs review = medium/low confidence";
+    }
+
+    function visibleRows() {
+      const filter = filterEl.value;
+      const q = searchEl.value.trim().toLowerCase();
+      let rows = data.results.slice();
+
+      if (filter === "failing") rows = rows.filter((r) => pageFailCount(r) > 0);
+      if (filter === "review") rows = rows.filter((r) => pageReviewCount(r) > 0);
+      if (filter === "issues") rows = rows.filter((r) => r.issues.length > 0);
+      if (filter === "clean") rows = rows.filter((r) => r.issues.length === 0);
+
+      if (q) {
+        rows = rows.filter((r) =>
+          [r.url, r.name, r.locale, r.expectedLanguage].join(" ").toLowerCase().includes(q)
+        );
+      }
+
+      const dir = sortEl.value === "desc" ? -1 : 1;
+      rows.sort((a, b) => {
+        const an = a.url.toLowerCase();
+        const bn = b.url.toLowerCase();
+        return an < bn ? -1 * dir : an > bn ? 1 * dir : 0;
+      });
+      return rows;
+    }
+
+    function issueBadgeClass(issue) {
+      if (issue.type === "needs_review") return "warn";
+      return "bad";
+    }
+
+    function issueRows(issues) {
+      if (!issues.length) {
+        return '<p class="page-meta" style="margin:0.75rem 0 0">No issues found for this page.</p>';
+      }
+      return `
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Field</th>
+              <th>Text</th>
+              <th>Expected</th>
+              <th>Detected</th>
+              <th>Confidence</th>
+              <th>Message</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${issues.map((issue) => `
+              <tr>
+                <td><span class="badge ${issueBadgeClass(issue)}">${escapeHtml(issue.type)}</span></td>
+                <td class="mono">${escapeHtml(issue.kind || "—")}</td>
+                <td>${escapeHtml(issue.text || "—")}</td>
+                <td>${escapeHtml(issue.expectedLanguage || "—")}</td>
+                <td>${escapeHtml(issue.detectedLanguage || "—")}</td>
+                <td>${escapeHtml(issue.confidence || "—")}</td>
+                <td>${escapeHtml(issue.message)}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      `;
+    }
+
+    function render() {
+      const rows = visibleRows();
+      if (!rows.length) {
+        resultsEl.innerHTML = '<div class="empty">No pages match the current filter.</div>';
+        return;
+      }
+
+      resultsEl.innerHTML = rows.map((page, index) => {
+        const failCount = pageFailCount(page);
+        const reviewCount = pageReviewCount(page);
+        const open = failCount > 0 && index === 0 ? " open" : "";
+        const badgeClass = failCount > 0 ? "bad" : reviewCount > 0 ? "warn" : "ok";
+        const badgeText = failCount > 0
+          ? failCount + " CI fail" + (failCount === 1 ? "" : "s") + (reviewCount ? " · " + reviewCount + " review" : "")
+          : reviewCount > 0
+            ? reviewCount + " need" + (reviewCount === 1 ? "s" : "") + " review"
+            : "Clean";
+        return `
+          <article class="page${open}" data-url="${escapeHtml(page.url)}">
+            <div class="page-header" role="button" tabindex="0" aria-expanded="${open ? "true" : "false"}">
+              <div>
+                <h2 class="page-title">
+                  <a href="${escapeHtml(page.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${escapeHtml(page.url)}</a>
+                </h2>
+                <div class="page-meta">
+                  ${escapeHtml(page.name)} · ${escapeHtml(page.locale)} → ${escapeHtml(page.expectedLanguage)}
+                </div>
+              </div>
+              <span class="badge ${badgeClass}">${badgeText}</span>
+            </div>
+            <div class="page-body">
+              <div class="page-meta">Checked ${page.attributesChecked} FAQ string(s) · scanned ${escapeHtml(page.scannedAt)}</div>
+              ${page.error ? `<p class="badge bad">${escapeHtml(page.error)}</p>` : ""}
+              ${issueRows(page.issues)}
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      resultsEl.querySelectorAll(".page-header").forEach((header) => {
+        const toggle = () => {
+          const page = header.closest(".page");
+          page.classList.toggle("open");
+          header.setAttribute("aria-expanded", page.classList.contains("open") ? "true" : "false");
+        };
+        header.addEventListener("click", (e) => {
+          if (e.target.closest("a")) return;
+          toggle();
+        });
+        header.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
+        });
+      });
+    }
+
+    filterEl.addEventListener("change", render);
+    sortEl.addEventListener("change", render);
+    searchEl.addEventListener("input", render);
+    renderStats();
+    render();
+  </script>
+</body>
+</html>
