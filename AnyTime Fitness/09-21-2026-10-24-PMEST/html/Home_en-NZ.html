@@ -1,0 +1,470 @@
+
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Validation Report - Home - en-NZ</title>
+        <style>
+          body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; color: #333; background-color: #f9fafb; }
+          h1 { color: #1e3a8a; margin-bottom: 14px; }
+          .summary {
+            background: #f1f5f9;
+            border-left: 6px solid #2563eb;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+          }
+          .summary a { color: #2563eb; text-decoration: none; }
+          .summary a:hover { text-decoration: underline; }
+        
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            table-layout: fixed;
+            word-wrap: break-word;
+          }
+          th, td {
+            padding: 6px 8px;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+          }
+          th {
+            background: #1f2937;
+            color: white;
+            position: sticky;
+            top: 0;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+          }
+          tr:nth-child(even) { background: #f9fafb; }
+          tr:hover { background: #eef2ff; }
+        
+          .text-cell {
+            white-space: pre-wrap;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #111827;
+            background-color: #fafafa;
+            border-radius: 6px;
+            padding: 6px 8px;
+          }
+        
+          /* Proportional column widths */
+          td:nth-child(1) { width: 8%; }    /* Page */
+          td:nth-child(2) { width: 6%; }    /* Iframe */
+          td:nth-child(3) { width: 20%; }   /* XPath */
+          td:nth-child(4), td:nth-child(5) { width: 16%; }  /* Desktop Text */
+          td:nth-child(6) { width: 8%; }    /* Desktop Status */
+          td:nth-child(7), td:nth-child(8) { width: 16%; }  /* Mobile Text */
+          td:nth-child(9) { width: 8%; }    /* Mobile Status */
+        
+          .highlight-status {
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+          }
+          .status-match {
+            background: #dcfce7;
+            color: #065f46;
+          }
+          .status-mismatch {
+            background: #fee2e2;
+            color: #991b1b;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Validation Report — Home (en-NZ)</h1>
+        <div class="summary">
+          <b>Summary:</b><br>
+          Total: 30 |
+          <span style="color:green">Matches: 30</span> |
+          <span style="color:orange">Partial: 0</span> |
+          <span style="color:crimson">Mismatches: 0</span> |
+          Not Found: 7 |
+          Errors: 0<br>
+          <b>URL:</b> <a href="https://www.anytimefitness.com/en-nz/" target="_blank">https://www.anytimefitness.com/en-nz/</a>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Page</th>
+              <th>Iframe</th>
+              <th>XPath</th>
+              <th>Desktop Expected</th>
+              <th>Desktop Actual</th>
+              <th>Desktop Status</th>
+              <th>Mobile Expected</th>
+              <th>Mobile Actual</th>
+              <th>Mobile Status</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/header[1]/div[1]/div[2]/h1[1]</td>
+          <td class="text-cell">HERE FOR YOU, ANYTIME</td>
+          <td class="text-cell">HERE FOR YOU, ANYTIME</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">HERE FOR YOU, ANYTIME</td>
+          <td class="text-cell">HERE FOR YOU, ANYTIME</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/header[1]/div[1]/div[2]/p[1]</td>
+          <td class="text-cell">With more locations across New Zealand than any other gym, there&#39;s always an Anytime Fitness right where you need one — open 24/7, with world-class equipment, supportive coaches, and a community that&#39;s got your back. For anybody, anywhere, anytime.</td>
+          <td class="text-cell">With more locations across New Zealand than any other gym, there&#39;s always an Anytime Fitness right where you need one — open 24/7, with world-class equipment, supportive coaches, and a community that&#39;s got your back. For anybody, anywhere, anytime.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">With more locations across New Zealand than any other gym, there&#39;s always an Anytime Fitness right where you need one — open 24/7, with world-class equipment, supportive coaches, and a community that&#39;s got your back. For anybody, anywhere, anytime.</td>
+          <td class="text-cell">With more locations across New Zealand than any other gym, there&#39;s always an Anytime Fitness right where you need one — open 24/7, with world-class equipment, supportive coaches, and a community that&#39;s got your back. For anybody, anywhere, anytime.</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/header[1]/div[1]/div[2]/div[1]/a[1]</td>
+          <td class="text-cell">TRY US FREE</td>
+          <td class="text-cell">TRY US FREE</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">TRY US FREE</td>
+          <td class="text-cell">TRY US FREE</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">FIND A GYM WITH ALL THE RIGHT BENEFITS</td>
+          <td class="text-cell">FIND A GYM WITH ALL THE RIGHT BENEFITS</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIND A GYM WITH ALL THE RIGHT BENEFITS</td>
+          <td class="text-cell">FIND A GYM WITH ALL THE RIGHT BENEFITS</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[1]/div[2]</td>
+          <td class="text-cell">Open 24 hours</td>
+          <td class="text-cell">Open 24 hours</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Open 24 hours</td>
+          <td class="text-cell">Open 24 hours</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[2]/div[2]/div[1]</td>
+          <td class="text-cell">Access to</td>
+          <td class="text-cell">Access to</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Access to</td>
+          <td class="text-cell">Access to</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[2]/div[2]/div[2]/div[1]</td>
+          <td class="text-cell">6,000+</td>
+          <td class="text-cell">6,000+</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">6,000+</td>
+          <td class="text-cell">6,000+</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[2]/div[2]/div[3]</td>
+          <td class="text-cell">gyms</td>
+          <td class="text-cell">gyms</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">gyms</td>
+          <td class="text-cell">gyms</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[3]/div[2]</td>
+          <td class="text-cell">Personalised plan</td>
+          <td class="text-cell">Personalised plan</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Personalised plan</td>
+          <td class="text-cell">Personalised plan</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[4]/div[2]</td>
+          <td class="text-cell">Personal &amp; group training</td>
+          <td class="text-cell">Personal &amp; group training</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Personal &amp; group training</td>
+          <td class="text-cell">Personal &amp; group training</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[5]/div[2]</td>
+          <td class="text-cell">Free fitness consultation</td>
+          <td class="text-cell">Free fitness consultation</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Free fitness consultation</td>
+          <td class="text-cell">Free fitness consultation</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[1]/div[1]/div[1]/ul[1]/li[6]/div[2]/div[1]</td>
+          <td class="text-cell">Top-quality equipment</td>
+          <td class="text-cell">Top-quality equipment</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Top-quality equipment</td>
+          <td class="text-cell">Top-quality equipment</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-_8bee0e69-4897-ceab-3156-9a088158876d-81588769&#39;]/h2[1]</td>
+          <td class="text-cell">RATED THE #1 GYM BY KIWIS​</td>
+          <td class="text-cell">RATED THE #1 GYM BY KIWIS​</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">RATED THE #1 GYM BY KIWIS​</td>
+          <td class="text-cell">RATED THE #1 GYM BY KIWIS​</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-_8bee0e69-4897-ceab-3156-9a088158876d-81588769&#39;]/div[1]/p[1]</td>
+          <td class="text-cell">Anytime clubs are locally owned and operated, which allows us to get to know you and your fitness goals on a personal level. Being a global company on the other hand means that you have access to</td>
+          <td class="text-cell">Anytime clubs are locally owned and operated, which allows us to get to know you and your fitness goals on a personal level. Being a global company on the other hand means that you have access to</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Anytime clubs are locally owned and operated, which allows us to get to know you and your fitness goals on a personal level. Being a global company on the other hand means that you have access to</td>
+          <td class="text-cell">Anytime clubs are locally owned and operated, which allows us to get to know you and your fitness goals on a personal level. Being a global company on the other hand means that you have access to</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-_8bee0e69-4897-ceab-3156-9a088158876d-81588769&#39;]/div[1]/div[1]/div[1]</td>
+          <td class="text-cell">6,000+</td>
+          <td class="text-cell">6,000+</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">6,000+</td>
+          <td class="text-cell">6,000+</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;w-node-_8bee0e69-4897-ceab-3156-9a088158876d-81588769&#39;]/div[1]/p[2]</td>
+          <td class="text-cell">clubs around the world, innovate fitness apps, and all the buisness equipment. So join Anytime, and enjoy a global club, just down the road.</td>
+          <td class="text-cell">clubs around the world, innovate fitness apps, and all the buisness equipment. So join Anytime, and enjoy a global club, just down the road.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">clubs around the world, innovate fitness apps, and all the buisness equipment. So join Anytime, and enjoy a global club, just down the road.</td>
+          <td class="text-cell">clubs around the world, innovate fitness apps, and all the buisness equipment. So join Anytime, and enjoy a global club, just down the road.</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">EVERYTHING YOU NEED TO TRAIN SMARTER. ALL IN ONE GYM.</td>
+          <td class="text-cell">EVERYTHING YOU NEED TO TRAIN SMARTER. ALL IN ONE GYM.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">EVERYTHING YOU NEED TO TRAIN SMARTER. ALL IN ONE GYM.</td>
+          <td class="text-cell">EVERYTHING YOU NEED TO TRAIN SMARTER. ALL IN ONE GYM.</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[1]/p[1]</td>
+          <td class="text-cell">From expert-led training to nutrition guidance and recovery support, Anytime Fitness helps you build sustainable habits, inside and outside the gym.</td>
+          <td class="text-cell">From expert-led training to nutrition guidance and recovery support, Anytime Fitness helps you build sustainable habits, inside and outside the gym.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">From expert-led training to nutrition guidance and recovery support, Anytime Fitness helps you build sustainable habits, inside and outside the gym.</td>
+          <td class="text-cell">From expert-led training to nutrition guidance and recovery support, Anytime Fitness helps you build sustainable habits, inside and outside the gym.</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[3]/div[1]/div[1]/div[1]/a[1]</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[4]/div[2]/div[1]/h2[1]</td>
+          <td class="text-cell">START YOUR JOURNEY TO STRONGER WITH ANYTIME FITNESS.</td>
+          <td class="text-cell">START YOUR JOURNEY TO STRONGER WITH ANYTIME FITNESS.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">START YOUR JOURNEY TO STRONGER WITH ANYTIME FITNESS.</td>
+          <td class="text-cell">START YOUR JOURNEY TO STRONGER WITH ANYTIME FITNESS.</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[4]/div[2]/div[1]/p[1]</td>
+          <td class="text-cell">With clubs all across New Zealand, a stronger you is just around the corner. Our community of coaches and members are waiting to meet you.</td>
+          <td class="text-cell">With clubs all across New Zealand, a stronger you is just around the corner. Our community of coaches and members are waiting to meet you.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">With clubs all across New Zealand, a stronger you is just around the corner. Our community of coaches and members are waiting to meet you.</td>
+          <td class="text-cell">With clubs all across New Zealand, a stronger you is just around the corner. Our community of coaches and members are waiting to meet you.</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td></td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;main-content&#39;]/section[4]/div[2]/div[1]/div[1]/a[1]</td>
+          <td class="text-cell">TRY US FOR FREE</td>
+          <td class="text-cell">TRY US FOR FREE</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">TRY US FOR FREE</td>
+          <td class="text-cell">TRY US FOR FREE</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/h2[1]</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="text-cell">FIND YOUR GYM</td>
+          <td class="status-match highlight-status">MATCH</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;react-select-2-placeholder&#39;]</td>
+          <td class="text-cell">Search by city &amp; area or postcode</td>
+          <td class="text-cell">Search by city &amp; area or postcode</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Search by city &amp; area or postcode</td>
+          <td class="text-cell">Search by city &amp; area or postcode</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]</td>
+          <td class="text-cell">Use Current Location</td>
+          <td class="text-cell">Use Current Location</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">Use Current Location</td>
+          <td class="text-cell">Use Current Location</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;list-tab&#39;]</td>
+          <td class="text-cell">LIST</td>
+          <td class="text-cell">LIST</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">LIST</td>
+          <td class="text-cell">LIST</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;map-tab&#39;]</td>
+          <td class="text-cell">MAP</td>
+          <td class="text-cell">MAP</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">MAP</td>
+          <td class="text-cell">MAP</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;list-panel&#39;]/div[1]/h2[1]</td>
+          <td class="text-cell">LET&#39;S GET YOU TO THE RIGHT PLACE.</td>
+          <td class="text-cell">LET&#39;S GET YOU TO THE RIGHT PLACE.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">LET&#39;S GET YOU TO THE RIGHT PLACE.</td>
+          <td class="text-cell">LET&#39;S GET YOU TO THE RIGHT PLACE.</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;list-panel&#39;]/div[1]/p[1]</td>
+          <td class="text-cell">It looks like you might be located outside of New Zealand. To find a location in New Zealand, search by city or postcode. Or, view all countries.</td>
+          <td class="text-cell">It looks like you might be located outside of New Zealand. To find a location in New Zealand, search by city or postcode. Or, view all countries.</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">It looks like you might be located outside of New Zealand. To find a location in New Zealand, search by city or postcode. Or, view all countries.</td>
+          <td class="text-cell">It looks like you might be located outside of New Zealand. To find a location in New Zealand, search by city or postcode. Or, view all countries.</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr>
+
+        <tr>
+          <td>Home</td>
+          <td>find-your-gym-searchbar-iframe</td>
+          <td style="white-space: pre-wrap; font-size:12px; line-height:1.4;">//*[@id=&#39;list-panel&#39;]/div[1]/button[1]</td>
+          <td class="text-cell">VIEW ALL COUNTRIES</td>
+          <td class="text-cell">VIEW ALL COUNTRIES</td>
+          <td class="status-match highlight-status">MATCH</td>
+          <td class="text-cell">VIEW ALL COUNTRIES</td>
+          <td class="text-cell">VIEW ALL COUNTRIES</td>
+          <td class=" highlight-status">NOT_FOUND</td>
+        </tr></tbody>
+        </table>
+      </body>
+      </html>
