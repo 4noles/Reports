@@ -1,0 +1,442 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>Automation Dashboard</title>
+      <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 30px; background: #f8fafc; color: #333; }
+        .header-bar { background: linear-gradient(90deg, #1e3a8a, #2563eb); color: white; padding: 16px 22px; border-radius: 8px; font-size: 1.4em; font-weight: 600; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        th, td { padding: 12px 14px; border: 1px solid #e5e7eb; text-align: left; font-size: 13px; }
+        th { background: #1f2937; color: white; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        tr:hover { background: #f0f4f8; }
+        a { color: #2563eb; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+      </style>
+    </head>
+    <body>
+      <div class="header-bar">Project Validation Dashboard: OrangeTheory</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Page Name</th>
+            <th>Target Sheet</th>
+            <th>Report (Live Link)</th>
+            <th>Total Checked</th>
+            <th>Text Matches</th>
+            <th>Text Mismatches</th>
+            <th>Not Found</th>
+            <th>Expected VS Actual Redirect Status</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-US</td>
+        <td><a href="./Booking_Lead_Form_en-US.html" target="_blank">https://www.sit.orangetheory.com/en-us/book-a-class-1?location_id=3faf5e12-327c-42e6-adb7-1363b57c4d04&amp;step=1</a></td>
+        <td>260</td>
+        <td style="color:green; font-weight:600;">260</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>fr-CA</td>
+        <td><a href="./Booking_Lead_Form_fr-CA.html" target="_blank">https://www.sit.orangetheory.com/fr-ca/book-a-class-1?location_id=196f0c40-c406-4245-af47-0b503318ce2d&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-CA</td>
+        <td><a href="./Booking_Lead_Form_en-CA.html" target="_blank">https://www.sit.orangetheory.com/en-ca/book-a-class-1?location_id=196f0c40-c406-4245-af47-0b503318ce2d&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-CO</td>
+        <td><a href="./Booking_Lead_Form_en-CO.html" target="_blank">https://www.sit.orangetheory.com/en-co/book-a-class-1?location_id=75326430-5146-4887-902e-7764466eb687&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-CO</td>
+        <td><a href="./Booking_Lead_Form_es-CO.html" target="_blank">https://www.sit.orangetheory.com/es-co/book-a-class-1?location_id=75326430-5146-4887-902e-7764466eb687&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-CR</td>
+        <td><a href="./Booking_Lead_Form_en-CR.html" target="_blank">https://www.sit.orangetheory.com/en-cr/book-a-class-1?location_id=6ccfa521-82c9-4d0b-a39a-504328d21902&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-CR</td>
+        <td><a href="./Booking_Lead_Form_es-CR.html" target="_blank">https://www.sit.orangetheory.com/es-cr/book-a-class-1?location_id=6ccfa521-82c9-4d0b-a39a-504328d21902&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-DO</td>
+        <td><a href="./Booking_Lead_Form_es-DO.html" target="_blank">https://www.sit.orangetheory.com/es-do/book-a-class-1?location_id=d524d997-f557-4e02-afa0-84bb04ea1ba7&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-DO</td>
+        <td><a href="./Booking_Lead_Form_en-DO.html" target="_blank">https://www.sit.orangetheory.com/en-do/book-a-class-1?location_id=d524d997-f557-4e02-afa0-84bb04ea1ba7&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-MX</td>
+        <td><a href="./Booking_Lead_Form_en-MX.html" target="_blank">https://www.sit.orangetheory.com/en-mx/book-a-class-1?location_id=35f6472b-dd09-4a36-92b4-22fdc7eff115&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-GT</td>
+        <td><a href="./Booking_Lead_Form_es-GT.html" target="_blank">https://www.sit.orangetheory.com/es-gt/book-a-class-1?location_id=71289999-3234-4320-842a-9c9dbd7c98a8&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-GT</td>
+        <td><a href="./Booking_Lead_Form_en-GT.html" target="_blank">https://www.sit.orangetheory.com/en-gt/book-a-class-1?location_id=71289999-3234-4320-842a-9c9dbd7c98a8&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-PA</td>
+        <td><a href="./Booking_Lead_Form_es-PA.html" target="_blank">https://www.sit.orangetheory.com/es-pa/book-a-class-1?location_id=dd9c05da-e2ec-4f39-956c-ecfcecf363e8&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-MX</td>
+        <td><a href="./Booking_Lead_Form_es-MX.html" target="_blank">https://www.sit.orangetheory.com/es-mx/book-a-class-1?location_id=35f6472b-dd09-4a36-92b4-22fdc7eff115&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-PA</td>
+        <td><a href="./Booking_Lead_Form_en-PA.html" target="_blank">https://www.sit.orangetheory.com/en-pa/book-a-class-1?location_id=dd9c05da-e2ec-4f39-956c-ecfcecf363e8&amp;step=1</a></td>
+        <td>271</td>
+        <td style="color:green; font-weight:600;">271</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-AU</td>
+        <td><a href="./Booking_Lead_Form_en-AU.html" target="_blank">https://www.sit.orangetheory.com/en-au/book-a-class-1?location_id=75f7c83d-74a8-41ec-b435-9c128a12ebbb&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-PR</td>
+        <td><a href="./Booking_Lead_Form_en-PR.html" target="_blank">https://www.sit.orangetheory.com/en-pr/book-a-class-1?location_id=7b76cb8f-0cf9-4529-b476-6e5cde16a629&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-PR</td>
+        <td><a href="./Booking_Lead_Form_es-PR.html" target="_blank">https://www.sit.orangetheory.com/es-pr/book-a-class-1?location_id=7b76cb8f-0cf9-4529-b476-6e5cde16a629&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-IN</td>
+        <td><a href="./Booking_Lead_Form_en-IN.html" target="_blank">https://www.sit.orangetheory.com/en-in/book-a-class-1?location_id=fec5b652-8b77-4625-a86f-f962dc049ebe&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>ja-JP</td>
+        <td><a href="./Booking_Lead_Form_ja-JP.html" target="_blank">https://www.sit.orangetheory.com/ja-jp/book-a-class-1?location_id=65523dab-b323-4990-a5d6-0adfb41fa5ea&amp;step=1</a></td>
+        <td>268</td>
+        <td style="color:green; font-weight:600;">268</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-JP</td>
+        <td><a href="./Booking_Lead_Form_en-JP.html" target="_blank">https://www.sit.orangetheory.com/en-jp/book-a-class-1?location_id=65523dab-b323-4990-a5d6-0adfb41fa5ea&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-ES</td>
+        <td><a href="./Booking_Lead_Form_es-ES.html" target="_blank">https://www.sit.orangetheory.com/es-es/book-a-class-1?location_id=f0140df5-b2e4-4567-8a68-383cafcfd097&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>de-DE</td>
+        <td><a href="./Booking_Lead_Form_de-DE.html" target="_blank">https://www.sit.orangetheory.com/de-de/book-a-class-1?location_id=2adb5c28-780e-4e21-a506-bc8a9a3c9188&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-DE</td>
+        <td><a href="./Booking_Lead_Form_en-DE.html" target="_blank">https://www.sit.orangetheory.com/en-de/book-a-class-1?location_id=2adb5c28-780e-4e21-a506-bc8a9a3c9188&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-ES</td>
+        <td><a href="./Booking_Lead_Form_en-ES.html" target="_blank">https://www.sit.orangetheory.com/en-es/book-a-class-1?location_id=f0140df5-b2e4-4567-8a68-383cafcfd097&amp;step=1</a></td>
+        <td>256</td>
+        <td style="color:green; font-weight:600;">256</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-KW</td>
+        <td><a href="./Booking_Lead_Form_en-KW.html" target="_blank">https://www.sit.orangetheory.com/en-kw/book-a-class-1?location_id=c0727c10-a866-411e-8c39-1c6d288bad84&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-BH</td>
+        <td><a href="./Booking_Lead_Form_en-BH.html" target="_blank">https://www.sit.orangetheory.com/en-bh/book-a-class-1?location_id=8d7c3866-12f9-48cd-af9e-e37af2911bfa&amp;step=1</a></td>
+        <td>271</td>
+        <td style="color:green; font-weight:600;">271</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-SA</td>
+        <td><a href="./Booking_Lead_Form_en-SA.html" target="_blank">https://www.sit.orangetheory.com/en-sa/book-a-class-1?location_id=745321d3-5c55-40b3-87d3-a67ef7c71951&amp;step=1</a></td>
+        <td>273</td>
+        <td style="color:green; font-weight:600;">273</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-QA</td>
+        <td><a href="./Booking_Lead_Form_en-QA.html" target="_blank">https://www.sit.orangetheory.com/en-qa/book-a-class-1?location_id=29ea3c44-32bf-4db2-8399-c4bb069e3d02&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr></tbody>
+      </table>
+    </body>
+    </html>
