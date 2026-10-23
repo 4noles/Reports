@@ -1,0 +1,4236 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>Automation Dashboard</title>
+      <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 30px; background: #f8fafc; color: #333; }
+        .header-bar { background: linear-gradient(90deg, #1e3a8a, #2563eb); color: white; padding: 16px 22px; border-radius: 8px; font-size: 1.4em; font-weight: 600; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        th, td { padding: 12px 14px; border: 1px solid #e5e7eb; text-align: left; font-size: 13px; }
+        th { background: #1f2937; color: white; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        tr:hover { background: #f0f4f8; }
+        a { color: #2563eb; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+      </style>
+    </head>
+    <body>
+      <div class="header-bar">Project Validation Dashboard: OrangeTheory</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Page Name</th>
+            <th>Target Sheet</th>
+            <th>Report (Live Link)</th>
+            <th>Total Checked</th>
+            <th>Text Matches</th>
+            <th>Text Mismatches</th>
+            <th>Not Found</th>
+            <th>Expected VS Actual Redirect Status</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td>October Promo - Home page</td>
+        <td>en-US</td>
+        <td><a href="./October_Promo_-_Home_page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us</a></td>
+        <td>37</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">6</td>
+        <td>1</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 2</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>fr-CA</td>
+        <td><a href="./Home_Page_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca</a></td>
+        <td>32</td>
+        <td style="color:green; font-weight:600;">32</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 2</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-CA</td>
+        <td><a href="./Home_Page_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca</a></td>
+        <td>33</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 2</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>es-CO</td>
+        <td><a href="./Home_Page_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-CR</td>
+        <td><a href="./Home_Page_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">29</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-CO</td>
+        <td><a href="./Home_Page_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>es-CR</td>
+        <td><a href="./Home_Page_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-DO</td>
+        <td><a href="./Home_Page_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>es-DO</td>
+        <td><a href="./Home_Page_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>es-GT</td>
+        <td><a href="./Home_Page_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt</a></td>
+        <td>29</td>
+        <td style="color:green; font-weight:600;">29</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-MX</td>
+        <td><a href="./Home_Page_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-GT</td>
+        <td><a href="./Home_Page_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>es-PA</td>
+        <td><a href="./Home_Page_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa</a></td>
+        <td>29</td>
+        <td style="color:green; font-weight:600;">29</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>es-MX</td>
+        <td><a href="./Home_Page_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-PA</td>
+        <td><a href="./Home_Page_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa</a></td>
+        <td>29</td>
+        <td style="color:green; font-weight:600;">29</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-PR</td>
+        <td><a href="./Home_Page_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>es-PR</td>
+        <td><a href="./Home_Page_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-AU</td>
+        <td><a href="./Home_Page_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au</a></td>
+        <td>32</td>
+        <td style="color:green; font-weight:600;">32</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 5</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-JP</td>
+        <td><a href="./Home_Page_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>ja-JP</td>
+        <td><a href="./Home_Page_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-IN</td>
+        <td><a href="./Home_Page_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-DE</td>
+        <td><a href="./Home_Page_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>de-DE</td>
+        <td><a href="./Home_Page_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>es-ES</td>
+        <td><a href="./Home_Page_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-BH</td>
+        <td><a href="./Home_Page_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh</a></td>
+        <td>29</td>
+        <td style="color:green; font-weight:600;">29</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-ES</td>
+        <td><a href="./Home_Page_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-KW</td>
+        <td><a href="./Home_Page_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw</a></td>
+        <td>31</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-CA</td>
+        <td><a href="./Locations_Page_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-QA</td>
+        <td><a href="./Home_Page_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page</td>
+        <td>en-SA</td>
+        <td><a href="./Home_Page_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa</a></td>
+        <td>30</td>
+        <td style="color:green; font-weight:600;">30</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>fr-CA</td>
+        <td><a href="./Locations_Page_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>es-CO</td>
+        <td><a href="./Locations_Page_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-CO</td>
+        <td><a href="./Locations_Page_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-CR</td>
+        <td><a href="./Locations_Page_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-DO</td>
+        <td><a href="./Locations_Page_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>es-CR</td>
+        <td><a href="./Locations_Page_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>es-DO</td>
+        <td><a href="./Locations_Page_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>es-GT</td>
+        <td><a href="./Locations_Page_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-GT</td>
+        <td><a href="./Locations_Page_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-PA</td>
+        <td><a href="./Locations_Page_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>es-MX</td>
+        <td><a href="./Locations_Page_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-MX</td>
+        <td><a href="./Locations_Page_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/locations</a></td>
+        <td>9</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>1</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-PR</td>
+        <td><a href="./Locations_Page_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>es-PR</td>
+        <td><a href="./Locations_Page_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>es-PA</td>
+        <td><a href="./Locations_Page_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-IN</td>
+        <td><a href="./Locations_Page_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-AU</td>
+        <td><a href="./Locations_Page_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-US</td>
+        <td><a href="./Locations_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations</a></td>
+        <td>3</td>
+        <td style="color:green; font-weight:600;">3</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>ja-JP</td>
+        <td><a href="./Locations_Page_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>de-DE</td>
+        <td><a href="./Locations_Page_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-JP</td>
+        <td><a href="./Locations_Page_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-ES</td>
+        <td><a href="./Locations_Page_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-DE</td>
+        <td><a href="./Locations_Page_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>es-ES</td>
+        <td><a href="./Locations_Page_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es/locations</a></td>
+        <td>7</td>
+        <td style="color:green; font-weight:600;">7</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-QA</td>
+        <td><a href="./Locations_Page_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-KW</td>
+        <td><a href="./Locations_Page_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-BH</td>
+        <td><a href="./Locations_Page_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-CA</td>
+        <td><a href="./Workout_Page_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>fr-CA</td>
+        <td><a href="./Workout_Page_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Locations Page</td>
+        <td>en-SA</td>
+        <td><a href="./Locations_Page_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa/locations</a></td>
+        <td>8</td>
+        <td style="color:green; font-weight:600;">8</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-CR</td>
+        <td><a href="./Workout_Page_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-CO</td>
+        <td><a href="./Workout_Page_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>es-CO</td>
+        <td><a href="./Workout_Page_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-DO</td>
+        <td><a href="./Workout_Page_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>es-CR</td>
+        <td><a href="./Workout_Page_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>es-DO</td>
+        <td><a href="./Workout_Page_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-MX</td>
+        <td><a href="./Workout_Page_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-GT</td>
+        <td><a href="./Workout_Page_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>es-GT</td>
+        <td><a href="./Workout_Page_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-PA</td>
+        <td><a href="./Workout_Page_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>es-PA</td>
+        <td><a href="./Workout_Page_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>es-MX</td>
+        <td><a href="./Workout_Page_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-PR</td>
+        <td><a href="./Workout_Page_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>es-PR</td>
+        <td><a href="./Workout_Page_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-US</td>
+        <td><a href="./Workout_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-IN</td>
+        <td><a href="./Workout_Page_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>ja-JP</td>
+        <td><a href="./Workout_Page_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">51</td>
+        <td style="color:red; font-weight:600;">8</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-AU</td>
+        <td><a href="./Workout_Page_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>de-DE</td>
+        <td><a href="./Workout_Page_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-JP</td>
+        <td><a href="./Workout_Page_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-DE</td>
+        <td><a href="./Workout_Page_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-BH</td>
+        <td><a href="./Workout_Page_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-ES</td>
+        <td><a href="./Workout_Page_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>es-ES</td>
+        <td><a href="./Workout_Page_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-QA</td>
+        <td><a href="./Workout_Page_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-KW</td>
+        <td><a href="./Workout_Page_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Workout Page</td>
+        <td>en-SA</td>
+        <td><a href="./Workout_Page_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa/workout</a></td>
+        <td>59</td>
+        <td style="color:green; font-weight:600;">59</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-CA</td>
+        <td><a href="./Memberships_Page_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/memberships</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>fr-CA</td>
+        <td><a href="./Memberships_Page_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/memberships</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-CO</td>
+        <td><a href="./Memberships_Page_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>es-CO</td>
+        <td><a href="./Memberships_Page_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>es-CR</td>
+        <td><a href="./Memberships_Page_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-CR</td>
+        <td><a href="./Memberships_Page_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>es-DO</td>
+        <td><a href="./Memberships_Page_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/memberships</a></td>
+        <td>37</td>
+        <td style="color:green; font-weight:600;">35</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-DO</td>
+        <td><a href="./Memberships_Page_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-GT</td>
+        <td><a href="./Memberships_Page_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>es-GT</td>
+        <td><a href="./Memberships_Page_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>es-MX</td>
+        <td><a href="./Memberships_Page_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-MX</td>
+        <td><a href="./Memberships_Page_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-PA</td>
+        <td><a href="./Memberships_Page_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>es-PA</td>
+        <td><a href="./Memberships_Page_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-PR</td>
+        <td><a href="./Memberships_Page_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-US</td>
+        <td><a href="./Memberships_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/memberships</a></td>
+        <td>37</td>
+        <td style="color:green; font-weight:600;">35</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>es-PR</td>
+        <td><a href="./Memberships_Page_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/memberships</a></td>
+        <td>37</td>
+        <td style="color:green; font-weight:600;">35</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-AU</td>
+        <td><a href="./Memberships_Page_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>ja-JP</td>
+        <td><a href="./Memberships_Page_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/memberships</a></td>
+        <td>37</td>
+        <td style="color:green; font-weight:600;">32</td>
+        <td style="color:red; font-weight:600;">3</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-JP</td>
+        <td><a href="./Memberships_Page_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/memberships</a></td>
+        <td>37</td>
+        <td style="color:green; font-weight:600;">35</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-IN</td>
+        <td><a href="./Memberships_Page_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/memberships</a></td>
+        <td>25</td>
+        <td style="color:green; font-weight:600;">23</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-DE</td>
+        <td><a href="./Memberships_Page_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/memberships</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">32</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>de-DE</td>
+        <td><a href="./Memberships_Page_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/memberships</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">32</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>es-ES</td>
+        <td><a href="./Memberships_Page_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es/memberships</a></td>
+        <td>33</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-BH</td>
+        <td><a href="./Memberships_Page_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-KW</td>
+        <td><a href="./Memberships_Page_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-ES</td>
+        <td><a href="./Memberships_Page_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es/memberships</a></td>
+        <td>33</td>
+        <td style="color:green; font-weight:600;">31</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-QA</td>
+        <td><a href="./Memberships_Page_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-CA</td>
+        <td><a href="./Standard_Studio_page_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/locations/vancouver-british-columbia-can073</a></td>
+        <td>87</td>
+        <td style="color:green; font-weight:600;">85</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Memberships Page</td>
+        <td>en-SA</td>
+        <td><a href="./Memberships_Page_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa/memberships</a></td>
+        <td>35</td>
+        <td style="color:green; font-weight:600;">33</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-CO</td>
+        <td><a href="./Standard_Studio_page_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/locations/bogota-cundinamarca-col001</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>fr-CA</td>
+        <td><a href="./Standard_Studio_page_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/locations/vancouver-british-columbia-can073</a></td>
+        <td>87</td>
+        <td style="color:green; font-weight:600;">85</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>es-CO</td>
+        <td><a href="./Standard_Studio_page_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/locations/bogota-cundinamarca-col001</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>es-CR</td>
+        <td><a href="./Standard_Studio_page_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/locations/escazu-san-jose-cri001</a></td>
+        <td>78</td>
+        <td style="color:green; font-weight:600;">76</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-DO</td>
+        <td><a href="./Standard_Studio_page_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/locations/arroyo-hondo-santiago-dom005</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-CR</td>
+        <td><a href="./Standard_Studio_page_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/locations/escazu-san-jose-cri001</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-GT</td>
+        <td><a href="./Standard_Studio_page_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/locations/guatemala-city-guatemala-gtm001</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>es-GT</td>
+        <td><a href="./Standard_Studio_page_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/locations/guatemala-city-guatemala-gtm001</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>es-DO</td>
+        <td><a href="./Standard_Studio_page_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/locations/arroyo-hondo-santiago-dom005</a></td>
+        <td>76</td>
+        <td style="color:green; font-weight:600;">74</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-MX</td>
+        <td><a href="./Standard_Studio_page_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/locations/mexico-city-mexico-mex011</a></td>
+        <td>76</td>
+        <td style="color:green; font-weight:600;">74</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>es-MX</td>
+        <td><a href="./Standard_Studio_page_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/locations/mexico-city-mexico-mex011</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-PA</td>
+        <td><a href="./Standard_Studio_page_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/locations/panama-pa-pan003</a></td>
+        <td>75</td>
+        <td style="color:green; font-weight:600;">73</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-PR</td>
+        <td><a href="./Standard_Studio_page_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/locations/condado-san-juan-pri002</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>es-PR</td>
+        <td><a href="./Standard_Studio_page_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/locations/condado-san-juan-pri002</a></td>
+        <td>76</td>
+        <td style="color:green; font-weight:600;">74</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>es-PA</td>
+        <td><a href="./Standard_Studio_page_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/locations/panama-pa-pan003</a></td>
+        <td>76</td>
+        <td style="color:green; font-weight:600;">74</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-AU</td>
+        <td><a href="./Standard_Studio_page_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/locations/mosman-new-south-wales-aus027</a></td>
+        <td>78</td>
+        <td style="color:green; font-weight:600;">76</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-IN</td>
+        <td><a href="./Standard_Studio_page_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/locations/mumbai-maharashtra-ind003</a></td>
+        <td>70</td>
+        <td style="color:green; font-weight:600;">68</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-US</td>
+        <td><a href="./Standard_Studio_page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/boca-raton-florida-0011</a></td>
+        <td>101</td>
+        <td style="color:green; font-weight:600;">95</td>
+        <td style="color:red; font-weight:600;">4</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 20</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>de-DE</td>
+        <td><a href="./Standard_Studio_page_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/locations/hamburg-hamburg-deu002</a></td>
+        <td>76</td>
+        <td style="color:green; font-weight:600;">74</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-JP</td>
+        <td><a href="./Standard_Studio_page_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/locations/yokohama-city-kanagawa-jpn001</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>ja-JP</td>
+        <td><a href="./Standard_Studio_page_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/locations/yokohama-city-kanagawa-jpn001</a></td>
+        <td>73</td>
+        <td style="color:green; font-weight:600;">71</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-DE</td>
+        <td><a href="./Standard_Studio_page_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/locations/hamburg-hamburg-deu002</a></td>
+        <td>76</td>
+        <td style="color:green; font-weight:600;">74</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>es-ES</td>
+        <td><a href="./Standard_Studio_page_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es/locations/barcelona-baleares-balearic-islands-esp005</a></td>
+        <td>79</td>
+        <td style="color:green; font-weight:600;">77</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-ES</td>
+        <td><a href="./Standard_Studio_page_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es/locations/barcelona-baleares-balearic-islands-esp005</a></td>
+        <td>79</td>
+        <td style="color:green; font-weight:600;">77</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-QA</td>
+        <td><a href="./Standard_Studio_page_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa/locations/doha-doha-qat001</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-BH</td>
+        <td><a href="./Standard_Studio_page_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh/locations/manama-manama-bhr001</a></td>
+        <td>85</td>
+        <td style="color:green; font-weight:600;">83</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-KW</td>
+        <td><a href="./Standard_Studio_page_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw/locations/egaila-al-ahmadi-kuw002</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>fr-CA</td>
+        <td><a href="./Presales_Studio_Page_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-CA</td>
+        <td><a href="./Presales_Studio_Page_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Standard Studio page</td>
+        <td>en-SA</td>
+        <td><a href="./Standard_Studio_page_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa/locations/jeddah-city-makkah-province-sau004</a></td>
+        <td>77</td>
+        <td style="color:green; font-weight:600;">75</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>2</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-CO</td>
+        <td><a href="./Presales_Studio_Page_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>es-CO</td>
+        <td><a href="./Presales_Studio_Page_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-CR</td>
+        <td><a href="./Presales_Studio_Page_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-DO</td>
+        <td><a href="./Presales_Studio_Page_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>es-DO</td>
+        <td><a href="./Presales_Studio_Page_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>es-CR</td>
+        <td><a href="./Presales_Studio_Page_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>es-GT</td>
+        <td><a href="./Presales_Studio_Page_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-MX</td>
+        <td><a href="./Presales_Studio_Page_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-GT</td>
+        <td><a href="./Presales_Studio_Page_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-PA</td>
+        <td><a href="./Presales_Studio_Page_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/locations/prod-intl-4</a></td>
+        <td>82</td>
+        <td style="color:green; font-weight:600;">69</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>es-MX</td>
+        <td><a href="./Presales_Studio_Page_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>es-PA</td>
+        <td><a href="./Presales_Studio_Page_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/locations/prod-intl-4</a></td>
+        <td>82</td>
+        <td style="color:green; font-weight:600;">69</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-PR</td>
+        <td><a href="./Presales_Studio_Page_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>es-PR</td>
+        <td><a href="./Presales_Studio_Page_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-US</td>
+        <td><a href="./Presales_Studio_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/online-join-prod-3</a></td>
+        <td>84</td>
+        <td style="color:green; font-weight:600;">71</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-IN</td>
+        <td><a href="./Presales_Studio_Page_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/locations/prod-intl-4</a></td>
+        <td>73</td>
+        <td style="color:green; font-weight:600;">60</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-AU</td>
+        <td><a href="./Presales_Studio_Page_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>ja-JP</td>
+        <td><a href="./Presales_Studio_Page_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-JP</td>
+        <td><a href="./Presales_Studio_Page_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/locations/prod-intl-4</a></td>
+        <td>87</td>
+        <td style="color:green; font-weight:600;">74</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-DE</td>
+        <td><a href="./Presales_Studio_Page_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>de-DE</td>
+        <td><a href="./Presales_Studio_Page_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-ES</td>
+        <td><a href="./Presales_Studio_Page_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es/locations/prod-intl-5</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>es-ES</td>
+        <td><a href="./Presales_Studio_Page_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es/locations/prod-intl-5</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-BH</td>
+        <td><a href="./Presales_Studio_Page_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-KW</td>
+        <td><a href="./Presales_Studio_Page_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-SA</td>
+        <td><a href="./Presales_Studio_Page_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Presales Studio Page</td>
+        <td>en-QA</td>
+        <td><a href="./Presales_Studio_Page_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa/locations/prod-intl-4</a></td>
+        <td>83</td>
+        <td style="color:green; font-weight:600;">70</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>12</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 14</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-CA</td>
+        <td><a href="./Product_Information_Page_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>fr-CA</td>
+        <td><a href="./Product_Information_Page_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-CO</td>
+        <td><a href="./Product_Information_Page_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-CR</td>
+        <td><a href="./Product_Information_Page_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>es-CR</td>
+        <td><a href="./Product_Information_Page_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>es-CO</td>
+        <td><a href="./Product_Information_Page_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>es-DO</td>
+        <td><a href="./Product_Information_Page_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-DO</td>
+        <td><a href="./Product_Information_Page_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-GT</td>
+        <td><a href="./Product_Information_Page_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>es-MX</td>
+        <td><a href="./Product_Information_Page_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/product-information</a></td>
+        <td>40</td>
+        <td style="color:green; font-weight:600;">40</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 27</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-MX</td>
+        <td><a href="./Product_Information_Page_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/product-information</a></td>
+        <td>40</td>
+        <td style="color:green; font-weight:600;">40</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 27</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>es-GT</td>
+        <td><a href="./Product_Information_Page_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-PA</td>
+        <td><a href="./Product_Information_Page_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>es-PA</td>
+        <td><a href="./Product_Information_Page_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-PR</td>
+        <td><a href="./Product_Information_Page_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/product-information</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 25</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>es-PR</td>
+        <td><a href="./Product_Information_Page_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/product-information</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 25</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-US</td>
+        <td><a href="./Product_Information_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/product-information</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 25</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-AU</td>
+        <td><a href="./Product_Information_Page_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>ja-JP</td>
+        <td><a href="./Product_Information_Page_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-JP</td>
+        <td><a href="./Product_Information_Page_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-IN</td>
+        <td><a href="./Product_Information_Page_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/product-information</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 25</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>de-DE</td>
+        <td><a href="./Product_Information_Page_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/product-information</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 25</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-DE</td>
+        <td><a href="./Product_Information_Page_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/product-information</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 25</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>es-ES</td>
+        <td><a href="./Product_Information_Page_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es/product-information</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 25</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-BH</td>
+        <td><a href="./Product_Information_Page_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-KW</td>
+        <td><a href="./Product_Information_Page_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-ES</td>
+        <td><a href="./Product_Information_Page_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es/product-information</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">36</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 25</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-QA</td>
+        <td><a href="./Product_Information_Page_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa/product-information</a></td>
+        <td>34</td>
+        <td style="color:green; font-weight:600;">34</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 24</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-CA</td>
+        <td><a href="./OTconnect_Beat_Page_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/product-information/otconnect-beat</a></td>
+        <td>120</td>
+        <td style="color:green; font-weight:600;">120</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Product Information Page</td>
+        <td>en-SA</td>
+        <td><a href="./Product_Information_Page_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa/product-information</a></td>
+        <td>40</td>
+        <td style="color:green; font-weight:600;">40</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 27</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-CO</td>
+        <td><a href="./OTconnect_Beat_Page_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>fr-CA</td>
+        <td><a href="./OTconnect_Beat_Page_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-CO</td>
+        <td><a href="./OTconnect_Beat_Page_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-CR</td>
+        <td><a href="./OTconnect_Beat_Page_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-CR</td>
+        <td><a href="./OTconnect_Beat_Page_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-DO</td>
+        <td><a href="./OTconnect_Beat_Page_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-GT</td>
+        <td><a href="./OTconnect_Beat_Page_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-DO</td>
+        <td><a href="./OTconnect_Beat_Page_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-GT</td>
+        <td><a href="./OTconnect_Beat_Page_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-PA</td>
+        <td><a href="./OTconnect_Beat_Page_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-MX</td>
+        <td><a href="./OTconnect_Beat_Page_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-MX</td>
+        <td><a href="./OTconnect_Beat_Page_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-PA</td>
+        <td><a href="./OTconnect_Beat_Page_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-PR</td>
+        <td><a href="./OTconnect_Beat_Page_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-PE</td>
+        <td><a href="./OTconnect_Beat_Page_es-PE.html" target="_blank">https://www.uat.orangetheory.com/es-pe/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">5</td>
+        <td style="color:red; font-weight:600;">116</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 1</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-PR</td>
+        <td><a href="./OTconnect_Beat_Page_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-US</td>
+        <td><a href="./OTconnect_Beat_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-AU</td>
+        <td><a href="./OTconnect_Beat_Page_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-JP</td>
+        <td><a href="./OTconnect_Beat_Page_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>ja-JP</td>
+        <td><a href="./OTconnect_Beat_Page_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-IN</td>
+        <td><a href="./OTconnect_Beat_Page_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>es-ES</td>
+        <td><a href="./OTconnect_Beat_Page_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>de-DE</td>
+        <td><a href="./OTconnect_Beat_Page_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-DE</td>
+        <td><a href="./OTconnect_Beat_Page_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>DriTri Evergreen</td>
+        <td>en-US</td>
+        <td><a href="./DriTri_Evergreen_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/events/dritri</a></td>
+        <td>36</td>
+        <td style="color:green; font-weight:600;">20</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>16</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Gyms Near Me Page</td>
+        <td>en-US</td>
+        <td><a href="./Gyms_Near_Me_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/gyms-near-me</a></td>
+        <td>27</td>
+        <td style="color:green; font-weight:600;">26</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>1</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>OTconnect Beat Page</td>
+        <td>en-ES</td>
+        <td><a href="./OTconnect_Beat_Page_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es/product-information/otconnect-beat</a></td>
+        <td>121</td>
+        <td style="color:green; font-weight:600;">121</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-US</td>
+        <td><a href="./Booking_Lead_Form_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/book-a-class-1?location_id=3faf5e12-327c-42e6-adb7-1363b57c4d04&amp;step=1</a></td>
+        <td>260</td>
+        <td style="color:green; font-weight:600;">260</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Pilates Alternative Page</td>
+        <td>en-US</td>
+        <td><a href="./Pilates_Alternative_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/pilates-alternative</a></td>
+        <td>22</td>
+        <td style="color:green; font-weight:600;">21</td>
+        <td style="color:red; font-weight:600;">1</td>
+        <td>1</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Strong Page</td>
+        <td>en-US</td>
+        <td><a href="./Strong_Page_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/workout/strong</a></td>
+        <td>24</td>
+        <td style="color:green; font-weight:600;">24</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 0</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-CO</td>
+        <td><a href="./Booking_Lead_Form_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/book-a-class-1?location_id=75326430-5146-4887-902e-7764466eb687&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>fr-CA</td>
+        <td><a href="./Booking_Lead_Form_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/book-a-class-1?location_id=196f0c40-c406-4245-af47-0b503318ce2d&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-CA</td>
+        <td><a href="./Booking_Lead_Form_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/book-a-class-1?location_id=196f0c40-c406-4245-af47-0b503318ce2d&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-CO</td>
+        <td><a href="./Booking_Lead_Form_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/book-a-class-1?location_id=75326430-5146-4887-902e-7764466eb687&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-CR</td>
+        <td><a href="./Booking_Lead_Form_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/book-a-class-1?location_id=6ccfa521-82c9-4d0b-a39a-504328d21902&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-CR</td>
+        <td><a href="./Booking_Lead_Form_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/book-a-class-1?location_id=6ccfa521-82c9-4d0b-a39a-504328d21902&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-DO</td>
+        <td><a href="./Booking_Lead_Form_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/book-a-class-1?location_id=d524d997-f557-4e02-afa0-84bb04ea1ba7&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-DO</td>
+        <td><a href="./Booking_Lead_Form_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/book-a-class-1?location_id=d524d997-f557-4e02-afa0-84bb04ea1ba7&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-GT</td>
+        <td><a href="./Booking_Lead_Form_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/book-a-class-1?location_id=71289999-3234-4320-842a-9c9dbd7c98a8&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-MX</td>
+        <td><a href="./Booking_Lead_Form_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/book-a-class-1?location_id=35f6472b-dd09-4a36-92b4-22fdc7eff115&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-GT</td>
+        <td><a href="./Booking_Lead_Form_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/book-a-class-1?location_id=71289999-3234-4320-842a-9c9dbd7c98a8&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-MX</td>
+        <td><a href="./Booking_Lead_Form_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/book-a-class-1?location_id=35f6472b-dd09-4a36-92b4-22fdc7eff115&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-PA</td>
+        <td><a href="./Booking_Lead_Form_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/book-a-class-1?location_id=dd9c05da-e2ec-4f39-956c-ecfcecf363e8&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-PA</td>
+        <td><a href="./Booking_Lead_Form_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/book-a-class-1?location_id=dd9c05da-e2ec-4f39-956c-ecfcecf363e8&amp;step=1</a></td>
+        <td>271</td>
+        <td style="color:green; font-weight:600;">271</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-PR</td>
+        <td><a href="./Booking_Lead_Form_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/book-a-class-1?location_id=7b76cb8f-0cf9-4529-b476-6e5cde16a629&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-AU</td>
+        <td><a href="./Booking_Lead_Form_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/book-a-class-1?location_id=75f7c83d-74a8-41ec-b435-9c128a12ebbb&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-PR</td>
+        <td><a href="./Booking_Lead_Form_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/book-a-class-1?location_id=7b76cb8f-0cf9-4529-b476-6e5cde16a629&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-IN</td>
+        <td><a href="./Booking_Lead_Form_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/book-a-class-1?location_id=fec5b652-8b77-4625-a86f-f962dc049ebe&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>ja-JP</td>
+        <td><a href="./Booking_Lead_Form_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/book-a-class-1?location_id=65523dab-b323-4990-a5d6-0adfb41fa5ea&amp;step=1</a></td>
+        <td>268</td>
+        <td style="color:green; font-weight:600;">268</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>de-DE</td>
+        <td><a href="./Booking_Lead_Form_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/book-a-class-1?location_id=2adb5c28-780e-4e21-a506-bc8a9a3c9188&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-JP</td>
+        <td><a href="./Booking_Lead_Form_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/book-a-class-1?location_id=65523dab-b323-4990-a5d6-0adfb41fa5ea&amp;step=1</a></td>
+        <td>257</td>
+        <td style="color:green; font-weight:600;">257</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>es-ES</td>
+        <td><a href="./Booking_Lead_Form_es-ES.html" target="_blank">https://www.uat.orangetheory.com/es-es/book-a-class-1?location_id=f0140df5-b2e4-4567-8a68-383cafcfd097&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 3</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-ES</td>
+        <td><a href="./Booking_Lead_Form_en-ES.html" target="_blank">https://www.uat.orangetheory.com/en-es/book-a-class-1?location_id=f0140df5-b2e4-4567-8a68-383cafcfd097&amp;step=1</a></td>
+        <td>256</td>
+        <td style="color:green; font-weight:600;">256</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-DE</td>
+        <td><a href="./Booking_Lead_Form_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/book-a-class-1?location_id=2adb5c28-780e-4e21-a506-bc8a9a3c9188&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-KW</td>
+        <td><a href="./Booking_Lead_Form_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw/book-a-class-1?location_id=c0727c10-a866-411e-8c39-1c6d288bad84&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-QA</td>
+        <td><a href="./Booking_Lead_Form_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa/book-a-class-1?location_id=29ea3c44-32bf-4db2-8399-c4bb069e3d02&amp;step=1</a></td>
+        <td>272</td>
+        <td style="color:green; font-weight:600;">272</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-BH</td>
+        <td><a href="./Booking_Lead_Form_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh/book-a-class-1?location_id=8d7c3866-12f9-48cd-af9e-e37af2911bfa&amp;step=1</a></td>
+        <td>271</td>
+        <td style="color:green; font-weight:600;">271</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-CA</td>
+        <td><a href="./App_FAQ_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Booking Lead Form</td>
+        <td>en-SA</td>
+        <td><a href="./Booking_Lead_Form_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa/book-a-class-1?location_id=745321d3-5c55-40b3-87d3-a67ef7c71951&amp;step=1</a></td>
+        <td>273</td>
+        <td style="color:green; font-weight:600;">273</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-US</td>
+        <td><a href="./App_FAQ_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/app-faq</a></td>
+        <td>206</td>
+        <td style="color:green; font-weight:600;">206</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 4</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 1</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>fr-CA</td>
+        <td><a href="./App_FAQ_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-CO</td>
+        <td><a href="./App_FAQ_en-CO.html" target="_blank">https://www.uat.orangetheory.com/en-co/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>es-CO</td>
+        <td><a href="./App_FAQ_es-CO.html" target="_blank">https://www.uat.orangetheory.com/es-co/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-DO</td>
+        <td><a href="./App_FAQ_en-DO.html" target="_blank">https://www.uat.orangetheory.com/en-do/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-CR</td>
+        <td><a href="./App_FAQ_en-CR.html" target="_blank">https://www.uat.orangetheory.com/en-cr/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>es-CR</td>
+        <td><a href="./App_FAQ_es-CR.html" target="_blank">https://www.uat.orangetheory.com/es-cr/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>es-GT</td>
+        <td><a href="./App_FAQ_es-GT.html" target="_blank">https://www.uat.orangetheory.com/es-gt/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>es-DO</td>
+        <td><a href="./App_FAQ_es-DO.html" target="_blank">https://www.uat.orangetheory.com/es-do/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-GT</td>
+        <td><a href="./App_FAQ_en-GT.html" target="_blank">https://www.uat.orangetheory.com/en-gt/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>es-MX</td>
+        <td><a href="./App_FAQ_es-MX.html" target="_blank">https://www.uat.orangetheory.com/es-mx/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-PA</td>
+        <td><a href="./App_FAQ_en-PA.html" target="_blank">https://www.uat.orangetheory.com/en-pa/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-MX</td>
+        <td><a href="./App_FAQ_en-MX.html" target="_blank">https://www.uat.orangetheory.com/en-mx/app-faq</a></td>
+        <td>148</td>
+        <td style="color:green; font-weight:600;">148</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>es-PA</td>
+        <td><a href="./App_FAQ_es-PA.html" target="_blank">https://www.uat.orangetheory.com/es-pa/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-PR</td>
+        <td><a href="./App_FAQ_en-PR.html" target="_blank">https://www.uat.orangetheory.com/en-pr/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>es-PR</td>
+        <td><a href="./App_FAQ_es-PR.html" target="_blank">https://www.uat.orangetheory.com/es-pr/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>ja-JP</td>
+        <td><a href="./App_FAQ_ja-JP.html" target="_blank">https://www.uat.orangetheory.com/ja-jp/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-AU</td>
+        <td><a href="./App_FAQ_en-AU.html" target="_blank">https://www.uat.orangetheory.com/en-au/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-IN</td>
+        <td><a href="./App_FAQ_en-IN.html" target="_blank">https://www.uat.orangetheory.com/en-in/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-JP</td>
+        <td><a href="./App_FAQ_en-JP.html" target="_blank">https://www.uat.orangetheory.com/en-jp/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>de-DE</td>
+        <td><a href="./App_FAQ_de-DE.html" target="_blank">https://www.uat.orangetheory.com/de-de/app-faq</a></td>
+        <td>146</td>
+        <td style="color:green; font-weight:600;">146</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-DE</td>
+        <td><a href="./App_FAQ_en-DE.html" target="_blank">https://www.uat.orangetheory.com/en-de/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-BH</td>
+        <td><a href="./App_FAQ_en-BH.html" target="_blank">https://www.uat.orangetheory.com/en-bh/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-QA</td>
+        <td><a href="./App_FAQ_en-QA.html" target="_blank">https://www.uat.orangetheory.com/en-qa/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-KW</td>
+        <td><a href="./App_FAQ_en-KW.html" target="_blank">https://www.uat.orangetheory.com/en-kw/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>App FAQ</td>
+        <td>en-SA</td>
+        <td><a href="./App_FAQ_en-SA.html" target="_blank">https://www.uat.orangetheory.com/en-sa/app-faq</a></td>
+        <td>147</td>
+        <td style="color:green; font-weight:600;">147</td>
+        <td style="color:red; font-weight:600;">0</td>
+        <td>0</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 2</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real US Studio page - Lees Summit</td>
+        <td>en-US</td>
+        <td><a href="./Real_US_Studio_page_-_Lees_Summit_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/lees-summit-missouri-0532</a></td>
+        <td>99</td>
+        <td style="color:green; font-weight:600;">88</td>
+        <td style="color:red; font-weight:600;">5</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 19</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real US Studio page - Grand Rapids</td>
+        <td>en-US</td>
+        <td><a href="./Real_US_Studio_page_-_Grand_Rapids_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/grand-rapids-michigan-1064</a></td>
+        <td>102</td>
+        <td style="color:green; font-weight:600;">91</td>
+        <td style="color:red; font-weight:600;">5</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 20</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real US Studio page - New York</td>
+        <td>en-US</td>
+        <td><a href="./Real_US_Studio_page_-_New_York_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/new-york-new-york-1403</a></td>
+        <td>94</td>
+        <td style="color:green; font-weight:600;">82</td>
+        <td style="color:red; font-weight:600;">8</td>
+        <td>4</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 17</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real US Studio page - Chicago</td>
+        <td>en-US</td>
+        <td><a href="./Real_US_Studio_page_-_Chicago_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/chicago-illinois-0686</a></td>
+        <td>101</td>
+        <td style="color:green; font-weight:600;">90</td>
+        <td style="color:red; font-weight:600;">5</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 20</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real US Studio page - Shiloh</td>
+        <td>en-US</td>
+        <td><a href="./Real_US_Studio_page_-_Shiloh_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/shiloh-illinois-1470</a></td>
+        <td>96</td>
+        <td style="color:green; font-weight:600;">85</td>
+        <td style="color:red; font-weight:600;">5</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 18</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real US Studio page - Edgewater</td>
+        <td>en-US</td>
+        <td><a href="./Real_US_Studio_page_-_Edgewater_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/edgewater-colorado-1409</a></td>
+        <td>99</td>
+        <td style="color:green; font-weight:600;">88</td>
+        <td style="color:red; font-weight:600;">5</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 19</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real US Studio page - Vancouver</td>
+        <td>en-US</td>
+        <td><a href="./Real_US_Studio_page_-_Vancouver_en-US.html" target="_blank">https://www.uat.orangetheory.com/en-us/locations/vancouver-washington-0512</a></td>
+        <td>102</td>
+        <td style="color:green; font-weight:600;">91</td>
+        <td style="color:red; font-weight:600;">5</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 20</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real CA Studio page - Brampton EN</td>
+        <td>en-CA</td>
+        <td><a href="./Real_CA_Studio_page_-_Brampton_EN_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/locations/brampton-ontario-can061</a></td>
+        <td>87</td>
+        <td style="color:green; font-weight:600;">78</td>
+        <td style="color:red; font-weight:600;">3</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real CA Studio page - Toronto EN</td>
+        <td>en-CA</td>
+        <td><a href="./Real_CA_Studio_page_-_Toronto_EN_en-CA.html" target="_blank">https://www.uat.orangetheory.com/en-ca/locations/toronto-ontario-can071</a></td>
+        <td>87</td>
+        <td style="color:green; font-weight:600;">78</td>
+        <td style="color:red; font-weight:600;">3</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real CA Studio page - Toronto FR</td>
+        <td>fr-CA</td>
+        <td><a href="./Real_CA_Studio_page_-_Toronto_FR_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/locations/toronto-ontario-can071</a></td>
+        <td>87</td>
+        <td style="color:green; font-weight:600;">78</td>
+        <td style="color:red; font-weight:600;">3</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Real CA Studio page - Brampton FR</td>
+        <td>fr-CA</td>
+        <td><a href="./Real_CA_Studio_page_-_Brampton_FR_fr-CA.html" target="_blank">https://www.uat.orangetheory.com/fr-ca/locations/brampton-ontario-can061</a></td>
+        <td>87</td>
+        <td style="color:green; font-weight:600;">78</td>
+        <td style="color:red; font-weight:600;">3</td>
+        <td>6</td>
+        <td>
+          <span style="color:green; font-weight:600;">PASSED: 13</span> / 
+          <span style="color:red; font-weight:600;">FAILED: 0</span>
+        </td>
+      </tr></tbody>
+      </table>
+    </body>
+    </html>
